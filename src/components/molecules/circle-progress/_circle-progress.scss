@@ -1,0 +1,55 @@
+.circle-progress {
+  position: relative;
+  width: 208px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 155px;
+    height: 155px;
+  }
+  .bg {
+    fill: none;
+    stroke-width: 13px;
+    stroke: $gray-1;
+  }
+  &__bar {
+    fill: none;
+    stroke-width: 13px;
+    stroke: $green-3;
+    stroke-linecap: round;
+    stroke-dasharray: 420;
+    stroke-dashoffset: 60;
+    transform: rotate(-196deg);
+    transform-origin: 50% 50%;
+    animation: big 1.5s ease-in-out;
+  }
+  &__text {
+    color: $green-3;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45.46px;
+    line-height: 55px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .small {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+
+@keyframes big {
+  from {
+    stroke-dashoffset: 400;
+  }
+  to {
+    stroke-dashoffset: 60;
+  }
+}

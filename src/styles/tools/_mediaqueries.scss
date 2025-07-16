@@ -1,0 +1,37 @@
+// ===================
+// ** Media Queries **
+// ===================
+
+$mobile: 576;
+$tablet: 768;
+$large: 992;
+$desktop: 1400;
+
+@mixin mobile {
+  @media only screen and (max-width: ($tablet - 1) * 1px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $tablet * 1px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $large * 1px) {
+    @content;
+  }
+}
+
+@mixin mediaq-max($max-width) {
+  @media only screen and (max-width: $max-width) {
+    @content;
+  }
+}
+@mixin mediaq-min($min-width) {
+  @media only screen and (min-width: $min-width) {
+    @content;
+  }
+}

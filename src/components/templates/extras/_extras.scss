@@ -1,0 +1,96 @@
+.g-card-pack {
+  border-radius: 8px;
+  border: 1px solid $gray-2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 194px;
+  padding: 16px;
+  position: relative;
+  min-width: 214px;
+  max-width: 214px;
+
+  @include mobile {
+    min-width: 100%;
+    width: 100%;
+    min-height: initial;
+  }
+
+  &--icon {
+    color: $green-main;
+    font-size: 41px;
+  }
+
+  &--title {
+    font-family: 'Lato';
+    font-size: 16.8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 8px 0;
+
+    @include mobile {
+      margin: 4px 0 0 16px;
+    }
+  }
+
+  &--text {
+    color: $text-light;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+
+    @include mobile {
+      margin-left: 16px;
+    }
+  }
+
+  &--price {
+    color: $green-main;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &--dsc {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.44px;
+    line-height: 15px;
+    color: $gray-light;
+  }
+
+  &--vol {
+    @include mobile {
+      margin-left: 58px;
+      margin-top: 20px;
+    }
+  }
+
+  .g-icon--tooltip {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 18px;
+  }
+
+  &--add {
+    font-size: 14px;
+    margin: 14px;
+    color: $green-main;
+  }
+
+  &--btn {
+    min-width: 220px;
+  }
+}
+
+.g-hidden {
+  display: none;
+}

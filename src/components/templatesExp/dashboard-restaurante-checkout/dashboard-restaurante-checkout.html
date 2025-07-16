@@ -1,0 +1,232 @@
+<section>
+  <div class="g-header u-bg--primary g-header--button-lg">
+    <div class="o-container u-d-flex u-align-items-center u-justify-content-between u-h--100">
+      <div
+        class="g-header__back u-d-flex u-align-items-center u-justify-content-start u-w--100 desktop-none u-text--white"
+      >
+        <i class="icon-arrow-left2 back o-mr--3"></i>
+        <p class="title g-font--montserrat u-font-weight-semibold">Finaliza pedido</p>
+      </div>
+      <div class="g-header__logo mobile-none">
+        <a href="javascript:void(0)" class="u-text--no-underline">
+          <img src="../../../assets/img/logo.svg" alt="logo" class="img" />
+        </a>
+      </div>
+      <p class="g-header__text u-d-flex u-align-items-center mobile-none u-text--white">
+        <i class="icon-lock icon o-mr--1"></i> Pago 100% seguro
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section__fixed-wrapper u-bg--lighter">
+  <div class="o-container">
+    <div class="o-row">
+      <div class="o-col-24">
+        <div class="mobile-none">
+          <div class="g-back-btn g-back-btn--small o-pb--3 o-pt--6 u-border--bottom-gray">
+            <i class="g-back-btn--arrow icon-arrow-left2"></i>
+            <p class="g-back-btn--text">Finaliza tu pedido</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section__fixed u-d-flex u-justify-content-between u-w--100 u-h--100">
+      <div class="section__fixed-scroll u-w--100">
+        <div class="box g-dropdown-basic dropdown-list dropdown-collapse u-w--100 show">
+          <button class="g-dropdown-basic--btn u-text">Introduce tus datos de pago</button>
+          <div class="g-dropdown-basic--content">
+            <div class="g-dropdown-basic--bkg u-border--top-gray">
+              <!-- Métodos de pago -->
+              <div class="collapse--group">
+                <div>
+                  <div class="collapse--group__header u-d-flex u-align-items-center u-justify-content-between">
+                    <div class="u-d-flex u-align-items-md-center">
+                      <label class="g-radiobtn"
+                        >Tarjeta bancaria
+                        <input type="radio" checked="checked" name="radio" />
+                        <span class="g-radiobtn--checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="u-d-flex">
+                      <img src="../../../assets/img/visa.svg" alt="visa" class="box-payment__card" />
+                      <img src="../../../assets/img/mastercard.svg" alt="mastercard" class="box-payment__card" />
+                      <img
+                        src="../../../assets/img/american-express.svg"
+                        alt="americanexpress"
+                        class="box-payment__card"
+                      />
+                    </div>
+                  </div>
+                  <div class="collapse--group__body box-payment__content active">
+                    <div class="o-row">
+                      <div class="o-col-lg-10 margin-responsive">
+                        <div class="form__input-wrapper">
+                          <input class="g-input form__input" type="text" name="label" placeholder=" " />
+                          <label>Número de la tarjeta</label>
+                        </div>
+                      </div>
+                      <div class="o-col-lg-14 margin-responsive">
+                        <div class="form__input-wrapper">
+                          <input class="g-input form__input" type="text" name="label" placeholder=" " />
+                          <label>Titular de la tarjeta</label>
+                        </div>
+                      </div>
+                      <div class="o-col-lg-6 margin-responsive">
+                        <div class="form__input-wrapper">
+                          <input class="g-input form__input" type="text" name="label" placeholder=" " />
+                          <label>Fecha de caducidad</label>
+                        </div>
+                      </div>
+                      <div class="o-col-lg-10 u-d-flex u-align-items-center margin-responsive cvv">
+                        <div class="form__input-wrapper">
+                          <input class="g-input form__input" type="text" name="label" placeholder=" " />
+                          <label>CVV</label>
+                        </div>
+                        <img src="../../../assets/img/card-cvv.svg" alt="cvv" class="o-ml--2 img" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="collapse--group__header u-d-flex u-align-items-center u-justify-content-between">
+                    <div class="u-d-flex u-align-items-md-center">
+                      <label class="g-radiobtn"
+                        ><img src="../../../assets/img/Paypal.svg" alt="" />
+                        <input type="radio" checked="checked" name="radio" />
+                        <span class="g-radiobtn--checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="collapse--group__body box-payment__content active">
+                    <div class="o-row">
+                      <div class="o-col-lg-24">
+                        <div
+                          class="o-p--0 banner-information banner-information--small u-d-flex u-align-items-center u-justify-content-between"
+                        >
+                          <div class="banner-information__info u-d-md-flex">
+                            <i class="icon-ticket o-mr--2 banner-information__icon"></i>
+                            <div>
+                              <h2 class="banner-information__title u-text u-d-flex u-align-items-center">
+                                Al hacer clic en “Completar reserva”
+                                <i class="icon-info tooltips o-ml--1"></i>
+                              </h2>
+                              <p class="banner-information__subtitle u-label">
+                                serás redirigido a nuestra plataforma de pago para completar tu reserva de forma 100%
+                                segura.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="o-row o-mt--3">
+                <div class="o-col-md-9 o-col-lg-10 o-mb--2">
+                  <button class="btn btn--primary u-w--100" data-micromodal-trigger="modal-pedido">
+                    Pagar y finalizar pedido
+                  </button>
+                </div>
+                <div
+                  class="o-col-lg-10 u-d-flex u-align-items-center u-justify-content-center u-justify-content-md-start o-mb--2"
+                >
+                  <div class="tag tag--green u-align-items-center">
+                    <i class="icon-star tag__icon u-d-flex u-align-items-center u-justify-content-center"></i>Pago 100%
+                    seguro
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section__fixed-sidebar">
+        <div class="g-dropdown-basic dropdown-list g-dropdown-basic--details u-w--100">
+          <button class="g-dropdown-basic--btn u-w--100 desktop-none">
+            <p>
+              <span class="u-d-block">Total</span>
+              <span class="u-d-block">70,00 €</span>
+            </p>
+            <i class="icon-arrow-down o-ml--1"></i>
+          </button>
+          <div class="g-dropdown-basic--content">
+            <div class="g-dropdown-basic--bkg details">
+              <div class="g-dropdown__content">
+                <div class="u-d-flex list--product u-border--bottom-gray">
+                  <img class="list--product__img" src="../../../assets/img/comida-1.png" alt="" />
+                  <div class="list--product__content">
+                    <p class="u-text-default--large u-font-weight-semibold">Estrella galicia 0,0 33cl</p>
+                    <div class="u-d-flex u-align-items-center u-justify-content-between">
+                      <span class="u-text--text-light">2 x 2,80 €</span>
+                      <p class="list--product__content--price">12,90 €</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-d-flex list--product u-border--bottom-gray">
+                  <img class="list--product__img" src="../../../assets/img/comida-1.png" alt="" />
+                  <div class="list--product__content">
+                    <p class="u-text-default--large u-font-weight-semibold">Estrella galicia 0,0 33cl</p>
+                    <div class="u-d-flex u-align-items-center u-justify-content-between">
+                      <span class="u-text--text-light">2 x 2,80 €</span>
+                      <p class="list--product__content--price">12,90 €</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-d-flex list--product">
+                  <img class="list--product__img" src="../../../assets/img/comida-1.png" alt="" />
+                  <div class="list--product__content">
+                    <p class="u-text-default--large u-font-weight-semibold">Estrella galicia 0,0 33cl</p>
+                    <div class="u-d-flex u-align-items-center u-justify-content-between">
+                      <span class="u-text--text-light">2 x 2,80 €</span>
+                      <p class="list--product__content--price">12,90 €</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="details__footer u-d-flex u-justify-content-between u-border--top-gray o-pt--4 u-align-items-center"
+                >
+                  <div>
+                    <p class="title--small">Total</p>
+                  </div>
+                  <p class="title">25,00 €</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal micromodal-slide" id="modal-pedido" aria-hidden="true">
+  <div class="g-modal--small g-modal--code modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <div class="o-p--3">
+        <div class="o-row">
+          <div class="o-col-md-24 u-d-flex u-align-items-center u-justify-content-center u-flex-column o-pt--2">
+            <img src="../../../assets/img/success.svg" alt="success" />
+            <h2 class="text-3 o-mb--2 o-mt--3 u-text-center u-text--fz-22">Pedido realizado correctamente</h2>
+            <p class="u-text-default u-text-default--medium u-text--text-gray u-text-center o-mb--2">
+              Estado del pedido
+            </p>
+            <div class="o-mb--2">
+              <div class="tag tag--bg-orange u-align-items-center"><span class="point"></span>Preparando</div>
+            </div>
+            <p class="u-text-default u-text-default--medium u-text--text-gray u-text-center">Número del pedido</p>
+            <h2 class="text-3 o-mb--2 u-text-center u-text--fz-22">348B</h2>
+            <p class="u-text-default u-text-default--medium u-text--text-gray u-text-center o-mb--6">
+              Cuando el estado de tu pedido sea Listo para recoger, dirígete al punto Click& Collect situado en la
+              cafetería central.
+            </p>
+            <button class="btn btn--primary u-w-mobile--100 o-mb--2 o-pr--6 o-pl--6 u-w--100" data-micromodal-close>
+              Entendido
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

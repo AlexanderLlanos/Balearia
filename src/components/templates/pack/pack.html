@@ -1,0 +1,380 @@
+<div class="u-bg--lighter">
+  <!-- Header -->
+  <section class="g-header g-header--button">
+    <div class="o-container u-d-flex u-align-items-center u-justify-content-center u-h--100">
+      <div class="g-header__back u-d-flex u-align-items-center u-justify-content-start u-w--100 desktop-none">
+        <i class="icon-arrow-left2 back o-mr--3"></i>
+        <p class="title">Selecciona hora y aomodación</p>
+      </div>
+      <div class="g-header__logo mobile-none">
+        <a class="u-text--no-underline">
+          <img src="../../../assets/img/logo.svg" alt="logo" class="img" />
+        </a>
+      </div>
+      <button class="btn btn--secondary g-header__btn">
+        <i class="icon-user o-mr--1"></i><img src="../../../assets/img/logo-small.png" alt="" class="mobile-none" />
+        <span class="g-header__btn-text o-ml--1 mobile-none">Club</span>
+      </button>
+    </div>
+  </section>
+  <!-- Bar items -->
+  <div class="bar-items u-d-flex u-align-items-center">
+    <div class="o-container u-d-flex u-align-items-center u-justify-content-between">
+      <div class="bar-items__text">
+        <div class="u-d-flex u-align-items-center">
+          <p class="text">Barcelona</p>
+          <i class="icon-arrow-doble icon o-ml--2 o-mr--2"></i>
+          <p class="text">Mallorca</p>
+        </div>
+        <ul class="bar-items__list u-d-flex u-align-items-center u-justify-content-between">
+          <li class="bar-items__item u-d-flex u-align-items-center">
+            15 dic <span class="mobile-none">2021</span>- 16 dic
+            <span class="mobile-none">2021</span>
+          </li>
+          <li class="bar-items__item u-d-flex u-align-items-center">2 personas</li>
+          <li class="bar-items__item u-d-flex u-align-items-center">1 vehículo</li>
+          <li class="bar-items__item u-d-flex u-align-items-center">3 mascotas</li>
+          <li class="bar-items__item u-d-flex u-align-items-center edit mobile-none">
+            Editar <i class="icon-edit icon"></i>
+          </li>
+          <li class="bar-items__item u-d-flex u-align-items-center edit desktop-none">
+            <i class="icon-search icon"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="bar-items__buttons u-d-flex u-align-items-center">
+        <div class="g-dropdown-basic dropdown-list g-dropdown-basic--empty">
+          <button class="g-dropdown-basic--btn">
+            <p>
+              <span class="u-d-block total">Total</span>
+              <span class="u-d-block price">0,00 €</span>
+            </p>
+            <i class="icon-arrow-down o-ml--1"></i>
+          </button>
+          <div class="g-dropdown-basic--content">
+            <div class="g-dropdown-basic--bkg">
+              <div
+                class="g-dropdown__header u-border--bottom-gray u-d-flex u-d-lg-none u-align-items-center u-justify-content-between o-pl--2 o-pr--2 o-mb--2"
+              >
+                <p class="title">Tu reserva</p>
+                <i class="icon-close icon"></i>
+              </div>
+              <div class="g-dropdown__content">
+                <img src="../../../assets/img/success.svg" alt="" class="o-mb--3" />
+                <h2 class="title">Tu reserva está vacía</h2>
+                <p class="text">
+                  Selecciona los trayectos y acomodaciones de ida y vuelta para continuar con tu reserva
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn--primary o-ml--2 bar-items__btn disabled">
+          Continuar a extras<i class="icon-arrow-right u-d-none u-d-md-block"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Bar dropdown -->
+  <div class="u-border--bottom-gray o-mb--2" data-initial-state="true">
+    <div class="o-container u-d-flex u-align-items-center o-pt--1 o-pb--1">
+      <div class="g-dropdown-basic g-dropdown--primary dropdown-list">
+        <button class="g-dropdown-basic--btn">
+          <span>¿Eres residente o familia numerosa?</span>
+          <i class="icon-arrow-down o-ml--1"></i>
+        </button>
+        <div class="g-dropdown-basic--content">
+          <div class="g-dropdown-basic--bkg">
+            <ul class="g-dropdown-basic--list-radiobtn">
+              <li class="item">
+                <label class="g-radiobtn"
+                  >Sin descuento
+                  <input type="radio" checked="checked" name="radio" />
+                  <span class="g-radiobtn--checkmark"></span>
+                </label>
+              </li>
+              <li class="item">
+                <label class="g-radiobtn"
+                  >Residente islas o Ceuta (75 %)
+                  <input type="radio" name="radio" />
+                  <span class="g-radiobtn--checkmark"></span>
+                </label>
+              </li>
+              <li class="item">
+                <label class="g-radiobtn"
+                  >Familia numerosa general (5 %)
+                  <input type="radio" name="radio" />
+                  <span class="g-radiobtn--checkmark"></span>
+                </label>
+              </li>
+              <li class="item">
+                <label class="g-radiobtn"
+                  >Familia numerosa especial (10 %)
+                  <input type="radio" name="radio" />
+                  <span class="g-radiobtn--checkmark"></span>
+                </label>
+              </li>
+              <li class="item">
+                <label class="g-radiobtn"
+                  >Fam. numerosa general residente (80 %)
+                  <input type="radio" name="radio" />
+                  <span class="g-radiobtn--checkmark"></span>
+                </label>
+              </li>
+              <li class="item">
+                <label class="g-radiobtn"
+                  >Fam. numerosa especial residente (85 %)
+                  <input type="radio" name="radio" />
+                  <span class="g-radiobtn--checkmark"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="u-d-none u-d-lg-block">
+    <div class="o-container">
+      <div class="o-row">
+        <div class="o-col-lg-24">
+          <!-- back button -->
+          <div class="g-back-btn o-pb--2 o-mb--6 o-mt--4 o-pl--2">
+            <i class="g-back-btn--arrow icon-arrow-left2"></i>
+            <div>
+              <p class="g-back-btn--text">Selecciona un pack y ahorra hasta un 32%</p>
+              <p class="g-back-btn--text2">
+                Con los Packs Balearia es más fácil ahorrar y personalizar tu viaje con extras
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="o-container">
+    <div class="o-row u-align-items-center">
+      <div class="o-col-lg-8 box--pack__order">
+        <div class="box o-mb--3 o-p--0">
+          <div class="box--pack box--pack__small">
+            <div>
+              <div class="u-d-flex u-align-items-center u-justify-content-between o-mb--2">
+                <div class="">
+                  <div class="u-d-flex u-align-items-center">
+                    <h3 class="box--title o-mr--1">Sin Plus</h3>
+                    <i class="icon-info g-icon--tooltip g-icon--tooltip__normal"></i>
+                  </div>
+                  <p class="box--text">No añades ningún servicio extra</p>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="box--pack__item u-d-flex u-justify-content-between u-align-items-center u-border--bottom-gray o-pt--2 o-pb--2"
+                >
+                  <div class="u-d-flex u-align-items-center">
+                    <i class="box--pack__item__icon icon-change"></i>
+                    <p class="box--pack__item__text">Cambios y anulaciones con antelación</p>
+                  </div>
+                  <p class="box--pack__item__price">6,00 €</p>
+                </div>
+              </div>
+            </div>
+            <div class="u-d-flex u-flex-column u-w--100 o-mt--4 o-mt-lg--0">
+              <p class="o-mb--1">
+                <span class="card-product__price">+7,00</span><span class="currency">€</span
+                ><span class="o-ml--1 text--small">por trayecto</span>
+              </p>
+              <button class="btn btn--primary btn--primary__border btn--medium u-w--100">Continuar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="o-col-lg-8">
+        <div class="box o-mb--3 o-p--0">
+          <div class="tag--exclusive tag--exclusive__small">
+            <i class="icon-discount"></i>
+            <p>NOVEDAD EXCLUSIVA</p>
+          </div>
+          <div class="box--pack">
+            <div>
+              <div class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                <div class="u-d-flex u-align-items-center">
+                  <h3 class="box--title o-mr--1">Pack Plus</h3>
+                  <i class="icon-info g-icon--tooltip g-icon--tooltip__normal"></i>
+                </div>
+                <div class="tag tag--green tag--large u-align-items-center">
+                  <i class="icon-discount tag__icon u-d-flex u-align-items-center u-justify-content-center"></i>Ahorra
+                  <span class="u-font-weight-bold"> 24%</span>
+                </div>
+              </div>
+              <p class="box--text">No añades ningún servicio extra</p>
+              <div>
+                <div
+                  class="box--pack__item u-d-flex u-justify-content-between u-align-items-center u-border--bottom-gray o-pt--2 o-pb--2"
+                >
+                  <div class="u-d-flex u-align-items-center">
+                    <i class="box--pack__item__icon icon-change"></i>
+                    <p class="box--pack__item__text">Cambios y anulaciones con antelación</p>
+                  </div>
+                  <p class="box--pack__item__price">6,00 €</p>
+                </div>
+                <div
+                  class="u-d-flex u-justify-content-between u-align-items-center u-border--bottom-gray o-pt--2 o-pb--2"
+                >
+                  <div class="u-d-flex u-align-items-center">
+                    <i class="box--pack__item__icon icon-meal"></i>
+                    <p class="box--pack__item__text">Bono restaurante</p>
+                  </div>
+                  <p class="box--pack__item__price">6,00 €</p>
+                </div>
+                <div
+                  class="u-d-flex u-justify-content-between u-align-items-center u-border--bottom-gray o-pt--2 o-pb--2"
+                >
+                  <div class="u-d-flex u-align-items-center">
+                    <i class="box--pack__item__icon icon-wifi2"></i>
+                    <p class="box--pack__item__text">Wi-Fi gratuito</p>
+                  </div>
+                  <p class="box--pack__item__price">6,00 €</p>
+                </div>
+              </div>
+            </div>
+            <div class="u-d-flex u-flex-column u-w--100 o-mt--4 o-mt-lg--0">
+              <div class="u-d-flex u-justify-content-between u-align-items-center o-mb--2">
+                <p>
+                  <span class="card-product__price">+7,00</span><span class="currency">€</span
+                  ><span class="card-product__price card-product__price--through o-ml--1">7,00</span
+                  ><span class="currency currency--through">€</span>
+                </p>
+                <p class="o-ml--1 text--small">Precio ida y vuelta</p>
+              </div>
+              <button class="btn btn--primary btn--medium u-w--100">Continua y ahorra 28 €</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="o-col-lg-8">
+        <div class="box o-mb--3 o-p--0">
+          <div class="box--pack box--pack__small">
+            <div>
+              <div class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                <div class="u-d-flex u-align-items-center">
+                  <h3 class="box--title o-mr--1">Pack Flexible</h3>
+                  <i class="icon-info g-icon--tooltip g-icon--tooltip__normal"></i>
+                </div>
+                <div class="tag tag--green tag--large u-align-items-center">
+                  <i class="icon-discount tag__icon u-d-flex u-align-items-center u-justify-content-center"></i>Ahorra
+                  <span class="u-font-weight-bold"> 24%</span>
+                </div>
+              </div>
+              <p class="box--text">No añades ningún servicio extra</p>
+              <div>
+                <div
+                  class="box--pack__item u-d-flex u-justify-content-between u-align-items-center u-border--bottom-gray o-pt--2 o-pb--2"
+                >
+                  <div class="u-d-flex u-align-items-center">
+                    <i class="box--pack__item__icon icon-change"></i>
+                    <p class="box--pack__item__text">Cambios y anulaciones con antelación</p>
+                  </div>
+                  <p class="box--pack__item__price">6,00 €</p>
+                </div>
+                <div
+                  class="u-d-flex u-justify-content-between u-align-items-center u-border--bottom-gray o-pt--2 o-pb--2"
+                >
+                  <div class="u-d-flex u-align-items-center">
+                    <i class="box--pack__item__icon icon-meal"></i>
+                    <p class="box--pack__item__text">Bono restaurante</p>
+                  </div>
+                  <p class="box--pack__item__price">6,00 €</p>
+                </div>
+                <div
+                  class="u-d-flex u-justify-content-between u-align-items-center u-border--bottom-gray o-pt--2 o-pb--2"
+                >
+                  <div class="u-d-flex u-align-items-center">
+                    <i class="box--pack__item__icon icon-wifi2"></i>
+                    <p class="box--pack__item__text">Wi-Fi gratuito</p>
+                  </div>
+                  <p class="box--pack__item__price">6,00 €</p>
+                </div>
+              </div>
+            </div>
+            <div class="u-d-flex u-flex-column u-w--100 o-mt--4 o-mt-lg--0">
+              <div class="u-d-flex u-justify-content-between u-align-items-center o-mb--2">
+                <p>
+                  <span class="card-product__price">+249,00</span><span class="currency">€</span
+                  ><span class="card-product__price card-product__price--through o-ml--1">322,00</span
+                  ><span class="currency currency--through">€</span>
+                </p>
+                <p class="o-ml--1 text--small">Precio ida y vuelta</p>
+              </div>
+              <button class="btn btn--primary btn--primary__border btn--medium u-w--100">Continua y ahorra 78 €</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Proposal -->
+  <section class="g-proposal">
+    <div class="o-container">
+      <div class="o-row u-h--100r">
+        <div class="o-col-md-6">
+          <div class="g-proposal--item">
+            <img src="../../../assets/img/proposal-1.svg" alt="" />
+            <div class="g-proposal--info">
+              <p class="g-proposal--title">Cancelaciones flexibles</p>
+              <p class="g-proposal--paragraph">Cancela sin penalización con nuestra tarifa Plus</p>
+            </div>
+          </div>
+        </div>
+        <div class="o-col-md-6">
+          <div class="g-proposal--item">
+            <img src="../../../assets/img/proposal-2.svg" alt="" />
+            <div class="g-proposal--info">
+              <p class="g-proposal--title">La libertad de llevar tu coche</p>
+              <p class="g-proposal--paragraph">La libertad de llevar tu coche</p>
+            </div>
+          </div>
+        </div>
+        <div class="o-col-md-6">
+          <div class="g-proposal--item">
+            <img src="../../../assets/img/proposal-3.svg" alt="" />
+            <div class="g-proposal--info">
+              <p class="g-proposal--title">Tu mascota contigo siempre</p>
+              <p class="g-proposal--paragraph">Acomodaciones 100% Pet friendly para viajar juntos</p>
+            </div>
+          </div>
+        </div>
+        <div class="o-col-md-6">
+          <div class="g-proposal--item">
+            <img src="../../../assets/img/proposal-4.svg" alt="" />
+            <div class="g-proposal--info">
+              <p class="g-proposal--title">Cuidamos el planeta</p>
+              <p class="g-proposal--paragraph">Buques más sostenibles, economía circular, envases bioedegradables...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-small">
+    <div class="o-container">
+      <button class="btn btn--secondary floating-btn">
+        <i class="icon-chat icon"></i>
+        Ayuda
+      </button>
+      <div class="footer-small__row u-d-flex u-justify-content-between u-align-items-center o-pt--3 o-pb--3">
+        <div class="footer-small__info">
+          <p class="footer-small__text">2021 Baleària. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-small__links">
+          <a class="footer-small__link">Política de cookies</a>
+          <a class="footer-small__link">Política de privacidad</a>
+          <a class="footer-small__link">Condiciones de uso</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

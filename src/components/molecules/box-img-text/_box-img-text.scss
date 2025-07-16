@@ -1,0 +1,24 @@
+.box-img-text {
+  text-align: center;
+  .img {
+    margin-bottom: 40px;
+  }
+  .title,
+  .text {
+    color: $text;
+    font-family: Lato;
+    font-style: normal;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 22.43px;
+    line-height: 27px;
+    margin-bottom: 16px;
+  }
+  .text {
+    font-weight: normal;
+    font-size: 16.8px;
+    line-height: 23px;
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,73 @@
+.g-link {
+  color: $green-main;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--small {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &--medium {
+    font-size: 14px;
+    line-height: 17px;
+    .icon {
+      font-size: 12px;
+    }
+    @include desktop {
+      font-size: 16.8px;
+      line-height: 20px;
+      .icon {
+        font-size: 13px;
+      }
+    }
+  }
+
+  &--redes {
+    text-decoration: none;
+    color: #333333;
+
+    i {
+      font-size: 48px;
+    }
+  }
+
+  i {
+    font-size: 20px;
+  }
+
+  &--green {
+    color: $green;
+  }
+
+  &--yellow {
+    color: $yellow-main;
+  }
+
+  &--green-main {
+    color: $green-main;
+  }
+
+  &--double-hover {
+    &:hover {
+      .g-link {
+        text-decoration: underline;
+      }
+      .icon {
+        color: $green-main;
+      }
+    }
+    .icon {
+      color: $yellow-main;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
+
+  &--yellow {
+    color: $yellow-main;
+  }
+}

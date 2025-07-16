@@ -1,0 +1,314 @@
+.swiper {
+  width: 100%;
+  height: 400px;
+
+  @include large {
+    height: 640px;
+  }
+
+  &-slide {
+    padding: 0 15px;
+    border-radius: 8px;
+
+    @include large {
+      padding: 30px;
+    }
+
+    @include desktop {
+      padding: 0 60px;
+    }
+
+    .o-row {
+      @include mobile {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.g-banner {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: #008193;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+  }
+
+  &--info {
+    color: $white;
+    padding-top: 15px;
+
+    @include large {
+      padding-top: 36px;
+      height: initial;
+    }
+
+    @include desktop {
+      padding-top: 106px;
+    }
+
+    &__title {
+      font-size: 54.46px;
+      font-family: Montserrat;
+      font-weight: 800;
+      line-height: 66px;
+      margin-bottom: 10px;
+
+      @include mobile {
+        font-size: 28.38px;
+        line-height: 34.6px;
+      }
+    }
+
+    &__paragraph {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16.8px;
+      line-height: 20px;
+      margin-bottom: 16px;
+    }
+
+    &__code {
+      display: flex;
+      align-items: center;
+      font-family: Lato;
+      font-size: 14px;
+    }
+  }
+
+  &--btn {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+
+    .btn {
+      padding: 0;
+      width: 100%;
+      height: 48px;
+
+      @include large {
+        padding: 0 32px;
+        width: initial;
+        height: 56px;
+      }
+    }
+
+    .btn--transparent {
+      margin-left: 16px;
+    }
+  }
+
+  &__formentera {
+    .g-banner--info {
+      padding-top: 40px;
+    }
+  }
+  &__top-bar-mobile {
+    padding: 24px 0;
+    position: relative;
+    font-size: 16.8px;
+    font-weight: 800;
+  }
+  &__content {
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    @include mobile {
+      min-height: 300px;
+    }
+
+    &--small {
+      @include mobile {
+        min-height: 160px;
+      }
+
+      .g-banner__info-title {
+        @include mobile {
+          font-size: 19.93px;
+          line-height: 24px;
+          width: 70%;
+        }
+      }
+    }
+
+    &--mobile-large {
+      @include mobile {
+        min-height: 450px;
+      }
+    }
+
+    &--footer {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+    }
+  }
+  &__img-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__img-bkg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      content: '';
+      background: linear-gradient(39.03deg, rgba(0, 58, 66, 0.71) 25.23%, rgba(0, 58, 66, 0) 51.76%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &__info {
+    z-index: 1;
+    padding: 48px;
+    padding-bottom: 24px;
+    //height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include mobile {
+      padding: 24px 16px;
+      .btn {
+        margin-top: auto;
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+
+    .btn-no-float {
+      margin-top: 20px;
+      width: initial;
+      margin-bottom: initial;
+    }
+  }
+  &__prices {
+    width: fit-content;
+    @include mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      > div {
+        width: fit-content;
+      }
+    }
+  }
+  &__share-btn {
+    width: fit-content;
+    margin-top: auto;
+    margin-left: auto;
+  }
+
+  &--large {
+    .g-banner__content {
+      min-height: 682px;
+
+      @include mobile {
+        min-height: 582px;
+      }
+    }
+  }
+
+  &--arrow-down {
+    position: absolute;
+    bottom: 14px;
+    color: white;
+    font-size: 29px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+
+    @include mobile {
+      bottom: 80px;
+    }
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-1 {
+  background-image: url('../../src/assets/img/banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include mobile {
+    background-position: left;
+  }
+}
+
+.slide-2 {
+  background-image: url('../../src/assets/img/banner-formentera.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include mobile {
+    background-position: left;
+  }
+}
+
+.swiper-pagination {
+  text-align: center;
+
+  @include large {
+    text-align: left;
+  }
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 20px;
+
+  @include large {
+    bottom: 72px;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 66px;
+  border-radius: 0;
+  margin: 0;
+}
+
+.swiper-pagination-bullet {
+  height: 4px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  border-radius: 5px !important;
+  background-color: $white;
+}

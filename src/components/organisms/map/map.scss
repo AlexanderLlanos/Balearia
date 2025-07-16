@@ -1,0 +1,237 @@
+.g-map {
+  height: 820px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @include mobile {
+    height: 720px;
+  }
+
+  &--box-search {
+    position: absolute;
+    top: 32px;
+    left: 23px;
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    width: 336px;
+    z-index: 2;
+
+    @include mobile {
+      top: 0;
+      width: 100%;
+      left: 0;
+      border-radius: 0;
+      display: flex;
+      gap: 16px;
+    }
+  }
+
+  &--select {
+    position: absolute;
+    top: 32px;
+    right: 23px;
+    background-color: white;
+    width: 150px;
+    border-radius: 8px;
+
+    @include mobile {
+      left: 15px;
+      top: 15px;
+      right: initial;
+    }
+  }
+
+  &--box-list {
+    position: absolute;
+    top: 32px;
+    right: 23px;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #AAAAAA;
+    cursor: pointer;
+
+    @include mobile {
+      left: 15px;
+      right: initial;
+      top: 100px;
+    }
+  }
+
+  &--preview {
+    background: white;
+    padding: 16px;
+    position: absolute;
+    border-radius: 8px;
+    width: 408px;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.09));
+    z-index: 2;
+
+    @include mobile {
+      width: 320px;
+      bottom: 100px;
+    }
+  }
+
+  &--detail {
+    background: white;
+    padding: 16px;
+    position: absolute;
+    border-radius: 8px;
+    width: 408px;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.09));
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include mobile {
+      width: 320px;
+      bottom: 100px;
+    }
+
+    &::before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 15px 0 15px;
+      border-color: #ffffff transparent transparent transparent;
+      position: absolute;
+      bottom: -20px;
+    }
+  }
+
+  &--pin-large {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    background: #006876;
+    width: 108px;
+    height: 108px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16.8px;
+    line-height: 20.16px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      background: url('./../assets/img/pin-large.png');
+      position: absolute;
+      top: 0;
+      width: 108px;
+      height: 108px;
+    }
+  }
+
+  &--pin-top {
+    position: absolute;
+    top: 30px;
+    background: #006876;
+    width: 48px;
+    height: 48px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    
+    &::before {
+      content: "";
+      background: url('./../assets/img/polygon.png');
+      position: absolute;
+      top: -9px;
+      width: 19px;
+      height: 16px;
+    }
+  }
+
+  &--pin-bottom {
+    position: absolute;
+    bottom: 30px;
+    background: #006876;
+    width: 48px;
+    height: 48px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    
+    &::before {
+      content: "";
+      background: url('./../assets/img/polygon.png');
+      position: absolute;
+      bottom: -9px;
+      width: 19px;
+      height: 16px;
+      rotate: 180deg;
+    }
+  }
+
+  &--pin-left {
+    position: absolute;
+    left: 30px;
+    background: #006876;
+    width: 48px;
+    height: 48px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    
+    &::before {
+      content: "";
+      background: url('./../assets/img/polygon.png');
+      position: absolute;
+      left: -9px;
+      width: 19px;
+      height: 16px;
+      rotate: 154deg;
+    }
+  }
+
+  &--pin-right {
+    position: absolute;
+    right: 30px;
+    background: #006876;
+    width: 48px;
+    height: 48px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    
+    &::before {
+      content: "";
+      background: url('./../assets/img/polygon.png');
+      position: absolute;
+      right: -9px;
+      width: 19px;
+      height: 16px;
+      rotate: 90deg;
+    }
+  }
+}

@@ -1,0 +1,241 @@
+.box-radio {
+  .icon {
+    color: $text;
+    font-size: 24px;
+    margin-right: 16px;
+  }
+  .label {
+    max-width: 200px;
+    cursor: pointer;
+    background-color: $white;
+    color: #444;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: inset 0 0 0 1px $gray-main;
+    transition: all 100ms ease-out;
+    @include mediaq-min(1300px) {
+      width: 200px;
+    }
+  }
+  &--full-width .label {
+    max-width: 100%;
+    width: 100%;
+    @include mediaq-min(1300px) {
+      width: 100%;
+    }
+  }
+  &:hover {
+    label {
+      background-color: $gray-dark;
+      box-shadow: inset 0 0 0 2px $green-main;
+    }
+  }
+  &.active {
+    label {
+      font-weight: 700;
+      box-shadow: inset 0 0 0 3px $green-main;
+    }
+  }
+
+  input[type='radio'],
+  input[type='checkbox'] {
+    display: none;
+    position: absolute;
+    width: 100%;
+    appearance: none;
+
+    &:checked + label,
+    &:hover + label {
+      transition: all 100ms ease-out;
+      font-weight: 700;
+      box-shadow: inset 0 0 0 3px $green-main;
+    }
+  }
+  &__title {
+    color: $text;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16.8px;
+    line-height: 23px;
+    @include mediaq-max(992px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .small {
+      color: $gray-light;
+      font-size: 12.44px;
+      line-height: 15px;
+    }
+  }
+  &__text-bold {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22.43px;
+    line-height: 27px;
+    color: $green-main;
+    @include mediaq-max(992px) {
+      font-size: 19.93px;
+      line-height: 24px;
+    }
+  }
+  &.box-radio--large {
+    .label {
+      max-width: 100%;
+      @include large {
+        max-width: none;
+        min-width: 262px;
+        min-height: 80px;
+      }
+    }
+    .box-radio__text {
+      @include mobile {
+        flex: 1;
+        justify-content: space-between;
+      }
+    }
+    .box-radio__text,
+    .box-radio__title {
+      display: flex;
+    }
+    .box-radio__title {
+      align-items: center;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .small {
+      margin: 0 16px 0 4px;
+    }
+  }
+  &.disabled {
+    .label {
+      box-shadow: none;
+      background-color: $gray-3;
+      height: 80px;
+      pointer-events: none;
+      .icon,
+      .box-radio__title,
+      .text-bold--small {
+        color: $gray;
+      }
+    }
+    .small,
+    .box-radio__text-bold {
+      display: none;
+    }
+    .text-bold--small {
+      display: block;
+      font-size: 16.8px;
+      line-height: 20px;
+    }
+  }
+  &.check {
+    label {
+      padding-left: 44px;
+      position: relative;
+    }
+    .g-radiobtn--checkmark {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:hover {
+      .g-radiobtn--checkmark {
+        border: 3px solid $green-main;
+      }
+    }
+    input:checked + label > .g-radiobtn--checkmark::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      border: 1px solid $white;
+      border-radius: 50%;
+      background-color: $green-main;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &--disabled {
+    .label {
+      background: #f5f5f5;
+      border: 1px solid #bebebe;
+      color: #bebebe;
+      box-shadow: none;
+
+      i {
+        color: #666666;
+      }
+
+      .box-radio__text-bold,
+      .box-radio__title {
+        color: #bebebe;
+      }
+    }
+
+    &:hover {
+      label {
+        background: #f5f5f5;
+        border: 1px solid #bebebe;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &--acomodation {
+    .tooltips__content {
+      top: -100px;
+      min-width: 440px;
+
+      @include mobile {
+        top: -170px;
+        min-width: 230px;
+      }
+    }
+  }
+
+  &--offers {
+    background: #00b8c5;
+    border-radius: 7px 7px 0px 0px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    display: flex;
+    align-items: center;
+    padding: 4px 20px;
+    color: white;
+
+    p {
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    i {
+      font-size: 14px;
+    }
+  }
+
+  &--offers-box {
+    .label {
+      padding-top: 24px;
+      padding-bottom: 8px;
+    }
+
+    &.active {
+      .label {
+        .box-radio--offers {
+          border-radius: 5px 5px 0px 0px;
+          top: 3px;
+          left: 3px;
+          right: 3px;
+        }
+      }
+    }
+  }
+}

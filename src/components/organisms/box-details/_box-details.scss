@@ -1,0 +1,108 @@
+.box-details {
+  padding: 21px 0;
+  position: relative;
+  @include desktop {
+    padding: 40px 0;
+  }
+  &__back {
+    width: 32px;
+    margin-right: 11px;
+    @include mediaq-max(993px) {
+      display: none;
+    }
+    .icon {
+      font-size: 15px;
+      margin: 0;
+    }
+  }
+  &__title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16.8px;
+    line-height: 20px;
+    @include desktop {
+      font-size: 35.92px;
+      line-height: 43px;
+    }
+    .icon {
+      font-size: 24px;
+    }
+  }
+  &__code {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    @include large {
+      margin-right: 16px;
+    }
+    @include desktop {
+      font-size: 16.8px;
+      line-height: 20px;
+    }
+  }
+  &__list {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    @include desktop {
+      padding-left: 32px;
+    }
+  }
+  &__list-item {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.44px;
+    line-height: 15px;
+    color: $text-light;
+    margin-bottom: 16px;
+    @include large {
+      margin-bottom: 0;
+    }
+    @include desktop {
+      font-size: 16.8px;
+      line-height: 23px;
+    }
+    &:after {
+      @include large {
+        content: '';
+        width: 2px;
+        height: 15px;
+        background-color: $gray-main;
+        margin-left: 8px;
+      }
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &__tag {
+    @include mobile {
+      padding-top: 16px;
+      position: absolute;
+      top: 11px;
+      right: 0;
+      align-items: flex-end;
+    }
+    .tag {
+      @include mobile {
+        margin-top: 8px;
+      }
+      @include large {
+        height: 40px;
+      }
+    }
+  }
+  &__btn-icon-left {
+    .icon {
+      margin-left: 0;
+      margin-right: 13px;
+    }
+  }
+  .btn-disabled {
+    color: $gray-light;
+  }
+}

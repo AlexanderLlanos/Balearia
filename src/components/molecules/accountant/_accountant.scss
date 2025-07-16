@@ -1,0 +1,52 @@
+.g-accountant {
+  &--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+
+    &__text {
+      .text1 {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12.44px;
+        line-height: 15px;
+        color: #AAAAAA;
+      }
+
+      .text2 {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16.8px;
+        line-height: 20px;
+        color: #333333;
+      }
+    }
+
+    &__nro {
+      background: #F5F5F5;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      padding: 8px;
+
+      .nro {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16.8px;
+        line-height: 20px;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      .btn {
+        margin-left: 8px;
+        min-width: 32px;
+        width: 32px;
+      }
+    }
+  }
+}

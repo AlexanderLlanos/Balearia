@@ -1,0 +1,116 @@
+.banner-confirmation {
+  padding: 16px;
+  @include large {
+    padding: 24px;
+  }
+  &__img {
+    margin: 0 auto;
+    width: 181px;
+    @include large {
+      width: 247px;
+    }
+    .img {
+      max-width: 100%;
+    }
+  }
+
+  &__box {
+    width: 100%;
+    @include large {
+      width: calc(100% - 247px);
+      padding-left: 24px;
+    }
+  }
+
+  .u-text {
+    color: $text-gray;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .u-sub-title.u-text--secondary {
+    font-size: 14px;
+    line-height: 17px;
+
+    @include large {
+      font-size: 22.43px;
+      line-height: 27px;
+    }
+  }
+
+  &__title {
+    max-width: 500px;
+    margin-bottom: 16px;
+    @include mobile {
+      margin-top: -4px;
+    }
+    @include desktop {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__buttons {
+    @include mobile {
+      flex-direction: column;
+    }
+    .btn {
+      @include mobile {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+      @include large {
+        margin-right: 16px;
+      }
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .list {
+    @include mediaq-max(992px) {
+      border-top: 1px solid $gray-1;
+      margin-top: 16px;
+      padding-top: 16px;
+    }
+  }
+
+  .list__item {
+    position: relative;
+    @include mobile {
+      margin-bottom: 16px;
+    }
+    .edit {
+      @include mediaq-max(992px) {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+  &__footer {
+    @include mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .g-box-link__wrapper {
+      @include large {
+        border-top: 1px solid $gray-2;
+        padding-top: 24px;
+        margin-top: 24px;
+      }
+    }
+  }
+  &__double-text {
+    .u-sub-title {
+      border-right: 1px solid $gray-1;
+      padding-right: 8px;
+      margin-right: 8px;
+      &:last-child {
+        border-right: 0;
+      }
+      .icon {
+        font-size: 20px;
+      }
+    }
+  }
+}

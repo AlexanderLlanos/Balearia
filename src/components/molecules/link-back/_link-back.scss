@@ -1,0 +1,12 @@
+.link-back {
+  &__icon {
+    color: $yellow-main;
+    font-size: 15px;
+  }
+  &__title {
+    &.u-text {
+      font-weight: 700;
+      color: $text;
+    }
+  }
+}

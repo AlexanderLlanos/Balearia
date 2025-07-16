@@ -1,0 +1,71 @@
+.title-icon {
+  @include mediaq-max(992px) {
+    justify-content: center;
+  }
+  @include mobile {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .title {
+      margin-right: 50%;
+    }
+    .text {
+      margin-left: 0;
+    }
+  }
+
+  .icon,
+  .title,
+  .text {
+    color: $text;
+  }
+
+  .icon {
+    font-size: 32px;
+  }
+
+  .title,
+  .text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16.8px;
+    line-height: 20px;
+
+    @include desktop {
+      font-size: 22.43px;
+      line-height: 27px;
+    }
+  }
+
+  .text {
+    font-weight: normal;
+
+    &__icon {
+      margin: 0 12px;
+      font-size: 24px;
+    }
+  }
+
+  &--medium {
+    .icon {
+      font-size: 32px;
+
+      @include desktop {
+        font-size: 24px;
+      }
+    }
+
+    .text,
+    .title {
+      font-size: 14px;
+
+      @include desktop {
+        font-size: 16.8px;
+      }
+    }
+
+    .text__icon {
+      font-size: 16px;
+    }
+  }
+}

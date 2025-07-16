@@ -1,0 +1,27 @@
+.box__text-icon {
+  min-height: 50px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $gray-dark;
+  }
+  .text {
+    color: $text;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 150px;
+  }
+  .link {
+    color: $green-main;
+    text-decoration: none;
+  }
+  .icon {
+    font-size: 32px;
+    margin-right: 16px;
+  }
+}

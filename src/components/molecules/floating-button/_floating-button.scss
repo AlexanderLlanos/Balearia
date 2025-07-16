@@ -1,0 +1,22 @@
+.floating-btn {
+  color: $white;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  border-radius: 60px;
+  font-size: 14px;
+  line-height: 16.8px;
+  padding: 16px;
+  position: fixed;
+  bottom: 96px;
+  right: 24px;
+  z-index: 10;
+  @include desktop {
+    font-size: 16.8px;
+    line-height: 20px;
+    bottom: 64px;
+  }
+  .icon {
+    margin-right: 7px;
+  }
+}

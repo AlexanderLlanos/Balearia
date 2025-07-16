@@ -1,0 +1,227 @@
+{
+  "trip_data": {
+    "outbound": {
+      "id": 0,
+      "name": "Butaca Sirena",
+      "accId": "butaca_sirena"
+    },
+    "inbound": {
+      "id": 0,
+      "name": "Butaca Sirena",
+      "accId": "butaca_sirena"
+    },
+    "includedExtras": {
+      "outbound": [
+        {
+          "type": "pets",
+          "id": "pets_large_cage",
+          "quantity": 3
+        },
+        {
+          "id": "small_food_token",
+          "quantity": 1
+        }
+      ],
+      "inbound": [
+        {
+          "id": "medium_food_token",
+          "quantity": 1
+        },
+        {
+          "type": "pets",
+          "id": "pets_large_cage",
+          "quantity": 1
+        },
+        {
+          "type": "pets",
+          "id": "pets_small_cage",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  "extras": [
+    {
+      "id": "tarifa_reducida",
+      "name": "Tarifa reducida",
+      "price": 7
+    },
+    {
+      "id": "priority_boarding_outbound",
+      "name": "Embarque prioritario",
+      "price": 3.5
+    },
+    {
+      "id": "priority_boarding_inbound",
+      "name": "Desembarque prioritario",
+      "price": 3.5
+    },
+    {
+      "id": "priority_unboarding_outbound",
+      "name": "Embarque prioritario",
+      "price": 3.5
+    },
+    {
+      "id": "priority_unboarding_inbound",
+      "name": "Desembarque prioritario",
+      "price": 3.5
+    },
+    {
+      "id": "late_unboarding_outbound",
+      "name": "Embarque prioritario",
+      "price": 3.5
+    },
+    {
+      "id": "late_unboarding_inbound",
+      "name": "Desembarque prioritario",
+      "price": 3.5
+    },
+    {
+      "id": "travel_insurance",
+      "name": "Seguro de viaje",
+      "price": 7
+    },
+    {
+      "type": "parking",
+      "id": "parking-denia",
+      "name": "Parking en Denia",
+      "price": 10
+    },
+    {
+      "type": "vehicle-rental",
+      "id": "vehicle_rental_tourism_classA",
+      "name": "Alquiler turismo clase A",
+      "price": 45,
+      "days": 5
+    },
+    {
+      "type": "vehicle-rental",
+      "id": "vehicle_rental_bike_49cc",
+      "name": "Alquiler moto 49 CC",
+      "price": 25,
+      "days": 5
+    },
+    {
+      "type": "bus",
+      "id": "bus_malaga",
+      "name": "Autobús Motril-Málaga",
+      "price": 0
+    },
+    {
+      "type": "tourist-bus",
+      "id": "bus_ruta_azul",
+      "name": "Ruta Azul",
+      "price": 12
+    },
+    {
+      "type": "tourist-bus",
+      "id": "bus_ruta_amarilla",
+      "name": "Ruta Amarilla",
+      "price": 8
+    },
+    {
+      "type": "food-token",
+      "id": "small_food_token",
+      "name": "Bono restaurante pequeño",
+      "price": 30
+    },
+    {
+      "type": "food-token",
+      "id": "medium_food_token",
+      "name": "Bono restaurante mediano",
+      "price": 50
+    },
+    {
+      "type": "food-token",
+      "id": "large_food_token",
+      "name": "Bono restaurante grande",
+      "price": 120
+    },
+    {
+      "type": "food",
+      "id": "continental_breakfast",
+      "name": "Desayuno continental",
+      "price": 7
+    },
+    {
+      "type": "food",
+      "id": "sandwitch_menu",
+      "name": "Menú Bocadillo",
+      "price": 7
+    },
+    {
+      "type": "food",
+      "id": "full_menu",
+      "name": "Menú Completo",
+      "price": 7
+    },
+    {
+      "type": "food",
+      "id": "kids_menu",
+      "name": "Menú Infantil",
+      "price": 7
+    },
+    {
+      "type": "pets",
+      "id": "pets_pet_friendly_seat",
+      "name": "Butaca Pet friendly",
+      "price": 7
+    },
+    {
+      "type": "pets",
+      "id": "pets_pet_friendly_room",
+      "name": "Camarote Pet friendly",
+      "price": 7
+    },
+    {
+      "type": "pets",
+      "id": "pets_own_cage",
+      "name": "Transportín propio",
+      "price": 7
+    },
+    {
+      "type": "pets",
+      "id": "pets_small_cage",
+      "name": "Transportín pequeño",
+      "price": 3.5
+    },
+    {
+      "type": "pets",
+      "id": "pets_large_cage",
+      "name": "Transportín grande",
+      "price": 7
+    },
+    {
+      "type": "wifi",
+      "id": "sn_pack_1",
+      "name": "Bono Redes Sociales (1)",
+      "price": 7
+    },
+    {
+      "type": "wifi",
+      "id": "trip_pack_1",
+      "name": "Bono Travesía (1)",
+      "price": 7
+    },
+    {
+      "type": "wifi",
+      "id": "trip_pack_3",
+      "name": "Bono Travesía (3)",
+      "price": 7
+    },
+
+    {
+      "type": "accomodation",
+      "id": "butaca_ventana",
+      "name": "Ventana",
+      "price": 7
+    },
+
+    {
+      "type": "example",
+      "id": "example_1",
+      "name": "Ejemplo",
+      "price": 100
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+.g-badge {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--white {
+    color: #008193;
+    background: #ffffff;
+  }
+
+  i {
+    font-size: 16px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  &--transparent {
+    font-weight: normal;
+    padding: 14px 16px;
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 22px;
+    @include large {
+      font-size: 16.8px;
+      line-height: 20px;
+    }
+    .g-badge__icon {
+      font-size: 20px;
+      margin-left: 0;
+      margin-right: 8px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.title-section {
+  padding-top: 24px;
+
+  @include mediaq-max(992px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 16px;
+  }
+
+  .tag {
+    @include mediaq-max(992px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &--medium {
+    padding-top: 8px;
+  }
+
+  &--icon {
+    color: $text-light;
+    display: flex;
+    align-items: center;
+
+    p {
+      font-family: Lato;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 17px;
+      padding-left: 16px;
+    }
+  }
+}
+
+.accommodation {
+  .accommodation__seat-type {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .accommodation__summary {
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.g-message {
+  &--border {
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    padding: 8px 16px;
+
+    @include large {
+      padding: 16px;
+    }
+  }
+
+  &--green {
+    border: 1px solid $green-3;
+
+    i {
+      color: $green-3;
+      font-size: 24px;
+    }
+  }
+
+  &--info {
+    font-family: Lato;
+    width: 100%;
+
+    &__title {
+      color: $text-light;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 17px;
+    }
+
+    &__subtitle {
+      color: $gray-light;
+      font-size: 12.44px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 15px;
+    }
+  }
+
+  &--arrow {
+    padding-right: 0;
+    padding-left: 16px;
+    font-size: 14px !important;
+  }
+}

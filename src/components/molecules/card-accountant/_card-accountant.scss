@@ -1,0 +1,63 @@
+.g-card-accountant {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: $text;
+  padding: 0 16px;
+
+  @include mobile {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .g-accountant--item {
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  .g-accountant--item__nro {
+    @include mobile {
+      width: 100%;
+    }
+
+    .nro {
+      width: initial;
+      white-space: nowrap;
+
+      @include mobile {
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+    .btn {
+      min-width: 32px;
+      max-width: 32px;
+    }
+  }
+
+  .g-accountant--item__nro_menu {
+    @include mobile {
+      width: 100%;
+    }
+
+    .nro {
+      width: initial;
+      white-space: nowrap;
+
+      @include mobile {
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+    .btn {
+      min-width: 32px;
+      max-width: 32px;
+    }
+  }
+}

@@ -1,0 +1,150 @@
+.box-line-travel {
+  @include desktop {
+    margin-bottom: 24px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+    .box-line-travel__body:before {
+      display: none;
+    }
+    .box-line-travel__content {
+      padding-bottom: 0;
+    }
+  }
+  &__icon {
+    width: 32px;
+    height: 32px;
+    background-color: $green-main;
+    color: $white;
+    font-size: 16px;
+    margin-right: 8px;
+    border-radius: 50%;
+    @include desktop {
+      width: 48px;
+      height: 48px;
+      font-size: 24px;
+      margin-right: 16px;
+    }
+  }
+  &__title {
+    color: $text !important;
+    font-weight: 700 !important;
+  }
+  &__subtitle {
+    color: $text;
+    font-size: 12.44px;
+    line-height: 15px;
+    @include desktop {
+      font-size: 16.8px;
+      line-height: 20px;
+    }
+  }
+  &__body {
+    position: relative;
+    padding: 20px 11px;
+    @include desktop {
+      padding-left: 19px;
+    }
+    &:before {
+      content: '';
+      width: 5px;
+      height: calc(100% - 40px);
+      background-color: $gray-2;
+      border-radius: 8px;
+      position: absolute;
+    }
+  }
+  &__content {
+    padding: 16px 23px;
+    @include desktop {
+      padding: 40px;
+    }
+  }
+  &__text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.44px;
+    line-height: 15px;
+    color: $text-gray;
+    @include desktop {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .icon {
+      font-size: 20px;
+    }
+  }
+  &__link {
+    width: 241px;
+    justify-content: space-between !important;
+    padding-top: 30px;
+  }
+  &__banner {
+    border: 1px solid $gray-2;
+    border-radius: 8px;
+    .banner-information__title {
+      @include mediaq-max(993px) {
+        font-size: 12.44px;
+        line-height: 15px;
+        justify-content: center;
+        margin-bottom: 0;
+      }
+    }
+    .banner-information__action {
+      @include mobile {
+        align-self: center;
+        margin-top: 16px;
+      }
+    }
+    .banner-information__icon {
+      @include mobile {
+        margin: 0 auto 16px;
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+  .icon {
+    display: inline-block !important;
+  }
+
+  .card--small {
+    @include desktop {
+      height: 156px;
+    }
+    .card-product__img {
+      @include desktop {
+        height: 156px;
+      }
+    }
+    .card-product__title {
+      font-size: 16.8px;
+      line-height: 20px;
+    }
+    .btn {
+      @include large {
+        width: auto !important;
+      }
+    }
+  }
+  .card--medium {
+    @include large {
+      height: 182px;
+    }
+    .card-product__img {
+      height: 161px;
+      @include large {
+        height: 182px;
+      }
+    }
+    .card-product__info {
+      display: block !important;
+    }
+    .card-product__description {
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 30px;
+    }
+  }
+}

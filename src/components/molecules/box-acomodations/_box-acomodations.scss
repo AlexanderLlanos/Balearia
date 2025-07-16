@@ -1,0 +1,151 @@
+.box-acomodations {
+  background-color: $white;
+  border: 2px solid transparent;
+  &:hover,
+  &.active {
+    border-color: $green-main !important;
+  }
+  & &__header,
+  &__body,
+  &__card {
+    padding: 16px;
+  }
+  &__header {
+    @include mobile {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &__body {
+    display: none;
+    &.active {
+      display: flex;
+    }
+    .box-acomodations__option-box-radio:nth-of-type(odd) {
+      @include large {
+        padding-left: 0px;
+      }
+    }
+    .box-acomodations__option-box-radio:nth-of-type(even) {
+      @include large {
+        padding-right: 0px;
+      }
+    }
+  }
+  &__top,
+  &__bottom {
+    @include mobile {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+  &__top {
+    @include mobile {
+      border-bottom: 1px solid $gray-2;
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+    }
+  }
+  &__link {
+    @include mobile {
+      position: absolute;
+      right: 24px;
+      top: 20px;
+    }
+  }
+  &__card {
+    width: 100%;
+    border: 1px solid $gray-2;
+    border-radius: 8px;
+    @include large {
+      width: 49%;
+      min-height: 80px;
+    }
+    &:last-child &:hover,
+    &.active {
+      border: 2px solid $green-main;
+    }
+    &:last-child {
+      @include mobile {
+        margin-bottom: 0;
+      }
+    }
+    &-link {
+      font-size: 11.06px;
+      line-height: 13px;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .g-radiobtn--checkmark {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &.disabled {
+      background-color: $gray-3;
+      &:hover {
+        outline: 0;
+      }
+      .title {
+        color: $gray-light;
+      }
+      .box-acomodations__card-link,
+      .text {
+        color: $gray !important;
+      }
+      .g-radiobtn--checkmark::after {
+        background-color: $white;
+      }
+      .g-radiobtn input:checked ~ .g-radiobtn--checkmark {
+        border-color: $gray-2 !important;
+      }
+    }
+  }
+  &__col {
+    @include large {
+      width: 25%;
+    }
+    &-md {
+      @include large {
+        width: 50%;
+      }
+    }
+  }
+  &.box-acomodations--transparent {
+    background-color: transparent;
+    @include mobile {
+      background-color: $white;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.09);
+      border-color: transparent;
+    }
+    .box-acomodations__body {
+      @include large {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      .o-row {
+        flex: 1;
+      }
+    }
+  }
+  &--full-width {
+    padding: 0;
+    .box-acomodations__header {
+      padding: 0;
+      .control--checkbox {
+        width: 100%;
+        margin: 0;
+        padding: 16px;
+        padding-left: 46px;
+        .control__indicator {
+          top: 50%;
+          transform: translateY(-50%);
+          left: 16px;
+        }
+      }
+    }
+    .box-acomodations__body {
+    }
+  }
+}

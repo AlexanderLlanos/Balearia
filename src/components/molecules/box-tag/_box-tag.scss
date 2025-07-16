@@ -1,0 +1,57 @@
+.box {
+  &.box--tag {
+    padding: 0;
+    .tag {
+      background-color: $green-5;
+      border-radius: 8px 8px 0 0;
+      padding: 4px 16px;
+      color: $green-medium;
+      width: 100%;
+      min-height: 24px;
+      box-shadow: none;
+      @include desktop {
+        min-height: 32px;
+      }
+      &--blue {
+        background-color: $green-3;
+        color: $white;
+      }
+      &__text {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12.44px;
+        line-height: 15px;
+        @include desktop {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+
+      &.bg-primary {
+        background-color: $green-main;
+        color: white;
+      }
+
+      &--sub {
+        background-color: $yellow;
+        color: $text;
+      }
+    }
+    .first {
+      font-size: 22px;
+      margin-right: 9px;
+    }
+    .last {
+      color: $green-main;
+      font-size: 14px;
+    }
+    .box--tag-content {
+      padding: 12px 8px;
+      @include desktop {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+  }
+}

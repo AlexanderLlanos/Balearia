@@ -1,0 +1,39 @@
+.g-card-radio {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 8px;
+  color: $text;
+
+  @include large {
+    padding: 26px 16px;
+  }
+
+  &--icon {
+    font-size: 24px;
+    padding-right: 9px;
+
+    @include large {
+      font-size: 32px;
+      padding-right: 16px;
+    }
+  }
+
+  &--title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    @include large {
+      font-size: 16.8px;
+    }
+  }
+
+  &.active {
+    background: $green-7;
+  }
+}

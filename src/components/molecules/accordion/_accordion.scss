@@ -1,0 +1,38 @@
+.c-accordion {
+  &__header {
+    margin-bottom: 30px;
+  }
+  &__icon {
+    color: $green-main;
+  }
+  &__btn {
+    @include mediaq-max(992px) {
+      width: 100%;
+    }
+    @include desktop {
+      min-width: 158px;
+      margin-left: 16px;
+    }
+  }
+}
+
+.c-check-accordion__content {
+  padding-top: calcRem(16px);
+}
+.c-check-accordion__content,
+.c-accordion__content {
+  overflow: hidden;
+  max-height: 0;
+  box-sizing: border-box;
+  transition: all 1s ease-in-out;
+}
+.c-check-accordion__content.open,
+.c-accordion__content.open {
+  max-height: 500px;
+}
+
+.c-accordion__icon {
+  &.open {
+    transform: rotate(180deg);
+  }
+}

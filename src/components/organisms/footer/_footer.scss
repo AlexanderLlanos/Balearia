@@ -1,0 +1,145 @@
+.footer {
+  background-color: $green-main;
+
+  &__logo {
+    display: block;
+    margin: 32px auto 44px;
+  }
+  &__bar-logos {
+    max-width: 350px;
+    
+    @include  mobile {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    a {
+      color: $gray-2;
+      font-size: 32px;
+      text-decoration: none;
+    }
+  }
+
+  &__bar-top {
+    border-bottom: 1px solid $green-medium;
+    height: 80px;
+  }
+
+  &__bar-img {
+    flex-wrap: wrap;
+    .img-link {
+      width: 175px;
+      height: 52px;
+      display: block;
+      margin: 0 24px 0 0;
+      @include mediaq-max(442px) {
+      margin-bottom: 10px;
+      }
+      @include mediaq-min(767px)  {
+        margin-bottom: 24px;
+      }
+    }
+    .img{
+      max-width: 100%;
+      
+    }
+  }
+  &__bar-bottom {
+    background-color: $green-medium;
+    height: 47px;
+    @include mobile {
+      height: 72px;
+    }
+    .o-container {
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    .link {
+      text-decoration: none;
+      &:last-child {
+        margin-right: 0;
+      }
+      @include desktop {
+        margin-right: 24px;
+      }
+    }
+    .text {
+      @include mobile {
+        margin-bottom: 10px;
+      }
+    }
+    .text,
+    .link {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12.44px;
+      line-height: 15px;
+      color: $white;
+    }
+  }
+  &__bar-link {
+    @include mobile {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  &__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16.8px;
+    line-height: 20px;
+    color: $white;
+    @include mobile {
+      margin-top: 32px;
+    }
+    &.first {
+      @include mobile {
+        margin-top: 0;
+      }
+    }
+  }
+  &__item {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__item-link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+    text-decoration: none;
+    display: block;
+  }
+  &__select {
+    justify-content: flex-end;
+    border-top: 1px solid $green-medium;
+    height: 64px;
+    .form__select {
+      width: 132px;
+      height: 32px;
+      padding: 8px;
+      border-radius: 2px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12.44px;
+      line-height: 15px;
+      color: $white;
+      background-image: url("../../src/assets/img/arrow-white.png");
+      &:not(:placeholder-shown):valid:not(:focus){
+        background-color: transparent;
+        outline: none;
+        border-color: $white;
+      }
+    }
+  }
+}

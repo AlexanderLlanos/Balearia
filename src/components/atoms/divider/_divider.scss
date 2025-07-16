@@ -1,0 +1,27 @@
+.divider {
+  position: relative;
+  text-align: center;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $gray-2;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text;
+    padding: 0 24px;
+    background-color: $white;
+    position: relative;
+    z-index: 1;
+  }
+}

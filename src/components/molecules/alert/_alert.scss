@@ -1,0 +1,140 @@
+.alert {
+  padding: 16px;
+  border: 2px solid $red;
+  text-align: center;
+  border-radius: 8px;
+
+  &--big {
+    .alert__text {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  @include mobile {
+    text-align: left;
+  }
+
+  @include large {
+    padding: 24px;
+    text-align: left;
+  }
+
+  &__icon {
+    color: $red;
+    font-size: 33px;
+    margin-right: 27px;
+    @include mediaq-max(992px) {
+      margin-bottom: 4px;
+      display: block;
+    }
+  }
+  &__title {
+    color: $text-light;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16.8px;
+    line-height: 20px;
+  }
+  &__text {
+    color: $text-gray;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    &--small {
+      font-weight: 400 !important;
+    }
+  }
+  &.alert--info {
+    border: 1px solid $green-3;
+    padding: 16px;
+
+    .alert__icon {
+      color: $green-3;
+      font-size: 20px;
+      margin-right: 10px;
+      @include mobile {
+        font-size: 26px;
+      }
+      &.icon--mobile {
+        margin-bottom: 0;
+        @include desktop {
+          font-size: 35px;
+        }
+      }
+    }
+    .alert__text {
+      color: $text-light;
+      &.normal {
+        font-weight: normal;
+      }
+    }
+    .alert__title {
+      color: $text-light;
+    }
+    &.alert--info-primary {
+      border-color: $green-main;
+      .alert__icon {
+        color: $green-main;
+      }
+      .alert__text {
+        @include mobile {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+    &.alert--info-error {
+      border-color: $red;
+      .alert__icon {
+        color: $red;
+      }
+      .alert__text {
+        color: $red !important;
+        @include mobile {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+    &-small {
+      padding: 9px 16px;
+      .alert__icon {
+        margin-bottom: 0;
+      }
+    }
+    &-small {
+      padding: 9px 16px;
+      .alert__icon {
+        margin-bottom: 0;
+      }
+    }
+    &-xsmall {
+      padding: 3px 13px;
+    }
+  }
+  &.alert--link {
+    position: relative;
+    .alert__icon {
+      font-size: 26px;
+      @include mobile {
+        margin-bottom: 10px;
+      }
+    }
+    .alert__link {
+      @include mobile {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    .alert__info {
+      @include mobile {
+        flex-direction: column;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

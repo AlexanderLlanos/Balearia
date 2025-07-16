@@ -1,0 +1,313 @@
+// Colors
+$yellow-main: #ffa745;
+$yellow-lighter: #fff7ee;
+$yellow-dark: #e3953e;
+
+$green-main: #008193;
+$green-light: #ababab;
+$green-lighter: #f8fff1;
+$green-dark: #6b7374;
+$green-medium: #006876;
+$green: #74b92f;
+$green-2: #509e2f;
+$green-3: #00b8c5;
+$green-4: #c4d600;
+$green-5: #e0f4a8;
+$green-6: #f8fbd2;
+$green-7: #e2f1f3;
+$green-8: #519aa6;
+
+$gray-main: #d3d3d3;
+$gray-light: #aaaaaa;
+$gray-lighter: #fafafa;
+$gray-dark: #f3f9fa;
+$gray: #bebebe;
+$gray-1: #eeeeee;
+$gray-2: #e6e6e6;
+$gray-3: #f5f5f5;
+
+$white: #fff;
+$black: #000;
+$red: #de3737;
+$red-medium: #ffe7e0;
+$red-light: #fff1f1;
+$blue-light: #b6e0e7;
+$yellow: #f9c902;
+
+$text: #333333;
+$text-light: #666666;
+$text-gray: #424b5a;
+
+$border: #f2f5f7;
+
+$colors: ();
+$colors: map-merge(
+  (
+    'yellow-main': $yellow-main,
+    'yellow-lighter': $yellow-lighter,
+    'yellow-dark': $yellow-dark,
+    'green-main': $green-main,
+    'green-light': $green-light,
+    'green-lighter': $green-lighter,
+    'green-dark': $green-dark,
+    'white': $white,
+    'black': $black,
+    'red': $red,
+    'red-light': $red-light,
+    'text': $text,
+    'text-light': $text-light,
+  ),
+  $colors
+);
+
+// <p>
+$bodytext-sz__lg: 19;
+$bodytext-sz__sm: 14;
+$bodytext-sz_card__lg: 16;
+$bodytext-sz_card__sm: 16;
+
+$bodytext-lineh__lg: 1.33;
+$bodytext-lineh__sm: 1.25;
+
+$bodytext-lettersp: normal;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1400px,
+);
+
+// Grid containers
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 1400px,
+);
+
+// Grid columns
+$grid-columns: 24;
+$grid-gutter-width: 24px;
+
+// Font weights
+$font-weights: (
+  ligth: 300,
+  normal: 400,
+  semibold: 700,
+  bold: 900,
+);
+
+// Displays
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex;
+
+// Custom styles for additional flex alignment options.
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .u-flex#{$infix}-row {
+      flex-direction: row;
+    }
+
+    .u-flex#{$infix}-column {
+      flex-direction: column;
+    }
+
+    .u-flex#{$infix}-row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .u-flex#{$infix}-column-reverse {
+      flex-direction: column-reverse;
+    }
+
+    .u-flex#{$infix}-wrap {
+      flex-wrap: wrap;
+    }
+
+    .u-flex#{$infix}-nowrap {
+      flex-wrap: nowrap;
+    }
+
+    .u-flex#{$infix}-wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+
+    .u-flex#{$infix}-fill {
+      flex: 1 1 auto;
+    }
+
+    .u-flex#{$infix}-grow-0 {
+      flex-grow: 0;
+    }
+
+    .u-flex#{$infix}-grow-1 {
+      flex-grow: 1;
+    }
+
+    .u-flex#{$infix}-shrink-0 {
+      flex-shrink: 0;
+    }
+
+    .u-flex#{$infix}-shrink-1 {
+      flex-shrink: 1;
+    }
+
+    .u-justify-content#{$infix}-start {
+      justify-content: flex-start;
+    }
+
+    .u-justify-content#{$infix}-end {
+      justify-content: flex-end;
+    }
+
+    .u-justify-content#{$infix}-center {
+      justify-content: center;
+    }
+
+    .u-justify-content#{$infix}-between {
+      justify-content: space-between;
+    }
+
+    .u-justify-content#{$infix}-around {
+      justify-content: space-around;
+    }
+
+    .u-align-items#{$infix}-start {
+      align-items: flex-start;
+    }
+
+    .u-align-items#{$infix}-end {
+      align-items: flex-end;
+    }
+
+    .u-align-items#{$infix}-center {
+      align-items: center;
+    }
+
+    .u-align-items#{$infix}-baseline {
+      align-items: baseline;
+    }
+
+    .u-align-items#{$infix}-stretch {
+      align-items: stretch;
+    }
+
+    .u-align-content#{$infix}-start {
+      align-content: flex-start;
+    }
+
+    .u-align-content#{$infix}-end {
+      align-content: flex-end;
+    }
+
+    .u-align-content#{$infix}-center {
+      align-content: center;
+    }
+
+    .u-align-content#{$infix}-between {
+      align-content: space-between;
+    }
+
+    .u-align-content#{$infix}-around {
+      align-content: space-around;
+    }
+
+    .u-align-content#{$infix}-stretch {
+      align-content: stretch;
+    }
+
+    .u-align-self#{$infix}-auto {
+      align-self: auto;
+    }
+
+    .u-align-self#{$infix}-start {
+      align-self: flex-start;
+    }
+
+    .u-align-self#{$infix}-end {
+      align-self: flex-end;
+    }
+
+    .u-align-self#{$infix}-center {
+      align-self: center;
+    }
+
+    .u-align-self#{$infix}-baseline {
+      align-self: baseline;
+    }
+
+    .u-align-self#{$infix}-stretch {
+      align-self: stretch;
+    }
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .u-text#{$infix}-inherit {
+      font-family: inherit;
+    }
+
+    .u-text#{$infix}-justify {
+      text-align: justify;
+    }
+
+    .u-text#{$infix}-wrap {
+      white-space: normal !important;
+    }
+
+    .u-text#{$infix}-nowrap {
+      white-space: nowrap;
+    }
+
+    .u-text#{$infix}-left {
+      text-align: left;
+    }
+
+    .u-text#{$infix}-right {
+      text-align: right;
+    }
+
+    .u-text#{$infix}-center {
+      text-align: center;
+    }
+
+    .u-text#{$infix}-lowercase {
+      text-transform: lowercase;
+    }
+
+    .u-text#{$infix}-uppercase {
+      text-transform: uppercase;
+    }
+
+    .u-text#{$infix}-capitalize {
+      text-transform: capitalize;
+    }
+  }
+}
+
+// font-weigh
+@each $font-weight, $value in $font-weights {
+  .u-font-weight-#{$font-weight} {
+    font-weight: $value;
+  }
+}
+
+// Displays
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $value in $displays {
+      .u-d#{$infix}-#{$value} {
+        display: $value;
+      }
+    }
+  }
+}

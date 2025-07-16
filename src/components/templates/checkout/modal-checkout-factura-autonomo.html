@@ -1,0 +1,284 @@
+<div class="modal micromodal-slide" id="modal-checkout-factura-autonomo" aria-hidden="true">
+  <div class="g-modal--info g-modal--info-small modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <div class="g-modal--info__header">
+        <h3 class="title">Date de alta para recibir facturas</h3>
+        <button class="modal__close icon-close" aria-label="Close modal" data-micromodal-close></button>
+      </div>
+      <div class="js-factura-autonomo-tabs o-p--3">
+        <div class="o-row">
+          <div class="o-col-lg-24 o-mb--3">
+            <!-- tab header -->
+            <div class="g-tab g-tab--transparent g-tab--full">
+              <button class="js-tabs__title tablinks active">
+                <span class="tablinks__title">Autónomo</span>
+                <span class="line"></span>
+              </button>
+              <button class="js-tabs__title tablinks">
+                <span class="tablinks__title">Empresa</span>
+                <span class="line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="o-row">
+          <div class="o-col-lg-24">
+            <form action="" class="js-checkout-form__step" id="js-form-company-bill-registration">
+              <div class="js-tabs__content g-tab--tabcontent">
+                <div class="o-row">
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="name-co"
+                        id="companyBillForm-name-sep"
+                        placeholder=" "
+                      />
+                      <label>Nombre</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="surname-co"
+                        id="companyBillForm-surname-sep"
+                        placeholder=" "
+                      />
+                      <label>Apellido</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="email-co"
+                        id="companyBillForm-email-sep"
+                        placeholder=" "
+                      />
+                      <label>Email</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="select-input u-w--100">
+                      <select class="form__select" name="phonePrefix-co" id="companyBillForm-phonePrefix-sep" required>
+                        <option value="" selected>+...</option>
+                        <option value="+34">+34</option>
+                        <option value="+58">+58</option>
+                        <option value="+51">+51</option>
+                        <option value="+56">+56</option>
+                      </select>
+                      <div class="form__input-wrapper u-w--100">
+                        <input
+                          class="g-input form__input"
+                          type="text"
+                          name="phone-co"
+                          placeholder=" "
+                          id="companyBillForm-phone-sep"
+                        />
+                        <label>Teléfono</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="nif-co"
+                        placeholder=" "
+                        id="companyBillForm-nif-sep"
+                      />
+                      <label>NIF</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <select class="form__select" name="country-co" id="companyBillForm-country-sep" required>
+                        <option value="" selected></option>
+                        <option value="España">España</option>
+                        <option value="Pais 2">Label</option>
+                        <option value="Pais 3">Label</option>
+                      </select>
+                      <label>País</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="number"
+                        oninput="javascript: if (this.value.length > 5) this.value = this.value.slice(0, 5);"
+                        name="zipcode-co"
+                        id="companyBillForm-zipcode-sep"
+                        placeholder=" "
+                      />
+                      <label>Código postal</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="city-co"
+                        id="companyBillForm-city-sep"
+                        placeholder=" "
+                      />
+                      <label>Población</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="address-co"
+                        id="companyBillForm-address-sep"
+                        placeholder=" "
+                      />
+                      <label>Dirección</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="js-tabs__content g-tab--tabcontent">
+                <div class="o-row">
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="name-sep"
+                        id="companyBillForm-name-co"
+                        placeholder=" "
+                      />
+                      <label>Nombre de la empresa</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="surname-sep"
+                        id="companyBillForm-surname-co"
+                        placeholder=" "
+                      />
+                      <label>Apellido</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="email-sep"
+                        id="companyBillForm-email-co"
+                        placeholder=" "
+                      />
+                      <label>Email</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="select-input u-w--100">
+                      <select class="form__select" name="phonePrefix-sep" id="companyBillForm-phonePrefix-co" required>
+                        <option value="" selected>+...</option>
+                        <option value="+34">+34</option>
+                        <option value="+58">+58</option>
+                        <option value="+51">+51</option>
+                        <option value="+56">+56</option>
+                      </select>
+                      <div class="form__input-wrapper u-w--100">
+                        <input
+                          class="g-input form__input"
+                          type="text"
+                          name="phone-sep"
+                          placeholder=" "
+                          id="companyBillForm-phone-co"
+                        />
+                        <label>Teléfono</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="nif-sep"
+                        placeholder=" "
+                        id="companyBillForm-nif-co"
+                      />
+                      <label>NIF</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <select class="form__select" name="country-sep" id="companyBillForm-country-co" required>
+                        <option value="" selected></option>
+                        <option value="España">España</option>
+                        <option value="Pais 2">Label</option>
+                        <option value="Pais 3">Label</option>
+                      </select>
+                      <label>País</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="number"
+                        oninput="javascript: if (this.value.length > 5) this.value = this.value.slice(0, 5);"
+                        name="zipcode-sep"
+                        id="companyBillForm-zipcode-co"
+                        placeholder=" "
+                      />
+                      <label>Código postal</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="city-sep"
+                        id="companyBillForm-city-co"
+                        placeholder=" "
+                      />
+                      <label>Población</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="address-sep"
+                        id="companyBillForm-address-co"
+                        placeholder=" "
+                      />
+                      <label>Dirección</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="g-modal--info__footer">
+          <button
+            class="btn btn--primary u-w--100 o-mb--1 u-w--100"
+            type="submit"
+            form="js-form-company-bill-registration"
+          >
+            Confirmar registro
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

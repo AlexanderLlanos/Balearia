@@ -1,0 +1,57 @@
+.g-back-btn {
+  display: flex;
+
+  &--arrow {
+    color: $green-main;
+    cursor: pointer;
+    font-size: 18px;
+    padding-right: 18px;
+    padding-top: 16px;
+  }
+
+  &--text {
+    color: $text;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 35.92px;
+    line-height: 43px;
+
+    &__small {
+      font-weight: 700;
+      font-size: 22.43px;
+    }
+  }
+
+  &--text2 {
+    color: $text-light;
+    font-family: 'Lato';
+    font-size: 16.8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+  }
+
+  &--large {
+    align-items: flex-start;
+
+    .g-back-btn--text {
+      font-size: 35.92px;
+      line-height: 43.1px;
+    }
+
+    .g-back-btn--arrow {
+      padding-top: 18px;
+    }
+  }
+
+  &--small {
+    .g-back-btn--text {
+      font-size: 22.43px;
+      line-height: 27px;
+    }
+
+    .g-back-btn--arrow {
+      padding-top: 4px;
+    }
+  }
+}

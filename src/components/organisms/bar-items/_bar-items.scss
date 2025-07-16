@@ -1,0 +1,141 @@
+.bar-items {
+  background-color: $green-main;
+  height: 65px;
+  position: sticky;
+  top: 0;
+  z-index: 13;
+
+  @include desktop {
+    height: 88px;
+  }
+
+  &--reservation {
+    display: none;
+    &.show {
+      display: flex;
+    }
+  }
+  &__btn {
+    @include mobile {
+      width: 100%;
+    }
+    &.disabled {
+      background-color: rgba(0, 104, 118, 0.8);
+      opacity: 0.4;
+      pointer-events: none;
+      color: $green-8;
+    }
+  }
+
+  .text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16.8px;
+    line-height: 20px;
+  }
+  .text,
+  .icon,
+  .form__select,
+  .label,
+  &__item,
+  .edit {
+    color: $white;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .g-dropdown-basic--btn {
+    border: 1px solid $white;
+    height: 54px;
+    color: $white;
+
+    .total {
+      font-size: 9.83px;
+      line-height: 12px;
+      text-transform: uppercase;
+      color: $gray-dark;
+      font-weight: 400;
+    }
+
+    .price {
+      font-weight: 900;
+      font-size: 16.8px;
+      line-height: 20px;
+      color: $white;
+    }
+  }
+
+  &__list {
+    margin-top: 11px;
+  }
+
+  &__item {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 16px;
+    white-space: nowrap;
+
+    &:last-child {
+      margin-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+    @include mediaq-max(992px) {
+      font-size: 12.44px;
+      line-height: 15px;
+      margin-right: 8px;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    @include desktop {
+      &:after {
+        display: block;
+      }
+    }
+
+    &:after {
+      content: '';
+      height: 16px;
+      width: 1px;
+      background-color: $white;
+      margin-left: 16px;
+    }
+
+    &.edit {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 17px;
+      cursor: pointer;
+
+      .icon {
+        margin-left: 9px;
+      }
+    }
+  }
+
+  &__buttons {
+    @include mediaq-max(992px) {
+      position: fixed;
+      height: 80px;
+      z-index: 11;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: $green-main;
+      padding: 16px;
+    }
+  }
+}

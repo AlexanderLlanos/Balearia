@@ -1,0 +1,132 @@
+.g-switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 16px;
+  padding-left: 30px;
+  cursor: pointer;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  &--label {
+    margin-left: 16px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $text-light;
+    white-space: nowrap;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e6e6e6;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 12px;
+      width: 12px;
+      left: 2px;
+      bottom: 2px;
+      background-color: $white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+
+    &.round {
+      border-radius: 34px;
+
+      &::before {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  input:checked + .slider {
+    background-color: $yellow-dark;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px $yellow-dark;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+  }
+
+  &--large {
+    width: 60px;
+    height: 32px;
+
+    .slider {
+      &::before {
+        bottom: 4px;
+        height: 24px;
+        left: 4px;
+        width: 24px;
+      }
+    }
+
+    .g-switch--label {
+      margin-left: 44px;
+      font-size: 16px;
+
+      @include mobile {
+        font-size: 14px;
+        margin-left: 16px;
+      }
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+  }
+
+  &--second {
+    .slider::before {
+      background-color: $green-main;
+    }
+
+    input:checked + .slider {
+      background: $green-main;
+      
+      &::before {
+        background-color: $white;
+      }
+    }
+  }
+
+  @include mobile {
+    width: 37px;
+    height: 20px;
+    padding-left: 30px;
+
+    .slider {
+      &::before {
+        height: 14px;
+        width: 14px;
+        left: 3px;
+        bottom: 3px;
+      }
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(16px);
+    }
+  }
+}

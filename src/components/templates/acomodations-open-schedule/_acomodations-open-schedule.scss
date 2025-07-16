@@ -1,0 +1,11 @@
+.acomodationOpenSchedule {
+  input[type='radio'],
+  input[type='checkbox'] {
+    &:checked + label,
+    &:hover + label {
+      transition: all 100ms ease-out;
+      font-weight: 700;
+      box-shadow: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.cvv {
+  .form__input-wrapper {
+    width: 125px;
+    @include desktop {
+      width: 85px;
+    }
+  }
+  .img {
+    width: 78px;
+  }
+}

@@ -1,0 +1,219 @@
+.g-tab {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 15px;
+  padding-top: 22px;
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+
+  @include large {
+    justify-content: center;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .tablinks {
+    align-items: center;
+    background: transparent;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    height: 46px;
+    justify-content: center;
+    line-height: 20px;
+    margin: 0 8px;
+    padding: 8px;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+
+    @include large {
+      font-size: 16.8px;
+      font-weight: bold;
+    }
+
+    .line {
+      background: transparent;
+      height: 0;
+      width: 0;
+    }
+
+    &.active,
+    &:hover {
+      background: $green-medium;
+      border-radius: 8px;
+      transition: 0.5s ease-in-out;
+
+      .line {
+        background: $white;
+        border-radius: 30px;
+        height: 2px;
+        margin-top: 8px;
+        width: 30px;
+      }
+    }
+  }
+
+  &--transparent {
+    justify-content: center;
+    overflow: auto;
+
+    .tablinks {
+      background: transparent;
+      color: $gray-light;
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16.8px;
+      line-height: 20px;
+      height: 46px;
+      padding: 0;
+      margin: 0;
+      &__title {
+        pointer-events: none;
+        padding: 0 20px;
+        @include large {
+          padding: 0 30px;
+        }
+      }
+      .line {
+        pointer-events: none;
+        background: $gray-2;
+        height: 2px;
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .textActive {
+        color: $green-main;
+      }
+
+      .lineActive {
+        background: $green-main;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      &.active,
+      &:hover {
+        color: $green-main;
+        background: transparent;
+        .line {
+          background: $green-main;
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+      @include mediaq-max(992px) {
+        width: 50%;
+      }
+    }
+
+    &__search {
+      justify-content: flex-start;
+      position: relative;
+
+      &::before {
+        content: '';
+        height: 2px;
+        background: #e6e6e6;
+        left: 0;
+        right: 0;
+        position: absolute;
+        bottom: 7px;
+      }
+
+      .tablinks {
+        font-size: 14px;
+        position: relative;
+        font-weight: 600;
+      }
+    }
+    &.g-tab--start {
+      justify-content: start;
+    }
+  }
+  &--full {
+    justify-content: flex-start;
+    .tablinks {
+      min-width: 50%;
+    }
+  }
+  &--border {
+    &:before {
+      content: '';
+      height: 3px;
+      width: 100%;
+      background-color: $gray-2;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .tablinks {
+      justify-content: end;
+    }
+    .line {
+      position: relative !important;
+      height: 3px !important;
+    }
+  }
+
+  &--vertical {
+    flex-direction: column;
+    height: initial !important;
+    filter: none !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .tablinks {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      text-align: left;
+      margin: 3px 0;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 16px;
+      min-height: 60px;
+
+      .tablinks__title {
+        color: $text;
+        font-weight: 400;
+      }
+
+      &.active {
+        .tablinks__title {
+          color: $green-main;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &--small {
+    border: 2px solid $green-main;
+    width: fit-content;
+    justify-content: flex-start;
+    border-radius: 8px;
+
+    .tablinks {
+      &.active,
+      &:hover {
+        .tablinks__title {
+          background-color: $green-main;
+          color: white;
+          font-weight: 400;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

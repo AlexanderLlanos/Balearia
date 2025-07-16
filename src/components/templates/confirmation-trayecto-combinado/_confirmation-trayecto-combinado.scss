@@ -1,0 +1,8 @@
+.confirmation {
+  .g-header {
+    margin-bottom: 56px;
+    @include mobile {
+      margin-bottom: 16px;
+    }
+  }
+}

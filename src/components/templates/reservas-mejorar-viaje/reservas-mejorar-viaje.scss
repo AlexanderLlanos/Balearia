@@ -1,0 +1,23 @@
+#modal-gestion-flexible,
+[id^='modal-cambios'] {
+  .js-reserva-subitem,
+  .js-reserva-opt {
+    cursor: pointer;
+  }
+}
+
+.js-saved-vehicle-selection-view {
+  display: none;
+  &.active {
+    display: flex;
+  }
+}
+
+.js-switchable-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-in-out;
+  &.active {
+    max-height: 500px;
+  }
+}

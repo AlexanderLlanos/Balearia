@@ -1,0 +1,350 @@
+.tag {
+  background-color: $white;
+  border-radius: 70px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+  color: $text;
+  display: inline-flex;
+  font-family: Lato;
+  font-size: 12.44px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 15px;
+  padding: 2px 8px 2px 2px;
+
+  &.tag--large {
+    color: $text-gray;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 2px 16px 2px 2px;
+
+    .tag__icon {
+      font-size: 20px;
+      height: 32px;
+      min-width: 32px;
+      width: 32px;
+    }
+  }
+
+  &__icon {
+    background-color: $green-main;
+    border-radius: 70px;
+    color: $white;
+    font-size: 16px;
+    height: 20px;
+    margin-right: 7px;
+    min-width: 20px;
+    width: 20px;
+
+    &--bold {
+      font-weight: 800;
+      margin-left: 6px;
+    }
+  }
+
+  &.tag--green {
+    .tag__icon {
+      background-color: $green-6;
+      color: $green-4;
+    }
+  }
+
+  &.tag--green2 {
+    .tag__icon {
+      background-color: $green-lighter;
+      color: $green;
+    }
+  }
+  &.tag--green3 {
+    .tag__icon {
+      background-color: $gray-dark;
+      color: $green-main;
+    }
+  }
+  &.tag--blue {
+    .tag__icon {
+      background-color: $green-7;
+      color: $green-main;
+    }
+  }
+
+  &.tag--red {
+    color: $red;
+    .tag__icon {
+      background-color: $red-light;
+      color: $red;
+    }
+  }
+
+  &.tag--bg-red {
+    background: #FFF2F2;
+    color: $red;
+
+    .point {
+      width: 9px;
+      height: 9px;
+      background-color: $red;
+      margin-right: 5px;
+      border-radius: 50%;
+    }
+  }
+
+  &.tag--bg-orange {
+    background: $yellow-lighter;
+    color: $text-light;
+    
+    .point {
+      width: 9px;
+      height: 9px;
+      background-color: $yellow-main;
+      margin-right: 5px;
+      border-radius: 50%;
+    }
+  }
+
+  &.tag--bg-green {
+    background: $green-lighter;
+    color: $text-light;
+    
+    .point {
+      width: 9px;
+      height: 9px;
+      background-color: $green;
+      margin-right: 5px;
+      border-radius: 50%;
+    }
+  }
+
+  &.tag--gray2 {
+    .tag__icon {
+      background-color: $gray-2;
+      color: $text-light;
+    }
+  }
+
+  &__grad-container {
+    background-color: $white;
+    z-index: 1;
+    width: 100%;
+    border-radius: 70px;
+    padding: 2px 10px 2px 2px;
+    display: flex;
+    align-items: center;
+  }
+
+  &--green-grad {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin-right: 10px;
+
+    .tag__icon {
+      background-color: $gray-dark;
+      &::before {
+        background: linear-gradient(to left, #11878f, #8ccb95);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      border-radius: 70px;
+      background: linear-gradient(to left, #11878f, #8ccb95);
+      z-index: -1;
+    }
+  }
+
+  &--blue-grad {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin-right: 10px;
+
+    .tag__icon {
+      background-color: $gray-dark;
+      &::before {
+        background: linear-gradient(to left, #01b9c5, #84a5e4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      border-radius: 70px;
+      background: linear-gradient(to left, #01b9c5, #84a5e4);
+      z-index: -1;
+    }
+  }
+
+  &.tag--gray {
+    background-color: $gray-3;
+    color: $green-main;
+    font-weight: 700;
+    padding: 2px;
+    border-radius: 8px;
+    .tag__icon {
+      background-color: transparent;
+      color: $green-main;
+      margin-right: 2px;
+      width: 16px;
+      min-width: 16px;
+    }
+  }
+  &--exclusive {
+    align-items: center;
+    background: $green-3;
+    border-radius: 8px 8px 0px 0px;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    position: relative;
+
+    @include mobile {
+      padding: 8px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 14px;
+      border-top: 6px solid $green-3;
+      border-bottom: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-left: 8px solid transparent;
+      position: absolute;
+      left: 50%;
+      bottom: -14px;
+      transform: translateX(-50%);
+    }
+
+    i {
+      font-size: 26px;
+      margin-right: 8px;
+    }
+
+    p {
+      font-family: Lato;
+      font-size: 14px;
+      line-height: 17px;
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      @include large {
+        font-size: 16.8px;
+        line-height: 20px;
+      }
+    }
+
+    &__small {
+      padding: 6px;
+
+      i {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &--medium {
+    font-size: 14px;
+
+    .tag__icon {
+      font-size: 20px;
+      height: 32px;
+      min-width: 32px;
+      width: 32px;
+    }
+  }
+
+  &--circle {
+    width: 69px;
+    height: 69px;
+    border-radius: 48px;
+    background-color: $green-4;
+    color: $white;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  &--secondary {
+    background: initial;
+    border-radius: 8px;
+    box-shadow: none;
+    font-size: 16.8px;
+    line-height: 23px;
+    padding: 12px;
+
+    .tag__icon {
+      background-color: transparent !important;
+    }
+
+    &.tag--blue {
+      background-color: $gray-dark;
+    }
+  }
+  &--transparent {
+    .tag__icon {
+      background-color: $gray-dark;
+      color: $green-3;
+    }
+  }
+
+  &--bg-blue {
+    background-color: $green-3;
+    color: white;
+
+    .tag__icon {
+      background-color: $green-3 !important;
+      color: white !important;
+    }
+  }
+}
+
+.g-pagination {
+  .btn {
+    font-size: 14px;
+    height: 32px;
+
+    @include large {
+      height: 48px;
+    }
+  }
+
+  &--item {
+    padding: 0;
+    width: 32px;
+
+    @include large {
+      width: 48px !important;
+      height: 48px !important;
+    }
+
+    &.active {
+      background: $yellow-main;
+      color: white;
+    }
+
+    &.points {
+      border: 2px solid $gray;
+      color: $gray;
+    }
+  }
+}

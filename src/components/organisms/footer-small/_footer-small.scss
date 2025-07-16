@@ -1,0 +1,46 @@
+.footer-small {
+  background-color: $white;
+  @include mediaq-max(992px) {
+    padding-bottom: 90px;
+  }
+  &__text,
+  &__link {
+    color: $text;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11.06px;
+    line-height: 13px;
+    @include desktop {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  &__link {
+    color: $green-main;
+    margin-right: 16px;
+    text-decoration: none;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__row {
+    @include mediaq-max(992px) {
+      flex-direction: column-reverse;
+    }
+  }
+  &__links {
+    @include mediaq-max(992px) {
+      margin-bottom: 26px;
+    }
+  }
+  &__info,
+  &__links {
+    @include mediaq-max(992px) {
+      width: 100%;
+    }
+  }
+  &--spacer {
+    margin-top: 90px;
+  }
+}

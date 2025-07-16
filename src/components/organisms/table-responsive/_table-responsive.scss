@@ -1,0 +1,152 @@
+.table-responsive {
+  &__header,
+  &__body {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__header {
+    margin-bottom: 16px;
+  }
+
+  &__body {
+    flex-wrap: wrap;
+    display: flex;
+    .table-responsive__cell {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  &__row {
+    margin-bottom: 32px;
+    display: flex;
+    width: 100%;
+    @include mediaq-max(992px) {
+      flex-direction: column;
+      border-bottom: 1px solid $gray-1;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      margin-bottom: 0;
+    }
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  &__cell {
+    color: $text-light;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    width: calc(100% / 7);
+    padding: 0 8px;
+    font-size: 10px;
+
+    @include mediaq-max(992px) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      width: 100%;
+      padding: 0;
+    }
+
+    &:first-child {
+      padding-left: 0;
+      @include mediaq-max(992px) {
+        padding-top: 0;
+      }
+      @include mediaq-min(1400px) {
+        flex-basis: 20%;
+      }
+    }
+    &:last-child {
+      @include mediaq-max(992px) {
+        margin-bottom: 0;
+      }
+    }
+    &.first {
+      @include mediaq-max(992px) {
+        padding-bottom: 8px;
+        justify-content: space-between;
+      }
+    }
+  }
+  .text-small {
+    display: none;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    @include mediaq-max(992px) {
+      width: 90px;
+    }
+  }
+  .text-bold {
+    color: $text;
+    font-weight: 700;
+  }
+}
+
+.g-table-row {
+  @include mobile {
+    border: 1px solid $gray-main;
+    border-radius: 8px;
+  }
+  &.js-table-row {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+
+  &--no-border-mobile {
+    @include mobile {
+      border: none;
+      border-radius: 0;
+    }
+
+    .g-table-row__body {
+      @include mobile {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  &__header {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    padding: 16px 0;
+    color: $gray-light;
+  }
+
+  &__body {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16.8px;
+    line-height: 23px;
+    padding: 16px 0;
+    color: $text-light;
+
+    &.bold {
+      font-weight: 700;
+      color: $text;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include mobile {
+        font-weight: 400;
+        font-size: 16.8px;
+        line-height: 23px;
+        color: $text-light;
+        min-width: 100px;
+        display: inline-block;
+        font-family: 'Lato';
+      }
+    }
+  }
+}

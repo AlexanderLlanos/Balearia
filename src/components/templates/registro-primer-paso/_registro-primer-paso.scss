@@ -1,0 +1,21 @@
+.box--irregular {
+  .box--double__text .login__buttons .btn {
+    height: 48px;
+    padding: 0 8px;
+  }
+  .u-bg--lighter__white {
+    @include mediaq-max(992px) {
+      background: $white;
+    }
+  }
+  .o-container.box--irregular {
+    @include mediaq-max(992px) {
+      margin-top: 0;
+    }
+  }
+  .box--irregular .box--double__text {
+    @include mediaq-max(992px) {
+      margin-top: 0;
+    }
+  }
+}

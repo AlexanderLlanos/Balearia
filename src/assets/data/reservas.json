@@ -1,0 +1,521 @@
+{
+  "trip_data": {
+    "outbound": {
+      "id": 0,
+      "name": "Butaca Sirena",
+      "accId": "butaca_sirena"
+    },
+    "inbound": {
+      "id": 0,
+      "name": "Butaca Sirena",
+      "accId": "butaca_sirena"
+    },
+    "includedExtras": {
+      "outbound": [
+        {
+          "type": "pets",
+          "id": "pets_large_cage",
+          "quantity": 3
+        },
+        {
+          "id": "small_food_token",
+          "quantity": 1
+        }
+      ],
+      "inbound": [
+        {
+          "id": "medium_food_token",
+          "quantity": 1
+        },
+        {
+          "type": "pets",
+          "id": "pets_large_cage",
+          "quantity": 1
+        },
+        {
+          "type": "pets",
+          "id": "pets_small_cage",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  "extras": [
+    {
+      "id": "tarifa_reducida",
+      "name": "Tarifa reducida",
+      "price": 7
+    },
+    {
+      "id": "priority_boarding_outbound",
+      "name": "Embarque prioritario",
+      "price": 3.5
+    },
+    {
+      "id": "priority_boarding_inbound",
+      "name": "Desembarque prioritario",
+      "price": 3.5
+    },
+    {
+      "id": "priority_unboarding_outbound",
+      "name": "Embarque prioritario",
+      "price": 3.5
+    },
+    {
+      "id": "priority_unboarding_inbound",
+      "name": "Desembarque prioritario",
+      "price": 3.5
+    },
+    {
+      "id": "late_unboarding_outbound",
+      "name": "Embarque prioritario",
+      "price": 3.5
+    },
+    {
+      "id": "late_unboarding_inbound",
+      "name": "Desembarque prioritario",
+      "price": 3.5
+    },
+    {
+      "id": "travel_insurance",
+      "name": "Seguro de viaje",
+      "price": 7
+    },
+    {
+      "type": "parking",
+      "id": "parking-denia",
+      "name": "Parking en Denia",
+      "price": 10
+    },
+    {
+      "type": "vehicle-rental",
+      "id": "vehicle_rental_tourism_classA",
+      "name": "Alquiler turismo clase A",
+      "price": 45,
+      "days": 5
+    },
+    {
+      "type": "vehicle-rental",
+      "id": "vehicle_rental_bike_49cc",
+      "name": "Alquiler moto 49 CC",
+      "price": 25,
+      "days": 5
+    },
+    {
+      "type": "bus",
+      "id": "bus_malaga",
+      "name": "Autobús Motril-Málaga",
+      "price": 0
+    },
+    {
+      "type": "tourist-bus",
+      "id": "bus_ruta_azul",
+      "name": "Ruta Azul",
+      "price": 12
+    },
+    {
+      "type": "tourist-bus",
+      "id": "bus_ruta_amarilla",
+      "name": "Ruta Amarilla",
+      "price": 8
+    },
+    {
+      "type": "food-token",
+      "id": "small_food_token",
+      "name": "Bono restaurante pequeño",
+      "price": 30
+    },
+    {
+      "type": "food-token",
+      "id": "medium_food_token",
+      "name": "Bono restaurante mediano",
+      "price": 50
+    },
+    {
+      "type": "food-token",
+      "id": "large_food_token",
+      "name": "Bono restaurante grande",
+      "price": 120
+    },
+    {
+      "type": "food",
+      "id": "continental_breakfast",
+      "name": "Desayuno continental",
+      "price": 7
+    },
+    {
+      "type": "food",
+      "id": "sandwitch_menu",
+      "name": "Menú Bocadillo",
+      "price": 7
+    },
+    {
+      "type": "food",
+      "id": "full_menu",
+      "name": "Menú Completo",
+      "price": 7
+    },
+    {
+      "type": "food",
+      "id": "kids_menu",
+      "name": "Menú Infantil",
+      "price": 7
+    },
+    {
+      "type": "pets",
+      "id": "pets_pet_friendly_seat",
+      "name": "Butaca Pet friendly",
+      "price": 10
+    },
+    {
+      "type": "pets",
+      "id": "pets_pet_friendly_room",
+      "name": "Camarote Pet friendly",
+      "price": 10
+    },
+    {
+      "type": "pets",
+      "id": "pets_own_cage",
+      "name": "Transportín propio",
+      "price": 0
+    },
+    {
+      "type": "pets",
+      "id": "pets_small_cage",
+      "name": "Transportín pequeño",
+      "price": 3.5
+    },
+    {
+      "type": "pets",
+      "id": "pets_large_cage",
+      "name": "Transportín grande",
+      "price": 7
+    },
+    {
+      "type": "wifi",
+      "id": "sn_pack_1",
+      "name": "Bono Redes Sociales (1)",
+      "price": 7
+    },
+    {
+      "type": "wifi",
+      "id": "trip_pack_1",
+      "name": "Bono Travesía (1)",
+      "price": 7
+    },
+    {
+      "type": "wifi",
+      "id": "trip_pack_3",
+      "name": "Bono Travesía (3)",
+      "price": 7
+    },
+
+    {
+      "type": "accomodation",
+      "id": "butaca_ventana",
+      "name": "Ventana",
+      "price": 7
+    },
+
+    {
+      "type": "example",
+      "id": "example_1",
+      "name": "Ejemplo",
+      "price": 100
+    }
+  ],
+  "reserva": {
+    "contact_data": {
+      "email": "contact@mail.com",
+      "code": "+51",
+      "phone": "938781912"
+    },
+    "change_trip": {
+      "change_date": {},
+      "change_out_hour": {},
+      "change_source": {
+        "source": "Ibiza",
+        "destiny": "Denia"
+      },
+      "change_destiny": {
+        "source": "Denia",
+        "destiny": "Ibiza"
+      },
+      "add_return_trip": {}
+    },
+    "passenger_management": {
+      "change_accomodation": {
+        "outbound": {
+          "id": 0,
+          "name": "Butaca Sirena",
+          "accId": "butaca_sirena",
+          "quantity": 4,
+          "price": "178"
+        },
+        "inbound": {
+          "id": 0,
+          "name": "Butaca Plus",
+          "accId": "butaca_plus",
+          "quantity": 4,
+          "price": "250"
+        }
+      },
+      "add_passenger": {
+        "adults": 2,
+        "seniors60": 1,
+        "children": 2,
+        "babies": 1,
+        "babies12": 1
+      },
+      "validate_documents": {},
+      "add_asistant": [
+        {
+          "id": "1",
+          "name": "Luis Perez",
+          "checked": true,
+          "asistant_type": "Label",
+          "asistant_type2": "Label",
+          "afilation_number": "12345678"
+        },
+        {
+          "id": "2",
+          "name": "Marco Cuadrado Redondo",
+          "checked": false,
+          "asistant_type": "Label",
+          "asistant_type2": "Label",
+          "afilation_number": "123456"
+        }
+      ],
+      "cancel_passenger_trip": [
+        {
+          "id": "1",
+          "name": "Luis Augusto Coro",
+          "type": "Adulto",
+          "isHolder": true,
+          "checked": true,
+          "cancel_motive": "Label"
+        },
+        {
+          "id": "2",
+          "name": "Marco Cuadrado Redondo",
+          "type": "Adulto",
+          "isHolder": false,
+          "checked": false,
+          "cancel_motive": "Label"
+        },
+        {
+          "id": "3",
+          "name": "Marco Cuadrado Redondo",
+          "type": "Adulto",
+          "isHolder": false,
+          "checked": false,
+          "cancel_motive": "Label"
+        },
+        {
+          "id": "4",
+          "name": "Marco Cuadrado Redondo",
+          "type": "Adulto",
+          "isHolder": false,
+          "checked": false,
+          "cancel_motive": "Label"
+        }
+      ]
+    },
+    "pets_management": {
+      "change_accomodation": [
+        {
+          "id": "1",
+          "name": "Luna",
+          "type": "Perro grande",
+          "accomodation_change_enabled": true,
+          "accomodation": {
+            "default": {
+              "id": 0,
+              "name": "Habitáculo Mascotes",
+              "accId": "habitaculo_mascotas",
+              "price": "125",
+              "checked": true
+            }, 
+            "premium": {
+              "id": 0,
+              "name": "Butaca Petfriendly",
+              "accId": "butaca_petfriendly",
+              "price": "250",
+              "checked": false
+            }
+          }
+        },
+        {
+          "id": "2",
+          "name": "Luna",
+          "type": "Gato",
+          "accomodation_change_enabled": false,
+          "accomodation": {
+            "default": {
+              "id": 0,
+              "name": "Habitáculo Mascotes",
+              "accId": "habitaculo_mascotas",
+              "price": "75",
+              "checked": true
+            }, 
+            "premium": {
+              "id": 0,
+              "name": "Butaca Petfriendly",
+              "accId": "butaca_petfriendly",
+              "price": "150",
+              "checked": false
+            }
+          }
+        }
+      ],
+      "add_pets": {
+        "small": 3,
+        "big": 0
+      },
+      "cancel_pets_trip": [
+        {
+          "id": "1",
+          "name": "Luna",
+          "type": "Perro grande",
+          "checked": true,
+          "cancel_motive": "Label"
+        },
+        {
+          "id": "2",
+          "name": "Luna",
+          "type": "Gato",
+          "checked": false,
+          "cancel_motive": "Label"
+        }
+      ]
+    },
+    "vehicle_management": {
+      "update_plate": [
+        {
+          "id": "1",
+          "type": "vehiculo",
+          "plate": "2342BZ"
+        },
+        {
+          "id": "2",
+          "type": "remolque",
+          "plate": "3342BZ"
+        }
+      ],
+
+      "change_vehicle": {
+        "id": "1",
+        "type": "Coche o furgoneta",
+        "branch": "Label",
+        "modelo": "Label",
+        "plate": "3342BZ",
+        "checked": true,
+        "options": [
+          {
+            "id": 1,
+            "description": "Menos de 2m de altura",
+            "checked": true
+          },
+          {
+            "id": 2,
+            "description": "Más de 2m de altura",
+            "checked": false
+          }
+        ]
+      },
+      "cancel_vehicle_trip": [
+        {
+          "id": "1",
+          "type": "Coche o furgoneta",
+          "plate": "3342BZ",
+          "checked": true,
+          "cancel_motive": "Label"
+        },
+        {
+          "id": "2",
+          "type": "Coche o furgoneta",
+          "plate": "3342BZ",
+          "checked": false,
+          "cancel_motive": "Label"
+        }
+      ],
+      "trailer": {
+        "checked": true,
+        "options": [
+          {
+            "id": 1,
+            "description": "Menos de 2m de altura",
+            "checked": true
+          },
+          {
+            "id": 2,
+            "description": "Más de 2m de altura",
+            "checked": false
+          }
+        ]
+      }
+    },
+    "extras_service_management": {
+      "restaurant_bonus": [
+        {
+          "id": "1",
+          "name": "Bono restaurante",
+          "price": "30",
+          "checked": false,
+          "cancel_motive": "Label"
+        }
+      ],
+      "menu_boarding": [
+        {
+          "id": "1",
+          "name": "Combo desayuno",
+          "quantity": "1",
+          "checked": false,
+          "cancel_motive": "Ya no lo necesito"
+        },
+        {
+          "id": "2",
+          "name": "Combo bocadillo + bebida",
+          "quantity": "1",
+          "checked": false,
+          "cancel_motive": "Ya no lo necesito"
+        }
+      ],
+      "parking": {
+        "id": "1",
+        "name": "Parking en el puerto",
+        "days": "2",
+        "checked": false,
+        "cancel_motive": "Label"
+      },
+      "bus_ticket": [
+        {
+          "id": "1",
+          "name": "Ruta azul",
+          "quantity": "1",
+          "checked": false,
+          "cancel_motive": "Label"
+        },
+        {
+          "id": "2",
+          "name": "Ruta azul",
+          "quantity": "1",
+          "checked": false,
+          "cancel_motive": "Label"
+        }
+      ],
+      "bus_free_ticket": [
+        {
+          "id": "1",
+          "name": "Bus gratuito a ",
+          "checked": false,
+          "cancel_motive": "Label"
+        }
+      ]
+    }
+  },
+  "amounts": {
+    "total": 1200,
+    "return": 200
+  }
+}

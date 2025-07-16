@@ -1,0 +1,72 @@
+.box--select-card {
+  padding-left: 0;
+  padding-right: 0;
+  .box-card-top {
+    @include large {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  .box-card-bottom {
+    padding-top: 22px;
+    margin-top: 16px;
+    display: none;
+    @include large {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    &.active {
+      display: block;
+    }
+    .close {
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      color: $green-main;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration: none;
+      margin-bottom: 22px;
+
+      > * {
+        display: inline-flex;
+      }
+    }
+    .close__icon {
+      font-size: 20px;
+      margin-left: 12px;
+      display: block;
+    }
+  }
+  &.alternativa {
+    .first {
+      border-radius: 0px 0px 8px 8px;
+      @include mobile {
+        padding-left: 8px;
+      }
+    }
+    .small-bg {
+      background-color: $gray-dark;
+      padding: 4px 0;
+    }
+    .text-alternativa {
+      background-color: $green-3;
+      color: $white;
+      border-radius: 0px 0px 8px 8px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12.44px;
+      padding: 4px 0;
+      @include mediaq-max(767px) {
+        font-size: 11.06px;
+        line-height: 13px;
+      }
+    }
+  }
+}

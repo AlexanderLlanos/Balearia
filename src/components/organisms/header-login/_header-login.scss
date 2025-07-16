@@ -1,0 +1,16 @@
+.g-header {
+  &.g-header--small {
+    height: 57px;
+    .close {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $white;
+      z-index: 1;
+      font-size: 20px;
+    }
+  }
+}

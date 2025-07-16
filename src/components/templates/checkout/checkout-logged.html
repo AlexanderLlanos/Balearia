@@ -1,0 +1,2274 @@
+<section class="g-header--fixed">
+  <div class="g-header g-header--button g-header--button-lg">
+    <div class="o-container u-d-flex u-align-items-center u-justify-content-center u-h--100">
+      <div class="g-header__back u-d-flex u-align-items-center u-justify-content-start u-w--100 desktop-none">
+        <i class="icon-arrow-left2 back o-mr--3"></i>
+        <p class="title">Ya casi estás, finaliza tu reserva</p>
+      </div>
+      <p class="g-header__text u-d-flex u-align-items-center mobile-none">
+        <i class="icon-lock icon o-mr--1"></i> Pago 100% seguro
+      </p>
+      <div class="g-header__logo mobile-none">
+        <a href="javascript:void(0)" class="u-text--no-underline">
+          <img src="../../../assets/img/logo.svg" alt="logo" class="img" />
+        </a>
+      </div>
+      <div class="g-header__item g-header__btn-box">
+        <div class="g-header--button g-header__btn u-border--bottom-0">
+          <div class="g-header__item g-header__btn-box o-ml-lg--2">
+            <div class="u-d-flex g-header--logado__agency">
+              <div class="g-header--logado__favi">
+                <span>M</span>
+              </div>
+              <div class="g-header--logado__info o-ml--1">
+                <p class="g-header--logado__name">Mari Luz</p>
+                <div class="g-header--logado__date">
+                  <p class="u-font-weight-normal">Basic | 345 pts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section__fixed-wrapper u-bg--lighter">
+  <div class="o-container">
+    <div class="o-row">
+      <div class="o-col-24">
+        <div class="mobile-none">
+          <div class="g-back-btn o-pb--3 o-pt--6 u-border--bottom-gray">
+            <i class="g-back-btn--arrow icon-arrow-left2"></i>
+            <p class="g-back-btn--text">Ya casi estás, finaliza tu reserva</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section__fixed u-d-flex u-justify-content-between u-w--100 u-h--100">
+      <div class=".c-checkout-form section__fixed-scroll u-w--100">
+        <div class="box u-d-flex u-align-items-center u-justify-content-between o-mb--3 o-mt--3 o-mt-lg--0">
+          <div class="banner-information__info u-d-flex u-align-items-center">
+            <img class="o-pr--2" src="../../../assets/img/club.svg" alt="" />
+            <div>
+              <h2 class="banner-information__title u-text u-d-flex u-align-items-center">
+                ¡En esta reserva te llevas 300 puntos!
+              </h2>
+              <p class="banner-information__subtitle u-label">Pertenecer a Balearia Club siempre tiene recompensa</p>
+            </div>
+          </div>
+        </div>
+        <!-- Datos pasajeros -->
+        <div
+          class="box c-checkout-form__form-item g-dropdown-basic dropdown-list dropdown-collapse u-w--100 show"
+          data-element="passengers"
+        >
+          <button class="c-checkout-form__form-title g-dropdown-basic--btn u-text">1 · Datos de pasajeros</button>
+
+          <div class="box--sumary c-checkout-form__form-summary g-hidden">
+            <div class="box--sumary__title">
+              <p>1 · Pasajeros</p>
+            </div>
+            <div class="box--sumary__info"></div>
+            <div class="box--sumary__link u-d-none u-d-md-block">
+              <a class="g-link js-checkout-modify" data-trigger="checkout-modify">Modificar</a>
+            </div>
+          </div>
+
+          <div class="g-dropdown-basic--content">
+            <div class="g-dropdown-basic--bkg u-border--top-gray">
+              <form action="" class="js-checkout-form__step g-dropdown--form-checkout" id="js-form-checkout-passengers">
+                <div class="o-row o-mt--1">
+                  <div class="o-col-24 o-mb--3">
+                    <div class="g-calendar--check">
+                      <label class="control control--checkbox"
+                        >Todos los pasajeros de la reserva son Residentes en Baleares
+                        <a
+                          class="g-link"
+                          data-micromodal-trigger="modal-checkout-residentes"
+                          href="javascript:void(0);"
+                        >
+                          <i class="icon-info tooltips tooltip--with-hover u-text--secondary"></i>
+                        </a>
+                        <input type="checkbox" data-check="passengers-all-residents" />
+                        <div class="control__indicator"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pasajero 1 - Adulto Titular -->
+                <div class="o-row o-mb--4 o-mb-lg--5">
+                  <div class="o-col-24 margin-responsive">
+                    <h3 class="box--title">
+                      Pasajero 1 <span class="box--text box--text-light o-ml--3">Adulto | Titular de la reserva</span>
+                    </h3>
+                  </div>
+                  <input id="checkoutForm-passenger-type-1" name="passenger-type-1" type="hidden" value="adult" />
+                  <div class="o-col-md-12 u-d-flex" id="checkoutForm-passenger-gender-1">
+                    <label class="g-radiobtn o-mr--3">
+                      Hombre
+                      <input type="radio" name="passenger-gender-1" value="male" checked />
+                      <span class="g-radiobtn--checkmark"></span>
+                    </label>
+                    <label class="g-radiobtn o-mr--3">
+                      Mujer
+                      <input type="radio" name="passenger-gender-1" value="female" />
+                      <span class="g-radiobtn--checkmark"></span>
+                    </label>
+                    <label class="g-radiobtn">
+                      Otro
+                      <input type="radio" name="passenger-gender-1" value="other-gender" />
+                      <span class="g-radiobtn--checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="o-row">
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="passenger-name-1"
+                        placeholder=" "
+                        id="checkoutForm-passenger-name-1"
+                      />
+                      <label>Nombre</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="passenger-surname1-1"
+                        placeholder=" "
+                        id="checkoutForm-passenger-surname1-1"
+                      />
+                      <label>Primer apellido</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="passenger-surname2-1"
+                        placeholder=" "
+                        id="checkoutForm-passenger-surname2-1"
+                      />
+                      <label>Segundo apellido</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 o-col-lg-10 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="passenger-email-1"
+                        placeholder=" "
+                        id="checkoutForm-passenger-email-1"
+                      />
+                      <label>Email</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row">
+                  <div class="o-col-md-12 o-col-lg-9 margin-responsive col-size-tablet">
+                    <div class="select-input u-w--100">
+                      <select
+                        class="form__select"
+                        name="passenger-phonePrefix-1"
+                        id="checkoutForm-passenger-phonePrefix-1"
+                        required
+                      >
+                        <option value="" selected>+...</option>
+                        <option value="+34">+34</option>
+                        <option value="+58">+58</option>
+                        <option value="+51">+51</option>
+                        <option value="+56">+56</option>
+                      </select>
+                      <div class="form__input-wrapper u-w--100">
+                        <input
+                          class="g-input form__input"
+                          type="text"
+                          name="passenger-phone-1"
+                          placeholder=" "
+                          id="checkoutForm-passenger-phone-1"
+                        />
+                        <label>Teléfono</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row">
+                  <div class="o-col-md-12 o-col-lg-9 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <select
+                        class="form__select"
+                        name="passenger-nationality-1"
+                        id="checkoutForm-passenger-nationality-1"
+                        required
+                      >
+                        <option value="" selected></option>
+                        <option value="spanish">Española</option>
+                        <option value="Pais 2">Label</option>
+                        <option value="Pais 3">Label</option>
+                      </select>
+                      <label>Nacionalidad</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 o-col-lg-15 u-d-flex u-align-items-center col-size-tablet">
+                    <div class="g-calendar--check">
+                      <label class="control control--checkbox"
+                        >Aplicar nacionalidad al resto de pasajeros
+                        <input type="checkbox" data-check="spread-nationality" />
+                        <div class="control__indicator"></div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive col-size-tablet">
+                    <div class="select-input u-w--100">
+                      <select
+                        class="form__select"
+                        name="passenger-idDocType-1"
+                        id="checkoutForm-passenger-idDocType-1"
+                        required
+                      >
+                        <option value="nif" selected>DNI</option>
+                        <option value="nie">NIE</option>
+                        <option value="no-document">Sin documento</option>
+                      </select>
+                      <div class="form__input-wrapper u-w--100">
+                        <input
+                          class="g-input form__input"
+                          type="text"
+                          name="passenger-idNumber-1"
+                          placeholder=" "
+                          id="checkoutForm-passenger-idNumber-1"
+                        />
+                        <label>Documento de identidad</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input js-input-textdate"
+                        type="text"
+                        name="passenger-idExpireDate-1"
+                        placeholder=" "
+                        id="checkoutForm-passenger-idExpireDate-1"
+                      />
+                      <label>Caducidad del documento</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row">
+                  <div class="o-col-md-12 o-col-lg-6 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input js-input-textdate"
+                        type="text"
+                        name="passenger-birthday-1"
+                        placeholder=" "
+                        id="checkoutForm-passenger-birthday-1"
+                      />
+                      <label>Fecha de nacimiento</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row o-mb--2">
+                  <div class="o-col-xs-23 o-col-sm-23 o-col-md-12 o-col-lg-9 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="bigFamily-id"
+                        placeholder=" "
+                        id="checkoutForm-bigFamily-id"
+                      />
+                      <label>Titulo de famila numerosa</label>
+                    </div>
+                  </div>
+                  <div class="o-col-1 o-p--0 margin-responsive u-align-self-center">
+                    <a class="g-link" data-micromodal-trigger="modal-checkout-bonificacion" href="javascript:void(0);">
+                      <i class="icon-info tooltips tooltip--with-hover u-text--secondary"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="o-row o-mb--2">
+                  <div class="o-col-24 margin-responsive">
+                    <p class="o-mr--2">Información sobre residente</p>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <select class="form__select">
+                        <option value=""></option>
+                        <option value="">Española</option>
+                        <option value="">Label</option>
+                        <option value="">Label</option>
+                      </select>
+                      <label>Localidad</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <select class="form__select">
+                        <option value=""></option>
+                        <option value="">Española</option>
+                        <option value="">Label</option>
+                        <option value="">Label</option>
+                      </select>
+                      <label>Tipo de documento acreditativo</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-mb--2" data-element="special-assistance">
+                  <div class="c-check-accordion__header">
+                    <div class="g-calendar--check">
+                      <label class="control control--checkbox"
+                        >¿Necesitas asistencia especial?
+                        <input type="checkbox" data-trigger="special-assistance" />
+                        <div class="control__indicator"></div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="c-check-accordion__content" data-passenger-id="1">
+                    <div class="o-row">
+                      <div class="o-col-md-12 o-col-lg-10 margin-responsive col-size-tablet">
+                        <div class="form__input-wrapper u-w--100">
+                          <select
+                            class="form__select"
+                            id="checkoutForm-passenger-assistanceType-1"
+                            name="passenger-assistanceType-1"
+                            required
+                          >
+                            <option value=""></option>
+                            <option value="persona_mayor">Persona mayor</option>
+                            <option value="discapacitado_visual">Discapacidad visual</option>
+                            <option value="discapacitado_auditivo">Discapacidad auditiva</option>
+                            <option value="discapacitado_sillaDeRuedas">Discapacidad: Silla de ruedas</option>
+                            <option value="discapacitado_psiquicaIntelectual">Discapacidad psíquica/intelectual</option>
+                            <option value="discapacitado_otras">Otra discapacidad</option>
+                            <option value="embarazada">Embarazada</option>
+                            <option value="movilidad_reducida">Movilidad reducida temporal</option>
+                            <option value="otra">Otra</option>
+                          </select>
+                          <label>Selecciona tipo de assitencia</label>
+                        </div>
+                      </div>
+                      <div
+                        class="o-col-md-12 o-col-lg-8 margin-responsive u-d-flex u-align-items-center col-size-tablet"
+                        data-element="assistance-info"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Banner club -->
+                <div
+                  class="box--line banner-information banner-information--small banner--checkout u-d-flex u-justify-content-between o-mb--3"
+                >
+                  <div class="banner-information__info u-d-md-flex u-align-items-start u-w--100 u-flex-wrap">
+                    <img
+                      class="o-mr--2 banner-information__icon banner-information__icon--svg"
+                      src="./../../../assets/img/club.svg"
+                      alt=""
+                    />
+                    <div class="banner-information__title-box">
+                      <h2 class="banner-information__title u-text u-d-flex u-align-items-center">
+                        <span>
+                          Únete al Balearia Club y consigue 54 puntos
+                          <i class="icon-info tooltips tooltip--with-hover o-ml--1"></i>
+                        </span>
+                      </h2>
+                      <p class="banner-information__subtitle u-label">
+                        Promociones, descuentos, regalo de cumpleaños y mucho más
+                      </p>
+                    </div>
+                  </div>
+                  <div class="banner-information__content">
+                    <p class="banner-information__subtitle u-label o-mb--2">
+                      Crea una contraseña para poder entrar en tu cuenta de Balearia Club
+                    </p>
+                    <div class="form__input-wrapper form__icon-right o-mb--1">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        placeholder=" "
+                        name="baleariaClub-password"
+                        id="checkoutForm-baleariaClub-password"
+                        pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+                      />
+                      <label>Contraseña</label>
+                      <i class="icon-eye-hide u-text--black"></i>
+                    </div>
+                    <p class="u-help u-text--gray-light o-mb--2">
+                      Mínimo 8 carácteres, un número, una letra mayúscula y algún símbolo
+                    </p>
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input js-input-textdate"
+                        type="text"
+                        name="baleariaClub-idExpireDate"
+                        placeholder=" "
+                        id="checkoutForm-baleariaClub-idExpireDate"
+                      />
+                      <label>Caducidad</label>
+                    </div>
+                  </div>
+                  <div class="banner-information__action">
+                    <label class="g-switch g-switch--second">
+                      <input type="checkbox" data-trigger="baleariaClub-toggle" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="box--line banner-information banner-information--small banner--checkout u-d-flex u-align-items-center u-justify-content-between o-mb--3"
+                >
+                  <div class="banner-information__info u-d-md-flex u-align-items-start u-w--100 u-flex-wrap">
+                    <img
+                      class="o-mr--2 banner-information__icon banner-information__icon--svg"
+                      src="./../../../assets/img/wsp.svg"
+                      alt=""
+                    />
+                    <div class="banner-information__title-box">
+                      <h2 class="banner-information__title u-text u-d-flex u-align-items-center">
+                        <span>
+                          Recibe tu tarjeta de embarque por Whatsapp gratis
+                          <i class="icon-info tooltips tooltip--with-hover o-ml--1"></i>
+                        </span>
+                      </h2>
+                      <p class="banner-information__subtitle u-label">
+                        Recibe tu tarjeta de embarque por Whatsapp gratis
+                      </p>
+                    </div>
+                  </div>
+                  <div class="banner-information__content">
+                    <p class="banner-information__subtitle u-label o-mb--2">
+                      ¿En qué teléfono quieres recibir la tarjeta de embarque?
+                    </p>
+                    <div class="select-input u-w--100">
+                      <select
+                        class="form__select"
+                        name="boardingPass-phonePrefix"
+                        id="checkoutForm-boardingPassWatsapp-phonePrefix"
+                        required
+                      >
+                        <option value="" selected>+...</option>
+                        <option value="+34">+34</option>
+                        <option value="+58">+58</option>
+                        <option value="+51">+51</option>
+                        <option value="+56">+56</option>
+                      </select>
+                      <div class="form__input-wrapper u-w--100">
+                        <input
+                          class="g-input form__input"
+                          type="text"
+                          name="boardingPass-phone"
+                          placeholder=" "
+                          id="checkoutForm-boardingPassWatsapp-phone"
+                        />
+                        <label>Teléfono</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner-information__action">
+                    <label class="g-switch g-switch--second">
+                      <input type="checkbox" data-trigger="watsapp-toggle" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Pasajero 2 - Adulto -->
+                <div class="o-row o-mb--5 o-mt-4">
+                  <div class="o-col-24 margin-responsive">
+                    <h3 class="box--title">Pasajero 2 <span class="box--text box--text-light o-ml--3">Adulto</span></h3>
+                  </div>
+                  <!-- Autofill -->
+                  <div class="js-checkout__autofill-passenger o-col-md-24" data-passenger-id="2">
+                    <div class="collapse u-w--100 o-mb--3">
+                      <div class="collapse__header u-d-flex u-align-items-center u-justify-content-start">
+                        <span class="u-d-flex u-align-items-center">
+                          <span class="icon-info g-icon--medium o-mr--1"></span>
+                          <span class="g-dropdown-basic__border--title">Autorrellenar con compañeros de viaje</span>
+                        </span>
+                        <i class="icon-arrow-down collapse__icon u-cursor-pointer o--ml-2"></i>
+                      </div>
+                      <div class="collapse__content o-pt--4">
+                        <div class="o-row">
+                          <div class="o-col-md-12 o-mb--2">
+                            <div class="js-autofill__btn-fill-passenger box--funel" data-id="savedPassengerId1">
+                              <label class="control control--checkbox">
+                                <span class="box--funel__text">Juan Perez Perez</span>
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                              </label>
+                              <i class="js-autofill__btn-clear box--funel__close icon-close g-hidden"></i>
+                            </div>
+                          </div>
+                          <div class="o-col-md-12 o-mb--2">
+                            <div class="js-autofill__btn-fill-passenger box--funel" data-id="savedPassengerId2">
+                              <label class="control control--checkbox">
+                                <span class="box--funel__text">María Fernandez Bautista</span>
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                              </label>
+                              <i class="js-autofill__btn-clear box--funel__close icon-close g-hidden"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <input id="checkoutForm-passenger-type-2" name="passenger-type-2" type="hidden" value="adult" />
+                  <div class="o-col-md-12 u-d-flex" id="checkoutForm-passenger-gender-2">
+                    <label class="g-radiobtn o-mr--3">
+                      Hombre
+                      <input type="radio" name="passenger-gender-2" value="male" checked />
+                      <span class="g-radiobtn--checkmark"></span>
+                    </label>
+                    <label class="g-radiobtn o-mr--3">
+                      Mujer
+                      <input type="radio" name="passenger-gender-2" value="female" />
+                      <span class="g-radiobtn--checkmark"></span>
+                    </label>
+                    <label class="g-radiobtn">
+                      Otro
+                      <input type="radio" name="passenger-gender-2" value="other-gender" />
+                      <span class="g-radiobtn--checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="o-row">
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="passenger-name-2"
+                        placeholder=" "
+                        id="checkoutForm-passenger-name-2"
+                      />
+                      <label>Nombre</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="passenger-surname1-2"
+                        placeholder=" "
+                        id="checkoutForm-passenger-surname1-2"
+                      />
+                      <label>Primer apellido</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="passenger-surname2-2"
+                        placeholder=" "
+                        id="checkoutForm-passenger-surname2-2"
+                      />
+                      <label>Segundo apellido</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row">
+                  <div class="o-col-md-12 o-col-lg-9 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <select
+                        class="form__select"
+                        name="passenger-nationality-2"
+                        id="checkoutForm-passenger-nationality-2"
+                        required
+                      >
+                        <option value="" selected></option>
+                        <option value="spanish">Española</option>
+                        <option value="Pais 2">Label</option>
+                        <option value="Pais 3">Label</option>
+                      </select>
+                      <label>Nacionalidad</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row">
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive">
+                    <div class="select-input u-w--100">
+                      <select
+                        class="form__select"
+                        name="passenger-idDocType-2"
+                        id="checkoutForm-passenger-idDocType-2"
+                        required
+                      >
+                        <option value="nif" selected>DNI</option>
+                        <option value="nie">NIE</option>
+                        <option value="no-document">Sin documento</option>
+                      </select>
+                      <div class="form__input-wrapper u-w--100">
+                        <input
+                          class="g-input form__input"
+                          type="text"
+                          name="passenger-idNumber-2"
+                          placeholder=" "
+                          id="checkoutForm-passenger-idNumber-2"
+                        />
+                        <label>Documento de identidad</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input js-input-textdate"
+                        type="text"
+                        name="passenger-idExpireDate-2"
+                        placeholder=" "
+                        id="checkoutForm-passenger-idExpireDate-2"
+                      />
+                      <label>Caducidad del documento</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row o-mb--2">
+                  <div class="o-col-md-12 o-col-lg-9 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input js-input-textdate"
+                        type="text"
+                        name="passenger-birthday-2"
+                        placeholder=" "
+                        id="checkoutForm-passenger-birthday-2"
+                      />
+                      <label>Fecha de nacimiento</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row o-mb--2">
+                  <div class="o-col-24 margin-responsive">
+                    <p class="o-mr--2">Información sobre residente</p>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <select class="form__select">
+                        <option value=""></option>
+                        <option value="">Española</option>
+                        <option value="">Label</option>
+                        <option value="">Label</option>
+                      </select>
+                      <label>Localidad</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <select class="form__select">
+                        <option value=""></option>
+                        <option value="">Española</option>
+                        <option value="">Label</option>
+                        <option value="">Label</option>
+                      </select>
+                      <label>Tipo de documento acreditativo</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-mb--2" data-element="special-assistance">
+                  <div class="c-check-accordion__header">
+                    <div class="g-calendar--check">
+                      <label class="control control--checkbox"
+                        >¿Necesitas asistencia especial?
+                        <input type="checkbox" data-trigger="special-assistance" />
+                        <div class="control__indicator"></div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="c-check-accordion__content" data-passenger-id="2">
+                    <div class="o-row">
+                      <div class="o-col-md-12 o-col-lg-10 margin-responsive col-size-tablet">
+                        <div class="form__input-wrapper u-w--100">
+                          <select
+                            class="form__select"
+                            id="checkoutForm-passenger-assistanceType-2"
+                            name="passenger-assistanceType-2"
+                            required
+                          >
+                            <option value=""></option>
+                            <option value="persona_mayor">Persona mayor</option>
+                            <option value="discapacitado_visual">Discapacidad visual</option>
+                            <option value="discapacitado_auditivo">Discapacidad auditiva</option>
+                            <option value="discapacitado_sillaDeRuedas">Discapacidad: Silla de ruedas</option>
+                            <option value="discapacitado_psiquicaIntelectual">Discapacidad psíquica/intelectual</option>
+                            <option value="discapacitado_otras">Otra discapacidad</option>
+                            <option value="embarazada">Embarazada</option>
+                            <option value="movilidad_reducida">Movilidad reducida temporal</option>
+                            <option value="otra">Otra</option>
+                          </select>
+                          <label>Selecciona tipo de assitencia</label>
+                        </div>
+                      </div>
+                      <div
+                        class="o-col-md-12 o-col-lg-8 margin-responsive u-d-flex u-align-items-center col-size-tablet"
+                        data-element="assistance-info"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-mb--2 u-d-flex u-align-items-center g-hidden" data-element="save-passenger">
+                  <div class="g-calendar--check">
+                    <label class="control control--checkbox"
+                      >Guardar pasajero como favorito para futuras reservas
+                      <i class="icon-info tooltips tooltip--with-hover u-text--secondary"></i>
+                      <input
+                        type="checkbox"
+                        name="passenger-savePassenger-2"
+                        id="checkoutForm-passenger-savePassenger-2"
+                      />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Pasajero 3 - senior -->
+                <div class="o-row o-mb--5 o-mt-4">
+                  <div class="o-col-24 margin-responsive">
+                    <h3 class="box--title">
+                      Pasajero 3 <span class="box--text box--text-light o-ml--3">Senior (más de 60 años)</span>
+                    </h3>
+                  </div>
+                  <!-- Autofill -->
+                  <div class="js-checkout__autofill-passenger o-col-md-24" data-passenger-id="3">
+                    <div class="collapse u-w--100 o-mb--3">
+                      <div class="collapse__header u-d-flex u-align-items-center u-justify-content-start">
+                        <span class="u-d-flex u-align-items-center">
+                          <span class="icon-info g-icon--medium o-mr--1"></span>
+                          <span class="g-dropdown-basic__border--title">Autorrellenar con compañeros de viaje</span>
+                        </span>
+                        <i class="icon-arrow-down collapse__icon u-cursor-pointer o--ml-2"></i>
+                      </div>
+                      <div class="collapse__content o-pt--4">
+                        <div class="o-row">
+                          <div class="o-col-md-12 o-mb--2">
+                            <div class="js-autofill__btn-fill-passenger box--funel" data-id="savedPassengerId1">
+                              <label class="control control--checkbox">
+                                <span class="box--funel__text">Juan Perez Perez</span>
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                              </label>
+                              <i class="js-autofill__btn-clear box--funel__close icon-close g-hidden"></i>
+                            </div>
+                          </div>
+                          <div class="o-col-md-12 o-mb--2">
+                            <div class="js-autofill__btn-fill-passenger box--funel" data-id="savedPassengerId2">
+                              <label class="control control--checkbox">
+                                <span class="box--funel__text">María Fernandez Bautista</span>
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                              </label>
+                              <i class="js-autofill__btn-clear box--funel__close icon-close g-hidden"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <input id="checkoutForm-passenger-type-3" name="passenger-type-3" type="hidden" value="senior60" />
+                  <div class="o-col-md-12 u-d-flex" id="checkoutForm-passenger-gender-3">
+                    <label class="g-radiobtn o-mr--3">
+                      Hombre
+                      <input type="radio" name="passenger-gender-3" value="male" checked />
+                      <span class="g-radiobtn--checkmark"></span>
+                    </label>
+                    <label class="g-radiobtn o-mr--3">
+                      Mujer
+                      <input type="radio" name="passenger-gender-3" value="female" />
+                      <span class="g-radiobtn--checkmark"></span>
+                    </label>
+                    <label class="g-radiobtn">
+                      Otro
+                      <input type="radio" name="passenger-gender-3" value="other-gender" />
+                      <span class="g-radiobtn--checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="o-row">
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="passenger-name-3"
+                        placeholder=" "
+                        id="checkoutForm-passenger-name-3"
+                      />
+                      <label>Nombre</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="passenger-surname1-3"
+                        placeholder=" "
+                        id="checkoutForm-passenger-surname1-3"
+                      />
+                      <label>Primer apellido</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="passenger-surname2-3"
+                        placeholder=" "
+                        id="checkoutForm-passenger-surname2-3"
+                      />
+                      <label>Segundo apellido</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row">
+                  <div class="o-col-md-12 o-col-lg-9 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <select
+                        class="form__select"
+                        name="passenger-nationality-3"
+                        id="checkoutForm-passenger-nationality-3"
+                        required
+                      >
+                        <option value="" selected></option>
+                        <option value="spanish">Española</option>
+                        <option value="Pais 2">Label</option>
+                        <option value="Pais 3">Label</option>
+                      </select>
+                      <label>Nacionalidad</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row">
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive">
+                    <div class="select-input u-w--100">
+                      <select
+                        class="form__select"
+                        name="passenger-idDocType-3"
+                        id="checkoutForm-passenger-idDocType-3"
+                        required
+                      >
+                        <option value="nif" selected>DNI</option>
+                        <option value="nie">NIE</option>
+                        <option value="no-document">Sin documento</option>
+                      </select>
+                      <div class="form__input-wrapper u-w--100">
+                        <input
+                          class="g-input form__input"
+                          type="text"
+                          name="passenger-idNumber-3"
+                          placeholder=" "
+                          id="checkoutForm-passenger-idNumber-3"
+                        />
+                        <label>Documento de identidad</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 o-col-lg-8 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input js-input-textdate"
+                        type="text"
+                        name="passenger-idExpireDate-3"
+                        placeholder=" "
+                        id="checkoutForm-passenger-idExpireDate-3"
+                      />
+                      <label>Caducidad del documento</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row o-mb--2">
+                  <div class="o-col-md-12 o-col-lg-9 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input js-input-textdate"
+                        type="text"
+                        name="passenger-birthday-3"
+                        placeholder=" "
+                        id="checkoutForm-passenger-birthday-3"
+                      />
+                      <label>Fecha de nacimiento</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row o-mb--2">
+                  <div class="o-col-24 margin-responsive">
+                    <p class="o-mr--2">Información sobre residente</p>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <select class="form__select">
+                        <option value=""></option>
+                        <option value="">Española</option>
+                        <option value="">Label</option>
+                        <option value="">Label</option>
+                      </select>
+                      <label>Localidad</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive col-size-tablet">
+                    <div class="form__input-wrapper">
+                      <select class="form__select">
+                        <option value=""></option>
+                        <option value="">Española</option>
+                        <option value="">Label</option>
+                        <option value="">Label</option>
+                      </select>
+                      <label>Tipo de documento acreditativo</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-mb--2" data-element="special-assistance">
+                  <div class="c-check-accordion__header">
+                    <div class="g-calendar--check">
+                      <label class="control control--checkbox"
+                        >¿Necesitas asistencia especial?
+                        <input type="checkbox" data-trigger="special-assistance" />
+                        <div class="control__indicator"></div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="c-check-accordion__content" data-passenger-id="3">
+                    <div class="o-row">
+                      <div class="o-col-md-12 o-col-lg-10 margin-responsive col-size-tablet">
+                        <div class="form__input-wrapper u-w--100">
+                          <select
+                            class="form__select"
+                            id="checkoutForm-passenger-assistanceType-3"
+                            name="passenger-assistanceType-3"
+                            required
+                          >
+                            <option value=""></option>
+                            <option value="persona_mayor">Persona mayor</option>
+                            <option value="discapacitado_visual">Discapacidad visual</option>
+                            <option value="discapacitado_auditivo">Discapacidad auditiva</option>
+                            <option value="discapacitado_sillaDeRuedas">Discapacidad: Silla de ruedas</option>
+                            <option value="discapacitado_psiquicaIntelectual">Discapacidad psíquica/intelectual</option>
+                            <option value="discapacitado_otras">Otra discapacidad</option>
+                            <option value="embarazada">Embarazada</option>
+                            <option value="movilidad_reducida">Movilidad reducida temporal</option>
+                            <option value="otra">Otra</option>
+                          </select>
+                          <label>Selecciona tipo de assitencia</label>
+                        </div>
+                      </div>
+                      <div
+                        class="o-col-md-12 o-col-lg-8 margin-responsive u-d-flex u-align-items-center col-size-tablet"
+                        data-element="assistance-info"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-mb--2 u-d-flex u-align-items-center g-hidden" data-element="save-passenger">
+                  <div class="g-calendar--check">
+                    <label class="control control--checkbox"
+                      >Guardar pasajero como favorito para futuras reservas
+                      <i class="icon-info tooltips tooltip--with-hover u-text--secondary"></i>
+                      <input
+                        type="checkbox"
+                        name="passenger-savePassenger-3"
+                        id="checkoutForm-passenger-savePassenger-3"
+                      />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Save & continue -->
+                <div class="o-row">
+                  <div class="o-col-md-8">
+                    <button class="btn btn--primary u-w--100" type="submit" form="js-form-checkout-passengers">
+                      Guardar y continuar
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Datos de las mascotas -->
+        <div
+          class="box c-checkout-form__form-item g-dropdown-basic dropdown-list dropdown-collapse disabled u-w--100 o-mt--3"
+          data-element="pets"
+        >
+          <button class="c-checkout-form__form-title g-dropdown-basic--btn u-text">2 · Mascotas</button>
+
+          <div class="box--sumary c-checkout-form__form-summary g-hidden">
+            <div class="box--sumary__title">
+              <p>2 · Mascotas</p>
+            </div>
+            <div class="box--sumary__info"></div>
+            <div class="box--sumary__link u-d-none u-d-md-block">
+              <a class="g-link js-checkout-modify" data-trigger="checkout-modify">Modificar</a>
+            </div>
+          </div>
+
+          <div class="g-dropdown-basic--content">
+            <div class="g-dropdown-basic--bkg u-border--top-gray">
+              <form action="" class="js-checkout-form__step" id="js-form-checkout-pets">
+                <!-- Mascota 1 -->
+                <div class="o-row">
+                  <div class="o-col-24 margin-responsive">
+                    <h3 class="box--title">
+                      Mascota 1 <span class="box--text box--text-light o-ml--3 mobile-none">Grande, más de 10 kg</span>
+                    </h3>
+                  </div>
+                  <input id="checkoutForm-pet-size-1" name="pet-size-1" type="hidden" value="grande" />
+                  <div class="o-col-md-6 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <select class="form__select" name="pet-type-1" id="checkoutForm-pet-type-1" required>
+                        <option value="" selected></option>
+                        <option value="gato">Label</option>
+                        <option value="perro">Label</option>
+                        <option value="iguana">Label</option>
+                      </select>
+                      <label>Tipo de mascota</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-15 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="pet-name-1"
+                        id="checkoutForm-pet-name-1"
+                        placeholder=" "
+                      />
+                      <label>Nombre (opcional)</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Mascota 2 -->
+                <div class="o-row">
+                  <div class="o-col-24 margin-responsive">
+                    <h3 class="box--title">
+                      Mascota 2
+                      <span class="box--text box--text-light o-ml--3 mobile-none">Pequeña, menos de 10 kg</span>
+                    </h3>
+                  </div>
+                  <input id="checkoutForm-pet-size-2" name="pet-size-2" type="hidden" value="pequeño" />
+                  <div class="o-col-md-6 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <select class="form__select" name="pet-type-2" id="checkoutForm-pet-type-2" required>
+                        <option value="" selected></option>
+                        <option value="gato">Label</option>
+                        <option value="perro">Label</option>
+                        <option value="iguana">Label</option>
+                      </select>
+                      <label>Tipo de mascota</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-15 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="pet-name-2"
+                        id="checkoutForm-pet-name-2"
+                        placeholder=" "
+                      />
+                      <label>Nombre (opcional)</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row">
+                  <div class="o-col-md-8">
+                    <button class="btn btn--primary u-w--100" type="submit" form="js-form-checkout-pets">
+                      Guardar y continuar
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Datos de los vehículos -->
+        <div
+          class="box c-checkout-form__form-item g-dropdown-basic dropdown-list dropdown-collapse u-w--100 o-mt--3 disabled"
+          data-element="vehicles"
+        >
+          <button class="c-checkout-form__form-title g-dropdown-basic--btn u-text">3 · Datos de los vehículos</button>
+
+          <div class="box--sumary c-checkout-form__form-summary g-hidden">
+            <div class="box--sumary__title">
+              <p>3 · Vehículos</p>
+            </div>
+            <div class="box--sumary__info"></div>
+            <div class="box--sumary__link u-d-none u-d-md-block">
+              <a class="g-link js-checkout-modify" data-trigger="checkout-modify">Modificar</a>
+            </div>
+          </div>
+
+          <div class="g-dropdown-basic--content">
+            <div class="g-dropdown-basic--bkg u-border--top-gray">
+              <form action="" class="js-checkout-form__step" id="js-form-checkout-vehicles">
+                <div class="o-row">
+                  <div class="o-col-24 margin-responsive">
+                    <h3 class="box--title">
+                      Coche o Furgoneta
+                      <span class="box--text box--text-light o-ml--3 mobile-none" data-text="vehicle-model"
+                        >Modelo de vehículo</span
+                      >
+                    </h3>
+                  </div>
+                  <input id="checkoutForm-vehicle-type-1" name="vehicle-type-1" type="hidden" value="car_van" />
+                  <div class="o-col-md-12 o-col-lg-6 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        id="checkoutForm-vehicle-id-1"
+                        name="vehicle-id-1"
+                        placeholder=" "
+                      />
+                      <label>Matrícula coche</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 o-col-lg-6 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        id="checkoutForm-vehicle-trailerId-1"
+                        name="vehicle-trailerId-1"
+                        placeholder=" "
+                      />
+                      <label>Matrícula remolque</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-check-accordion__header">
+                  <div class="g-calendar--check">
+                    <label class="control control--checkbox"
+                      >¿Viajas con equipamiento adicional?
+                      <input type="checkbox" data-trigger="additional-equipment" />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="c-check-accordion__content" data-element="additional-equipment">
+                  <div class="o-row" data-equipment="0">
+                    <div class="o-col-md-12 o-col-lg-10 margin-responsive">
+                      <div class="form__input-wrapper">
+                        <input
+                          class="g-input form__input"
+                          id="checkoutForm-vehicle-additionalEquip-0"
+                          name="vehicle-additionalEquip-0"
+                          placeholder=" "
+                        />
+                        <label>Tipo de equipaje</label>
+                      </div>
+                    </div>
+                    <div class="o-col-sm-8 o-col-lg-8 margin-responsive u-d-flex u-align-items-center">
+                      <div class="form__input-wrapper u-w--100">
+                        <select
+                          class="form__select"
+                          id="checkoutForm-vehicle-equipQty-0"
+                          name="vehicle-equipQty-0"
+                          required
+                        >
+                          <option value="" selected></option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                        <label>Cantidad</label>
+                      </div>
+                      <div
+                        class="btn btn--secondary__ghost o-ml--2 btn--icon btn--icon__medium btn--medium"
+                        data-trigger="add-equipment"
+                      >
+                        <i class="icon-add"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-row">
+                  <div class="o-col-md-10 o-col-lg-8">
+                    <button class="btn btn--primary u-w--100" type="submit" form="js-form-checkout-vehicles">
+                      Guardar y continuar
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Datos del pago -->
+        <div
+          class="box c-checkout-form__form-item g-dropdown-basic dropdown-list dropdown-collapse u-w--100 o-mt--3 disabled"
+          data-element="payment"
+        >
+          <button class="g-dropdown-basic--btn u-text">4 · Datos de pago</button>
+          <div class="g-dropdown-basic--content">
+            <div
+              class="banner-information banner-information--xsmall u-border--top-gray o-py--1"
+              data-element="promo-code"
+            >
+              <div class="collapse">
+                <div class="collapse__header u-d-flex u-align-items-center u-justify-content-between">
+                  <span class="g-link u-d-flex u-align-items-center"
+                    ><i class="icon-discount o-mr--1"></i> Tengo un código promocional</span
+                  >
+                  <i class="icon-arrow-down collapse__icon u-cursor-pointer"></i>
+                </div>
+                <div class="collapse__content">
+                  <div class="o-row o-mt--3">
+                    <div class="o-col-lg-24 u-d-lg-flex u-align-items-center u-justify-content-md-between">
+                      <div class="form__input-wrapper u-w--100 margin-mobile">
+                        <input class="g-input form__input" type="text" name="promo-code" placeholder=" " />
+                        <label>Introduce código promocional</label>
+                      </div>
+                      <button class="btn btn--primary btn--medium collapse__btn" data-trigger="apply-promo-code">
+                        Aplicar código
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="u-d-flex u-align-items-center g-hidden" data-element="promo-code-success">
+                <div class="banner-information__info u-d-flex u-align-items-center u-justify-content-between u-w--100">
+                  <div class="u-d-flex u-align-items-md-center">
+                    <i class="icon-discount o-mr--2 banner-information__icon u-text--secondary"></i>
+                    <h2 class="banner-information__title u-text">
+                      Código promocional aplicado:
+                      <span class="u-text--secondary" data-text="promo-code"> BALEARIA2020</span>
+                    </h2>
+                  </div>
+                  <div
+                    class="btn btn--secondary__ghost btn--icon btn--icon__medium btn--medium"
+                    data-trigger="remove-promo-code"
+                  >
+                    <i class="icon-trash"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Métodos de pago -->
+            <div class="js-checkout-form__step">
+              <div class="collapse--group" data-element="payment-methods">
+                <div class="collapse--group__item">
+                  <div class="collapse--group__header u-d-flex u-align-items-center u-justify-content-between">
+                    <div class="u-d-flex u-align-items-md-center">
+                      <label class="g-radiobtn"
+                        >Tarjeta bancaria
+                        <input
+                          type="radio"
+                          name="payment-accordion"
+                          checked
+                          id="payment-accordion-content-0"
+                          value="box-payment__card"
+                        />
+                        <span class="g-radiobtn--checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="u-d-flex">
+                      <img src="../../../assets/img/visa.svg" alt="visa" class="box-payment__card" />
+                      <img src="../../../assets/img/mastercard.svg" alt="mastercard" class="box-payment__card" />
+                      <img
+                        src="../../../assets/img/american-express.svg"
+                        alt="americanexpress"
+                        class="box-payment__card"
+                      />
+                    </div>
+                  </div>
+                  <div class="collapse--group__body box-payment__item active">
+                    <div class="item__content">
+                      <div class="o-row">
+                        <div class="o-col-lg-10 margin-responsive">
+                          <div class="form__input-wrapper">
+                            <input
+                              class="g-input form__input"
+                              type="text"
+                              name="payment-card-number"
+                              placeholder=" "
+                              data-input="payment-card-number"
+                            />
+                            <label>Número de la tarjeta</label>
+                          </div>
+                        </div>
+                        <div class="o-col-lg-14 margin-responsive">
+                          <div class="form__input-wrapper">
+                            <input class="g-input form__input" type="text" name="payment-card-owner" placeholder=" " />
+                            <label>Titular de la tarjeta</label>
+                          </div>
+                        </div>
+                        <div class="o-col-lg-6 margin-responsive">
+                          <div class="form__input-wrapper">
+                            <input
+                              class="g-input form__input"
+                              type="text"
+                              name="payment-card-expiry"
+                              placeholder=" "
+                              data-input="payment-card-expiry"
+                            />
+                            <label>Fecha de caducidad</label>
+                          </div>
+                        </div>
+                        <div class="o-col-lg-6 u-d-flex u-align-items-center margin-responsive">
+                          <div class="form__input-wrapper">
+                            <input
+                              class="g-input form__input"
+                              type="text"
+                              name="label"
+                              placeholder=" "
+                              data-input="payment-card-cvc"
+                            />
+                            <label>CVV</label>
+                          </div>
+                          <img src="../../../assets/img/card-cvv.svg" alt="cvv" class="o-ml--2" />
+                        </div>
+                      </div>
+                      <div class="o-row">
+                        <div class="o-col-lg-24 o-mb--2 o-mt--2">
+                          <div class="g-calendar--check">
+                            <label class="control control--checkbox"
+                              >Guardar tarjeta para futuras compras <i class="icon-info tooltips u-text--secondary"></i>
+                              <input type="checkbox" data-check="payment-save-card" />
+                              <div class="control__indicator"></div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse--group__item">
+                  <div class="collapse--group__header u-d-flex u-align-items-center u-justify-content-between">
+                    <div class="u-d-flex u-align-items-md-center">
+                      <label class="g-radiobtn"
+                        ><img src="../../../assets/img/Paypal.svg" alt="" />
+                        <input
+                          type="radio"
+                          name="payment-accordion"
+                          id="payment-accordion-content-1"
+                          value="box-payment__payapl"
+                        />
+                        <span class="g-radiobtn--checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="collapse--group__body box-payment__item">
+                    <div class="item__content">
+                      <div class="o-row">
+                        <div class="o-col-lg-24">
+                          <div
+                            class="banner-information banner-information--small u-d-flex u-align-items-center u-justify-content-between"
+                          >
+                            <div class="banner-information__info u-d-md-flex">
+                              <i class="icon-ticket o-mr--2 banner-information__icon"></i>
+                              <div>
+                                <h2 class="banner-information__title u-text u-d-flex u-align-items-center">
+                                  <span>
+                                    Al hacer clic en “Completar reserva”
+                                    <i class="icon-info tooltips tooltip--with-hover o-ml--1"></i>
+                                  </span>
+                                </h2>
+                                <p class="banner-information__subtitle u-label">
+                                  serás redirigido a nuestra plataforma de pago para completar tu reserva de forma 100%
+                                  segura.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse--group__item">
+                  <div class="collapse--group__header u-d-flex u-align-items-center u-justify-content-between">
+                    <div class="u-d-flex u-align-items-md-center">
+                      <label class="g-radiobtn"
+                        ><img src="../../../assets/img/Bizum.svg" alt="" />
+                        <input
+                          type="radio"
+                          name="payment-accordion"
+                          id="payment-accordion-content-2"
+                          value="box-payment__bizum"
+                        />
+                        <span class="g-radiobtn--checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="collapse--group__body box-payment__item">
+                    <div class="item__content">
+                      <div class="o-row">
+                        <div class="o-col-lg-24">
+                          <div
+                            class="banner-information banner-information--small u-d-flex u-align-items-center u-justify-content-between"
+                          >
+                            <div class="banner-information__info u-d-md-flex">
+                              <i class="icon-ticket o-mr--2 banner-information__icon"></i>
+                              <div>
+                                <h2 class="banner-information__title u-text u-d-flex u-align-items-center">
+                                  <span>
+                                    Al hacer clic en “Completar reserva”
+                                    <i class="icon-info tooltips tooltip--with-hover o-ml--1"></i>
+                                  </span>
+                                </h2>
+                                <p class="banner-information__subtitle u-label">
+                                  serás redirigido a nuestra plataforma de pago para completar tu reserva de forma 100%
+                                  segura.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse--group__item">
+                  <div class="collapse--group__header u-d-flex u-align-items-center u-justify-content-between">
+                    <div class="u-d-flex u-align-items-md-center">
+                      <label class="g-radiobtn"
+                        ><img src="../../../assets/img/Amazon_Pay.svg" alt="" />
+                        <input
+                          type="radio"
+                          name="radio"
+                          id="payment-accordion-content-3"
+                          value="box-payment__amazon-pay"
+                        />
+                        <span class="g-radiobtn--checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="tag tag--green u-align-items-center">
+                      <i class="icon-star tag__icon u-d-flex u-align-items-center u-justify-content-center"></i>
+                      RegaloIncluido
+                    </div>
+                  </div>
+                  <div class="collapse--group__body box-payment__item">
+                    <div class="item__content">
+                      <div class="o-row">
+                        <div class="o-col-lg-24">
+                          <div class="banner-information banner-information--small u-d-flex u-align-items-center">
+                            <div class="banner-information__info u-d-md-flex u-border--bottom-gray o-pb--3 u-w--100">
+                              <i class="icon-ticket o-mr--2 banner-information__icon"></i>
+                              <div>
+                                <h2 class="banner-information__title u-text u-d-flex u-align-items-center">
+                                  <span>
+                                    Al hacer clic en “Completar reserva”
+                                    <i class="icon-info tooltips tooltip--with-hover o-ml--1"></i>
+                                  </span>
+                                </h2>
+                                <p class="banner-information__subtitle u-label">
+                                  serás redirigido a nuestra plataforma de pago para completar tu reserva de forma 100%
+                                  segura.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="banner-information banner-information--small u-d-flex u-align-items-center o-mb--3"
+                            data-element="amazon-prize"
+                          >
+                            <div class="banner-information__info u-d-md-flex">
+                              <i class="icon-gift o-mr--2 banner-information__icon u-text--secondary"></i>
+                              <div>
+                                <h2 class="banner-information__title u-text">Consigue tu premio</h2>
+                                <p class="banner-information__subtitle u-label">
+                                  Paga con Amazon pay y consigue tu Tablet series X y muchos premios más.
+                                </p>
+                                <a
+                                  data-micromodal-trigger="modal-checkout-pago-promo"
+                                  href="javascript:void(0);"
+                                  class="g-link u-d-block o-mt--2"
+                                >
+                                  Ver detalles del concurso</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Acceptance Checkboxes -->
+            <div class="o-row o-mt--4 o-ml-lg--1">
+              <div class="o-col-md-24 o-mb--2">
+                <div class="c-check-accordion__header">
+                  <div class="g-calendar--check">
+                    <label class="control control--checkbox"
+                      >Quiero factura (Sólo para empresas y autónomos)
+                      <input type="checkbox" data-check="factura-empresa" />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="c-check-accordion__content">
+                  <div
+                    class="banner-information banner-information--small u-d-flex u-align-items-center u-w--100 u-box-border"
+                    data-element="factura-empresa"
+                  >
+                    <div class="banner-information__info u-d-md-flex u-w--100">
+                      <i class="icon-file o-mr--2 banner-information__icon u-text--secondary"></i>
+                      <div class="o-row u-w--100">
+                        <div class="o-col-lg-20">
+                          <div class="u-w--100">
+                            <h2 class="banner-information__title u-text">Recibe la factura por correo electrónico</h2>
+                            <p class="banner-information__subtitle u-label o-mb--1">
+                              Indícanos tus datos y recibirás la fatura por correo electrónico.
+                            </p>
+                            <p class="banner-information__subtitle u-label o-mb--2">
+                              También podrás descargarla en el detalle de tu reserva en tu area privada.
+                            </p>
+                            <div class="o-row">
+                              <div class="o-col-lg-14 margin-mobile">
+                                <div class="form__input-wrapper">
+                                  <input
+                                    class="g-input form__input"
+                                    type="text"
+                                    name="empresa-id"
+                                    placeholder=" "
+                                    data-input="empresa-id"
+                                  />
+                                  <label>CIF / NIF</label>
+                                </div>
+                              </div>
+                              <div class="o-col-lg-7">
+                                <div class="form__input-wrapper">
+                                  <input
+                                    class="g-input form__input"
+                                    type="text"
+                                    name="empresa-codigo"
+                                    placeholder=" "
+                                    data-input="empresa-codigo"
+                                  />
+                                  <label>Código</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="o-col-24 u-text-right o-mt--1">
+                          <a
+                            class="g-link"
+                            data-micromodal-trigger="modal-checkout-factura-autonomo"
+                            href="javascript:void(0);"
+                          >
+                            No tengo código
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="banner-information banner-information--small u-d-flex u-align-items-center u-w--100 u-box-border g-hidden"
+                    data-element="factura-empresa-success"
+                  >
+                    <div class="banner-information__info u-d-md-flex">
+                      <i class="icon-square o-mr--2 banner-information__icon u-text--secondary"></i>
+                      <div>
+                        <h2 class="banner-information__title u-text">Factura solicitada correctamente</h2>
+                        <p class="banner-information__subtitle u-label">
+                          Recuerda que te enviaremos un código para futuras reservas con Balearia.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="o-col-md-24 o-mb--2">
+                <div class="g-calendar--check">
+                  <label class="control control--checkbox"
+                    >Quiero recibir ofertas y novedades de Baleària
+                    <input type="checkbox" data-check="newsletter-subscribe" />
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+              </div>
+              <div class="o-col-md-24 o-mb--2">
+                <div class="g-calendar--check">
+                  <label class="control control--checkbox"
+                    >He leído y acepto las condiciones de reserva y las tarifas correspondientes, la política de
+                    privacidad y la protección de datos de carácter personal
+                    <input type="checkbox" data-check="terms-conditions-acceptance" />
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="o-row">
+              <div class="o-col-md-9 o-col-lg-10 o-mb--2">
+                <button class="btn btn--primary u-w--100" data-trigger="complete-checkout" disabled>
+                  Completar reserva
+                </button>
+              </div>
+              <div
+                class="o-col-lg-10 u-d-flex u-align-items-center u-justify-content-center u-justify-content-md-start o-mb--2"
+              >
+                <div class="tag tag--green u-align-items-center">
+                  <i class="icon-star tag__icon u-d-flex u-align-items-center u-justify-content-center"></i>Pago 100%
+                  seguro
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section side - cart summary -->
+      <div class="section__fixed-sidebar" data-element="checkout-summary">
+        <div class="g-dropdown-basic dropdown-list g-dropdown-basic--details u-w--100">
+          <button class="g-dropdown-basic--btn u-w--100 desktop-none">
+            <p>
+              <span class="u-d-block">Total</span>
+              <span class="u-d-block" data-text="checkout-summary-final-price"></span>
+            </p>
+            <i class="icon-arrow-down o-ml--1"></i>
+          </button>
+          <div class="g-dropdown-basic--content">
+            <div class="g-dropdown-basic--bkg details">
+              <div
+                class="g-dropdown__header u-border--bottom-gray u-d-flex u-d-lg-none u-align-items-center u-justify-content-between o-pl--2 o-pr--2 o-mb--2"
+              >
+                <p class="title">Tu reserva</p>
+                <i class="icon-close icon"></i>
+              </div>
+              <div class="g-dropdown__content">
+                <div class="u-d-flex">
+                  <i class="icon-arrow-right icon-green"></i>
+                  <div class="information u-w--100">
+                    <p class="title--small o-mb--2">Viaje de ida</p>
+                    <h2 class="title">Barcelona a Mallorca</h2>
+                    <p class="text">15 diciembre 2021 a las 13:00. llegada 10:00</p>
+                    <p class="text">4 pasajeros en Butaca Sirena</p>
+                    <div
+                      class="details__wrapper js-details u-align-items-center u-justify-content-between o-mt--2 o-mb--2"
+                    >
+                      <div class="u-d-flex u-justify-content-between u-border--top-gray o-pt--2">
+                        <button class="details__btn js-details-out-btn">
+                          <p>Precio total ida</p>
+                          <i class="icon-arrow-down o-ml--1"></i>
+                        </button>
+                        <p>60,00 €</p>
+                      </div>
+                      <ul class="details__list js-details-list">
+                        <li class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                          <p class="details__list-text u-text--text-light">Adultos</p>
+                          <p class="details__list-text u-text--gray u-font-weight-semibold">2 x 10,00 €</p>
+                        </li>
+                        <li class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                          <p class="details__list-text u-text--text-light">Niños</p>
+                          <p class="details__list-text u-text--gray u-font-weight-semibold">2 x 10,00 €</p>
+                        </li>
+                        <li class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                          <p class="details__list-text u-text--text-light">Bebés</p>
+                          <p class="details__list-text u-text--gray u-font-weight-semibold">2 x 10,00 €</p>
+                        </li>
+                        <li class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                          <p class="details__list-text u-text--text-light">Coche o furgoneta</p>
+                          <p class="details__list-text u-text--gray u-font-weight-semibold">1 x 10,00 €</p>
+                        </li>
+                      </ul>
+                      <ul class="details__list js-details-list">
+                        <li class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                          <p class="details__list-text u-text--text-light">Seguro de viaje</p>
+                          <p class="details__list-text u-text--gray u-font-weight-semibold">2 x 10,00 €</p>
+                        </li>
+                        <li class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                          <p class="details__list-text u-text--text-light">Menú desayuno</p>
+                          <p class="details__list-text u-text--gray u-font-weight-semibold">2 x 10,00 €</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-d-flex u-border--top-gray o-pt--2">
+                  <i class="icon-arrow-left icon-green"></i>
+                  <div class="information u-w--100">
+                    <p class="title--small o-mb--2">Viaje de vuelta</p>
+                    <h2 class="title">Barcelona a Mallorca</h2>
+                    <div
+                      class="details__wrapper js-details u-align-items-center u-justify-content-between u-border--top-gray o-mt--2 o-pt--2 o-pb--2"
+                    >
+                      <div class="u-d-flex u-justify-content-between">
+                        <button class="details__btn js-details-in-btn">
+                          <p>Precio total ida</p>
+                          <i class="icon-arrow-down o-ml--1"></i>
+                        </button>
+                        <p>60,00 €</p>
+                      </div>
+                      <ul class="details__list js-details-list">
+                        <li class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                          <p class="details__list-text u-text--text-light">Adultos</p>
+                          <p class="details__list-text u-text--gray u-font-weight-semibold">2 x 10,00 €</p>
+                        </li>
+                        <li class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                          <p class="details__list-text u-text--text-light">Niños</p>
+                          <p class="details__list-text u-text--gray u-font-weight-semibold">2 x 10,00 €</p>
+                        </li>
+                        <li class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                          <p class="details__list-text u-text--text-light">Bebés</p>
+                          <p class="details__list-text u-text--gray u-font-weight-semibold">2 x 10,00 €</p>
+                        </li>
+                        <li class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                          <p class="details__list-text u-text--text-light">Coche o furgoneta</p>
+                          <p class="details__list-text u-text--gray u-font-weight-semibold">1 x 10,00 €</p>
+                        </li>
+                      </ul>
+                      <ul class="details__list js-details-list">
+                        <li class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                          <p class="details__list-text u-text--text-light">Seguro de viaje</p>
+                          <p class="details__list-text u-text--gray u-font-weight-semibold">2 x 10,00 €</p>
+                        </li>
+                        <li class="u-d-flex u-align-items-center u-justify-content-between o-mb--1">
+                          <p class="details__list-text u-text--text-light">Menú desayuno</p>
+                          <p class="details__list-text u-text--gray u-font-weight-semibold">2 x 10,00 €</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="details__wrapper js-details g-hidden" data-element="promo-code-success">
+                  <div class="u-d-flex u-justify-content-between u-border--top-gray o-pt--2 o-pb--2">
+                    <button class="details__btn js-details-code-btn">
+                      <i class="icon-discount o-mr--1"></i>
+                      <p>Descuento</p>
+                      <i class="icon-arrow-down o-ml--1"></i>
+                    </button>
+                    <p>-25,00 €</p>
+                  </div>
+                  <div class="details__list js-details-list">
+                    <div class="u-d-flex u-border--top-gray o-pt--2 o-pb--2">
+                      <i class="icon-ticket icon-green"></i>
+                      <div class="information u-w--100">
+                        <h3 class="details__discount-title text" data-text="promo-code"></h3>
+                        <p class="details__discount-text text">El descuento se aplica en el paso de pago</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="details__footer u-d-flex u-justify-content-between u-border--top-gray o-pt--4 u-align-items-center"
+                >
+                  <div>
+                    <p class="title--small" data-text="checokut-sumary-total">Total</p>
+                  </div>
+                  <p class="title" data-text="checkout-summary-final-price"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="footer-small">
+  <div class="o-container">
+    <button class="btn btn--secondary floating-btn">
+      <i class="icon-chat icon"></i>
+      Ayuda
+    </button>
+    <div class="footer-small__row u-d-flex u-justify-content-between u-align-items-center o-pt--3 o-pb--3">
+      <div class="footer-small__info">
+        <p class="footer-small__text">2021 Baleària. Todos los derechos reservados.</p>
+      </div>
+      <div class="footer-small__links">
+        <a href="" class="footer-small__link">Política de cookies</a>
+        <a href="" class="footer-small__link">Política de privacidad</a>
+        <a href="" class="footer-small__link">Condiciones de uso</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modals -->
+
+<!-- Registro Factura Empresa/Autonomos -->
+<div class="modal micromodal-slide" id="modal-checkout-factura-autonomo" aria-hidden="true">
+  <div class="g-modal--info g-modal--info-small modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <div class="g-modal--info__header">
+        <h3 class="title">Date de alta para recibir facturas</h3>
+        <button class="modal__close icon-close" aria-label="Close modal" data-micromodal-close></button>
+      </div>
+      <div class="js-factura-autonomo-tabs o-p--3">
+        <div class="o-row">
+          <div class="o-col-lg-24 o-mb--3">
+            <!-- tab header -->
+            <div class="g-tab g-tab--transparent g-tab--full">
+              <button class="js-tabs__title tablinks active">
+                <span class="tablinks__title">Autónomo</span>
+                <span class="line"></span>
+              </button>
+              <button class="js-tabs__title tablinks">
+                <span class="tablinks__title">Empresa</span>
+                <span class="line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="o-row">
+          <div class="o-col-lg-24">
+            <form action="" class="js-checkout-form__step" id="js-form-company-bill-registration">
+              <div class="js-tabs__content g-tab--tabcontent">
+                <div class="o-row">
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="name-co"
+                        id="companyBillForm-name-sep"
+                        placeholder=" "
+                      />
+                      <label>Nombre</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="surname-co"
+                        id="companyBillForm-surname-sep"
+                        placeholder=" "
+                      />
+                      <label>Apellido</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="email-co"
+                        id="companyBillForm-email-sep"
+                        placeholder=" "
+                      />
+                      <label>Email</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="select-input u-w--100">
+                      <select class="form__select" name="phonePrefix-co" id="companyBillForm-phonePrefix-sep" required>
+                        <option value="" selected>+...</option>
+                        <option value="+34">+34</option>
+                        <option value="+58">+58</option>
+                        <option value="+51">+51</option>
+                        <option value="+56">+56</option>
+                      </select>
+                      <div class="form__input-wrapper u-w--100">
+                        <input
+                          class="g-input form__input"
+                          type="text"
+                          name="phone-co"
+                          placeholder=" "
+                          id="companyBillForm-phone-sep"
+                        />
+                        <label>Teléfono</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="nif-co"
+                        placeholder=" "
+                        id="companyBillForm-nif-sep"
+                      />
+                      <label>NIF</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <select class="form__select" name="country-co" id="companyBillForm-country-sep" required>
+                        <option value="" selected></option>
+                        <option value="spanish">España</option>
+                        <option value="Pais 2">Label</option>
+                        <option value="Pais 3">Label</option>
+                      </select>
+                      <label>País</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="number"
+                        oninput="javascript: if (this.value.length > 5) this.value = this.value.slice(0, 5);"
+                        name="zipcode-co"
+                        id="companyBillForm-zipcode-sep"
+                        placeholder=" "
+                      />
+                      <label>Código postal</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="city-co"
+                        id="companyBillForm-city-sep"
+                        placeholder=" "
+                      />
+                      <label>Población</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="address-co"
+                        id="companyBillForm-address-sep"
+                        placeholder=" "
+                      />
+                      <label>Dirección</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="js-tabs__content g-tab--tabcontent">
+                <div class="o-row">
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="name-sep"
+                        id="companyBillForm-name-co"
+                        placeholder=" "
+                      />
+                      <label>Nombre de la empresa</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="surname-sep"
+                        id="companyBillForm-surname-co"
+                        placeholder=" "
+                      />
+                      <label>Apellido</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="email-sep"
+                        id="companyBillForm-email-co"
+                        placeholder=" "
+                      />
+                      <label>Email</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="select-input u-w--100">
+                      <select class="form__select" name="phonePrefix-sep" id="companyBillForm-phonePrefix-co" required>
+                        <option value="" selected>+...</option>
+                        <option value="+34">+34</option>
+                        <option value="+58">+58</option>
+                        <option value="+51">+51</option>
+                        <option value="+56">+56</option>
+                      </select>
+                      <div class="form__input-wrapper u-w--100">
+                        <input
+                          class="g-input form__input"
+                          type="text"
+                          name="phone-sep"
+                          placeholder=" "
+                          id="companyBillForm-phone-co"
+                        />
+                        <label>Teléfono</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="nif-sep"
+                        placeholder=" "
+                        id="companyBillForm-nif-co"
+                      />
+                      <label>NIF</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <select class="form__select" name="country-sep" id="companyBillForm-country-co" required>
+                        <option value="" selected></option>
+                        <option value="spanish">España</option>
+                        <option value="Pais 2">Label</option>
+                        <option value="Pais 3">Label</option>
+                      </select>
+                      <label>País</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="number"
+                        oninput="javascript: if (this.value.length > 5) this.value = this.value.slice(0, 5);"
+                        name="zipcode-sep"
+                        id="companyBillForm-zipcode-co"
+                        placeholder=" "
+                      />
+                      <label>Código postal</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-12 margin-responsive">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="city-sep"
+                        id="companyBillForm-city-co"
+                        placeholder=" "
+                      />
+                      <label>Población</label>
+                    </div>
+                  </div>
+                  <div class="o-col-md-24">
+                    <div class="form__input-wrapper">
+                      <input
+                        class="g-input form__input"
+                        type="text"
+                        name="address-sep"
+                        id="companyBillForm-address-co"
+                        placeholder=" "
+                      />
+                      <label>Dirección</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="g-modal--info__footer">
+          <button
+            class="btn btn--primary u-w--100 o-mb--1 u-w--100"
+            type="submit"
+            form="js-form-company-bill-registration"
+          >
+            Confirmar registro
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Registro Factura Ok -->
+<div class="modal micromodal-slide" id="modal-checkout-factura-ok" aria-hidden="true">
+  <div class="g-modal--info g-modal--info-small modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <div class="g-modal--info__header">
+        <h3 class="title">Date de alta para recibir facturas</h3>
+        <button class="modal__close icon-close" aria-label="Close modal" data-micromodal-close></button>
+      </div>
+      <div class="o-p--3">
+        <div class="g-modal--medium__content">
+          <img src="../../../assets/img/success.svg" alt="success" />
+          <h4 class="g-modal--medium__subtitle o-mb--3">Te has dado de alta correctamente</h4>
+        </div>
+        <p class="g-modal--medium__txt o-mb--2">Te enviaremos la factura de esta reserva a marco@gmail.com</p>
+        <p class="g-modal--medium__txt o-mb--2">
+          Para futuras reservas, te enviaremos un código de empresa por correo electrónico para que puedas identificarte
+          de manera ágil y sencilla.
+        </p>
+        <div class="g-modal--info__footer">
+          <button class="btn btn--primary u-w--100 o-mb--1 u-w--100" data-button="modal-btn-close">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Info familia numerosa-->
+<div class="modal micromodal-slide" id="modal-checkout-bonificacion" aria-hidden="true">
+  <div class="g-modal--info modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <div class="g-modal--info__header">
+        <h3 class="title">Família numerosa</h3>
+        <button class="modal__close icon-close" aria-label="Close modal" data-micromodal-close></button>
+      </div>
+      <div class="o-p--3">
+        <div class="o-row u-justify-content-between">
+          <div class="o-col-md-24">
+            <p class="g-modal--medium__txt o-mb--2">
+              Será necesario presentar en taquilla el Título de Familia Numerosa (emitido por una administración
+              española) o el carné individual de todos los pasajeros.
+            </p>
+            <p class="g-modal--small__subtitle o-mb--2">Validación automática</p>
+            <p class="g-modal--medium__txt o-mb--3">
+              Y presentar fotocopias de las páginas del Título de Familia Numerosa donde consten los siguientes datos
+              (que deben ser legibles):
+            </p>
+            <ul class="list list--bullets">
+              <li class="list__item">Categoría del título</li>
+              <li class="list__item">Nombre del pasajero</li>
+              <li class="list__item">Vigencia</li>
+              <li class="list__item">Fecha de caducidad</li>
+            </ul>
+            <div class="box alert alert--info u-d-md-flex u-align-items-center">
+              <i class="icon-info alert__icon"></i>
+              <div class="alert__info">
+                <p class="alert__text">La documentación debe ser original y estar en vigor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Info descuento residentes islas -->
+<div class="modal micromodal-slide" id="modal-checkout-residentes" aria-hidden="true">
+  <div class="g-modal--info modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <div class="g-modal--info__header">
+        <h3 class="title">Verificación para Residentes</h3>
+        <button class="modal__close icon-close" aria-label="Close modal" data-micromodal-close></button>
+      </div>
+      <div class="o-p--3">
+        <div class="o-row u-justify-content-between">
+          <div class="o-col-md-24">
+            <p class="g-modal--medium__txt o-mb--2">
+              Los pasajeros residentes en Canarias, Illes Balears, Ceuta y Melilla pueden acreditar su condición de
+              beneficiarios de la subvención al transporte marítimo en el momento de la compra de su billete.
+            </p>
+            <p class="g-modal--small__subtitle o-mb--2">Validación automática</p>
+            <p class="g-modal--medium__txt o-mb--2">
+              La condición de residencia se verificará mediante el Sistema de Acreditación de Residencia Automático
+              (Sistema S.A.R.A)
+            </p>
+            <p class="g-modal--medium__txt o-mb--3">
+              Para ello, sólo será necesario introducir al realizar la reserva de su billete subvencionado:
+            </p>
+            <ul class="list list--bullets">
+              <li class="list__item">El número del documento de identidad (DNI o NIE)</li>
+              <li class="list__item">Nombre y apellidos</li>
+            </ul>
+            <div class="box alert alert--info u-d-md-flex u-align-items-center">
+              <i class="icon-info alert__icon"></i>
+              <div class="alert__info">
+                <p class="alert__text">Recuerda introducirlos tal y como aparecen en tu documento de identidad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Error Promo Code -->
+<div class="modal micromodal-slide" id="modal-checkout-condiciones-error" aria-hidden="true">
+  <div class="g-modal--info g-modal--info-small modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <div class="g-modal--info__header">
+        <h3 class="title">Código promocional inválido</h3>
+        <button class="modal__close icon-close" aria-label="Close modal" data-micromodal-close></button>
+      </div>
+      <div class="o-p--3">
+        <div>
+          <i class="icon-alert g-modal--info-icon g-modal--info-icon-error"></i>
+          <h4 class="g-modal--medium__subtitle o-mb--3">Tu reserva no cumple las condiciones del código promocional</h4>
+        </div>
+        <p class="g-modal--medium__txt o-mb--2">
+          Para poder continuar con la reserva y aprovecharte del código promocional debes cumplir estas condicoines:
+        </p>
+        <ul class="list list--bullets">
+          <li class="list__item">Condición 1 lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        </ul>
+        <div class="g-modal--info__footer">
+          <button class="btn btn--primary btn--primary__ghost u-w--100" data-button="modal-btn-close">Cancelar</button>
+          <button class="btn btn--primary u-w--100 o-mb--1 u-w--100" data-button="modal-btn-close">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Info sobre la promo -->
+<div class="modal micromodal-slide" id="modal-checkout-pago-promo" aria-hidden="true">
+  <div class="g-modal--info modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <div class="g-modal--info__header">
+        <h3 class="title">Verificación para Residentes</h3>
+        <button class="modal__close icon-close" aria-label="Close modal" data-micromodal-close></button>
+      </div>
+      <div class="o-p--3">
+        <div class="o-row u-justify-content-between">
+          <div class="o-col-md-24">
+            <p class="g-modal--medium__txt o-mb--2">
+              Los pasajeros residentes en Canarias, Illes Balears, Ceuta y Melilla pueden acreditar su condición de
+              beneficiarios de la subvención al transporte marítimo en el momento de la compra de su billete.
+            </p>
+            <p class="g-modal--small__subtitle o-mb--2">Validación automática</p>
+            <p class="g-modal--medium__txt o-mb--2">
+              La condición de residencia se verificará mediante el Sistema de Acreditación de Residencia Automático
+              (Sistema S.A.R.A)
+            </p>
+            <p class="g-modal--medium__txt o-mb--3">
+              Para ello, sólo será necesario introducir al realizar la reserva de su billete subvencionado:
+            </p>
+            <ul class="list list--bullets">
+              <li class="list__item">E1 Kindle Paperwhite</li>
+              <li class="list__item">E1 Kindle Paperwhite 1 Fire TV Cube</li>
+              <li class="list__item">5 Gift Card valorada en 100€</li>
+              <li class="list__item">5 Tablet Fire 7</li>
+            </ul>
+            <a href="" class="u-link u-font-weight-semibold">Ver condiciones del sorteo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Payment error -->
+<div class="modal micromodal-slide" id="modal-checkout-error-pago" aria-hidden="true">
+  <div class="g-modal--info g-modal--info-small modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <div class="o-p--3">
+        <div>
+          <i class="icon-alert g-modal--info-icon g-modal--info-icon-error"></i>
+          <h4 class="g-modal--medium__subtitle o-mb--3">Algo ha ido mal con tu reserva</h4>
+        </div>
+        <p class="g-modal--medium__txt">La reserva no se ha pagado correctamente. La transacción ha sido cancelada.</p>
+        <p class="g-modal--medium__txt">Póngase en contact con nosotros para poder solucionar el problema</p>
+        <div class="g-modal--info__footer">
+          <button class="btn btn--primary btn--primary__ghost u-w--100">
+            933 874 238 <i class="icon-mobile o-ml--1"></i>
+          </button>
+          <button class="btn btn--primary u-w--100 o-mb--1 u-w--100">Contacta por chat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

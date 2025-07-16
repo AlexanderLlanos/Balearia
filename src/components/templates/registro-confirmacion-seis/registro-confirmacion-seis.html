@@ -1,0 +1,302 @@
+<div class="u-bg--lighter">
+  <!-- header -->
+  <section class="g-header g-header--simple">
+    <div class="o-container u-d-flex u-align-items-center u-justify-content-between u-h--100 wrapper">
+      <div class="g-header__logo">
+        <a href="javascript:void(0)">
+          <img src="../../../assets/img/logo.svg" alt="logo" class="img" />
+        </a>
+        <div class="g-header__logo-help">
+          <i class="icon-help icon"></i>
+          <button class="btn btn--secondary g-header__btn"><i class="icon-user o-mr--1"></i></button>
+        </div>
+      </div>
+      <ul class="g-header__list last u-d-md-flex u-align-items-center u-justify-content-between">
+        <li class="g-header__item" id="help">
+          <a href="javascript:void(0)" class="g-header__item-link u-font-weight-semibold fw-normal">Ayuda</a>
+        </li>
+        <li class="g-header__item g-header__btn-box">
+          <button class="btn btn--secondary g-header__btn">
+            <i class="icon-user o-mr--1"></i><img src="../../../assets/img/logo-small.png" alt="" />
+            <span class="g-header__btn-text o-ml--1">Club</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- body -->
+  <section class="o-container o-container--registro box o-mb--4">
+    <div class="o-mt--8 o-mb--4 mobile-none"></div>
+    <div class="o-mt--2 desktop-none"></div>
+    <div class="o-row box--registro u-justify-content-between">
+      <div class="o-col-lg-14 texts">
+        <h2 class="title title--registro o-mb--3 o-mt--3">Crea tu cuenta Balearia Club</h2>
+        <p class="subtitle mobile-none">Ya casi estás, en 1 minuto la tienes lista</p>
+        <p class="subtitle desktop-none o-mt--3 o-mb--1">Cuéntanos sobre ti</p>
+      </div>
+      <div class="o-col-lg-10">
+        <img class="img-bg" src="../../../assets/img/registro.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="o-container">
+      <div class="o-row">
+        <div class="o-col-md-12 o-col-lg-9 margin-responsive">
+          <div class="form__input-wrapper">
+            <input class="g-input form__input" type="text" name="label" placeholder=" " />
+            <label>Nombre</label>
+          </div>
+        </div>
+        <div class="o-col-md-12 o-col-lg-6 margin-responsive">
+          <div class="form__input-wrapper">
+            <input class="g-input form__input" type="text" name="label" placeholder=" " />
+            <label>Primer apellido</label>
+          </div>
+        </div>
+        <div class="o-col-md-12 o-col-lg-9 margin-responsive">
+          <div class="form__input-wrapper">
+            <input class="g-input form__input" type="text" name="label" placeholder=" " />
+            <label>Segundo apellido</label>
+          </div>
+        </div>
+      </div>
+      <div class="o-row">
+        <div class="o-col-lg-24 margin-responsive">
+          <div class="form__input-wrapper">
+            <select class="form__select" id="extra" name="extra" required="">
+              <option value="" selected=""></option>
+              <option value="tinted">Label</option>
+              <option value="turbo">Label</option>
+              <option value="speed">Label</option>
+            </select>
+            <label>Nacionalidad</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="o-row u-d-flex u-align-items-center margin-responsive">
+        <div class="o-col-lg-8">
+          <div class="form__input-wrapper">
+            <input class="g-input form__input" type="text" name="label" placeholder=" " />
+            <label>Fecha de nacimiento</label>
+          </div>
+        </div>
+        <div class="o-col-lg-12 u-d-md-block">
+          <div class="tag tag--green u-align-items-center o-mr--1 tag__cumpleaños">
+            <i class="icon-star tag__icon u-d-flex u-align-items-center u-justify-content-center"></i>Tendrás regalo el
+            dia de tu cumpleaños
+          </div>
+        </div>
+      </div>
+
+      <div class="o-row">
+        <div class="o-col-lg-24 o-mt--2">
+          <p class="subtitle-form margin-responsive">Tu documento identificativo</p>
+        </div>
+      </div>
+
+      <div class="o-row">
+        <div class="o-col-lg-11 margin-responsive col-size-tablet">
+          <div class="select-input u-w--100">
+            <select
+              class="form__select"
+              name="passenger-idDocType-1"
+              id="checkoutForm-passenger-idDocType-1"
+              required=""
+            >
+              <option value="nif" selected="">DNI</option>
+              <option value="nie">NIE</option>
+              <option value="no-document">Sin documento</option>
+            </select>
+            <div class="form__input-wrapper u-w--100">
+              <input
+                class="g-input form__input"
+                type="text"
+                name="passenger-idNumber-1"
+                placeholder=" "
+                id="checkoutForm-passenger-idNumber-1"
+              />
+              <label>Documento de identidad</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="o-row u-d-flex u-align-items-center">
+        <div class="o-col-lg-11 margin-responsive">
+          <div class="form__input-wrapper">
+            <input class="g-input form__input" type="text" name="label" placeholder=" " />
+            <label>Fecha de caducidad del documento</label>
+          </div>
+        </div>
+        <div class="o-col-lg-11 margin-responsive mobile-none">
+          <div class="c-check-accordion__header">
+            <div class="g-calendar--check g-calendar--check__caducidad">
+              <label class="control control--checkbox control--btn">
+                <span class="label__text-light"></span>
+                <i class="icon-user"></i>
+                Item
+                <input type="checkbox" data-trigger="special-assistance" />
+                <div class="control__indicator"></div>
+              </label>
+              <i
+                class="icon-info icon-info--btn tooltips u-text--secondary o-ml--1 icon-info__caducidad btn btn--primary btn--primary__ghost btn--icon btn--icon__small btn--smal"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="o-col-lg-11 margin-responsive desktop-none">
+          <div class="c-check-accordion__header">
+            <div class="g-calendar--check g-calendar--check__caducidad">
+              <label class="control control--checkbox control--btn">
+                <span class="label__text-light"></span>
+                Permanente
+                <input type="checkbox" data-trigger="special-assistance" />
+                <div class="control__indicator"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="o-row">
+        <div class="o-col-lg-24 margin-responsive o-mt--2">
+          <p class="subtitle-form">Tu residencia y ruta favorita</p>
+        </div>
+      </div>
+
+      <div class="o-row">
+        <div class="o-col-lg-11 margin-responsive">
+          <div class="form__input-wrapper">
+            <select class="form__select" id="extra" name="extra" required="">
+              <option value="" selected=""></option>
+              <option value="tinted">Label</option>
+              <option value="turbo">Label</option>
+              <option value="speed">Label</option>
+            </select>
+            <label>¿Dónde vives?</label>
+          </div>
+        </div>
+      </div>
+      <div class="o-row">
+        <div class="o-col-md-12 o-col-lg-15 margin-responsive">
+          <div class="form__input-wrapper form__icon-right o-mb--1">
+            <input class="g-input form__input" type="text" name="label" placeholder=" " />
+            <label>Ruta favorita</label>
+            <i class="icon-location"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="o-row">
+        <div class="o-col-lg-24 margin-responsive o-mt--2">
+          <p class="subtitle-form">Comunicaciones</p>
+        </div>
+      </div>
+
+      <div class="o-row">
+        <div class="o-col-lg-11 margin-responsive col-size-tablet">
+          <div class="select-input u-w--100">
+            <select
+              class="form__select"
+              name="passenger-phonePrefix-1"
+              id="checkoutForm-passenger-phonePrefix-1"
+              required=""
+            >
+              <option value="" selected="">+...</option>
+              <option value="+34">+34</option>
+              <option value="+58">+58</option>
+              <option value="+51">+51</option>
+              <option value="+56">+56</option>
+            </select>
+            <div class="form__input-wrapper u-w--100">
+              <input
+                class="g-input form__input"
+                type="text"
+                name="passenger-phone-1"
+                placeholder=" "
+                id="checkoutForm-passenger-phone-1"
+              />
+              <label>Teléfono</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="o-row">
+        <div class="o-col-lg-24 o-mt--2">
+          <p class="subtitle-form subtitle-form--orange mobile-none o-mb--1">
+            ¿Quieres recibir por Whatsapp información sobre tus compras?
+          </p>
+          <div class="desktop-none u-d-flex u-align-items-center">
+            <i class="icon-whatsapp icon o-pr--1 icon--green-main"></i>
+            <span>¿Quieres recibir por Whatsapp información sobre tus compras? </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="o-row">
+        <div class="o-col-lg-24 o-mt--2">
+          <div class="c-check-accordion__header">
+            <div class="g-calendar--check u-border--bottom-gray">
+              <label class="control control--checkbox">
+                <span class="label__text-light">Activar servicio Whatsapp. </span> Ver política de privacidad
+                <input type="checkbox" data-trigger="special-assistance" />
+                <div class="control__indicator"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="o-col-lg-24 o-mt--2">
+          <div class="c-check-accordion__header">
+            <div class="g-calendar--check">
+              <label class="control control--checkbox"
+                ><span class="label__text-light"
+                  >Quiero recibir comunicaciones comerciales diseñadas y pensadas para mi, de promociones y/o servicios
+                  de Baleària y Baleària Club, conforme nuestra</span
+                >
+                política de privacidad.
+                <input type="checkbox" data-trigger="special-assistance" />
+                <div class="control__indicator"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="o-row">
+        <div class="o-col-md-12 o-mt--2 o-mb--2">
+          <button class="btn btn--primary btn--medium u-w--100" type="submit" form="js-form-checkout-passengers">
+            Crear cuenta
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- floating button -->
+  <button class="btn btn--secondary floating-btn desktop-none floating-btn--login desktop-none">
+    <i class="icon-chat icon"></i>
+    Ayuda
+  </button>
+
+  <!-- footer -->
+  <section class="footer-small">
+    <div class="o-container">
+      <div
+        class="footer-small__row u-border--top-gray u-d-flex u-justify-content-between u-align-items-center o-pt--3 o-pb--3"
+      >
+        <div class="footer-small__info">
+          <p class="footer-small__text">2021 Baleària. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-small__links">
+          <a class="footer-small__link">Política de cookies</a>
+          <a class="footer-small__link">Política de privacidad</a>
+          <a class="footer-small__link">Condiciones de uso</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

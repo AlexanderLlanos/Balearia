@@ -1,0 +1,12 @@
+.banner-club {
+  .logo {
+    @include mediaq-max(992px) {
+      height: 34px;
+    }
+  }
+  .img {
+    @include mediaq-max(992px) {
+      height: 339px;
+    }
+  }
+}

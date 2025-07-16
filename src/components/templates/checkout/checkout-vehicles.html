@@ -1,0 +1,403 @@
+<!-- Datos de los vehículos -->
+<div
+  class="box c-checkout-form__form-item g-dropdown-basic dropdown-list dropdown-collapse u-w--100 o-mt--3 show"
+  data-element="vehicles"
+>
+  <button class="c-checkout-form__form-title g-dropdown-basic--btn u-text">3 · Datos de los vehículos</button>
+
+  <div class="box--sumary c-checkout-form__form-summary g-hidden">
+    <div class="box--sumary__title">
+      <p>3 · Vehículos</p>
+    </div>
+    <div class="box--sumary__info"></div>
+    <div class="box--sumary__link u-d-none u-d-md-block">
+      <a class="g-link js-checkout-modify" data-trigger="checkout-modify">Modificar</a>
+    </div>
+  </div>
+
+  <div class="g-dropdown-basic--content">
+    <div class="g-dropdown-basic--bkg u-border--top-gray">
+      <form action="" class="js-checkout-form__step" id="js-form-checkout-vehicles">
+        <div class="o-row">
+          <div class="o-col-24 margin-responsive">
+            <h3 class="box--title">
+              Coche o Furgoneta
+              <span class="box--text box--text-light o-ml--3 mobile-none" data-text="vehicle-model"
+                >Modelo de vehículo</span
+              >
+            </h3>
+          </div>
+          <input id="checkoutForm-vehicle-type-1" name="vehicle-type-1" type="hidden" value="car_van" />
+          <div class="o-col-md-12 o-col-lg-6 margin-responsive">
+            <div class="form__input-wrapper">
+              <input
+                class="g-input form__input"
+                type="text"
+                id="checkoutForm-vehicle-id-1"
+                name="vehicle-id-1"
+                placeholder=" "
+              />
+              <label>Matrícula coche</label>
+            </div>
+          </div>
+          <div class="o-col-md-12 o-col-lg-6 margin-responsive">
+            <div class="form__input-wrapper">
+              <input
+                class="g-input form__input"
+                type="text"
+                id="checkoutForm-vehicle-trailerId-1"
+                name="vehicle-trailerId-1"
+                placeholder=" "
+              />
+              <label>Matrícula remolque</label>
+            </div>
+          </div>
+        </div>
+        <div class="c-check-accordion__header">
+          <div class="g-calendar--check">
+            <label class="control control--checkbox"
+              >¿Viajas con equipamiento adicional?
+              <input type="checkbox" data-trigger="additional-equipment" />
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+        </div>
+        <div class="c-check-accordion__content" data-element="additional-equipment">
+          <div class="o-row" data-equipment="0">
+            <div class="o-col-md-12 o-col-lg-10 margin-responsive">
+              <div class="form__input-wrapper">
+                <input
+                  class="g-input form__input"
+                  id="checkoutForm-vehicle-additionalEquip-0"
+                  name="vehicle-additionalEquip-0"
+                  placeholder=" "
+                />
+                <label>Tipo de equipaje</label>
+              </div>
+            </div>
+            <div class="o-col-sm-8 o-col-lg-8 margin-responsive u-d-flex u-align-items-center">
+              <div class="form__input-wrapper u-w--100">
+                <select class="form__select" id="checkoutForm-vehicle-equipQty-0" name="vehicle-equipQty-0" required>
+                  <option value="" selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label>Cantidad</label>
+              </div>
+              <div
+                class="btn btn--secondary__ghost o-ml--2 btn--icon btn--icon__medium btn--medium"
+                data-trigger="add-equipment"
+              >
+                <i class="icon-add"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="o-row">
+          <div class="o-col-md-10 o-col-lg-8">
+            <button class="btn btn--primary u-w--100" type="submit" form="js-form-checkout-vehicles">
+              Guardar y continuar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Datos de los vehículos -->
+<div
+  class="box c-checkout-form__form-item g-dropdown-basic dropdown-list dropdown-collapse u-w--100 o-mt--3 show"
+  data-element="vehicles"
+>
+  <button class="c-checkout-form__form-title g-dropdown-basic--btn u-text">3 · Datos de los vehículos</button>
+
+  <div class="box--sumary c-checkout-form__form-summary g-hidden">
+    <div class="box--sumary__title">
+      <p>3 · Vehículos</p>
+    </div>
+    <div class="box--sumary__info"></div>
+    <div class="box--sumary__link u-d-none u-d-md-block">
+      <a class="g-link js-checkout-modify" data-trigger="checkout-modify">Modificar</a>
+    </div>
+  </div>
+
+  <div class="g-dropdown-basic--content">
+    <div class="g-dropdown-basic--bkg u-border--top-gray">
+      <form action="" class="js-checkout-form__step" id="js-form-checkout-vehicles">
+        <div class="o-row">
+          <div class="o-col-24 margin-responsive">
+            <h3 class="box--title">
+              Motocicleta
+              <span class="box--text box--text-light o-ml--3 mobile-none" data-text="vehicles-qty">2</span>
+            </h3>
+          </div>
+        </div>
+        <input id="checkoutForm-vehicle-type-1" name="vehicle-type-1" type="hidden" value="motorbike" />
+        <div class="o-row">
+          <div class="o-col-md-12 o-col-lg-6 margin-responsive">
+            <div class="form__input-wrapper">
+              <input
+                class="g-input form__input"
+                type="text"
+                id="checkoutForm-vehicle-id-1"
+                name="vehicle-id-1"
+                placeholder=" "
+              />
+              <label>Matrícula</label>
+            </div>
+          </div>
+        </div>
+        <input id="checkoutForm-vehicle-type-2" name="vehicle-type-2" type="hidden" value="motorbike" />
+        <div class="o-row">
+          <div class="o-col-md-12 o-col-lg-6 margin-responsive">
+            <div class="form__input-wrapper">
+              <input
+                class="g-input form__input"
+                type="text"
+                id="checkoutForm-vehicle-id-2"
+                name="vehicle-id-2"
+                placeholder=" "
+              />
+              <label>Matrícula</label>
+            </div>
+          </div>
+        </div>
+        <div class="c-check-accordion__header">
+          <div class="g-calendar--check">
+            <label class="control control--checkbox"
+              >¿Viajas con equipamiento adicional?
+              <input type="checkbox" data-trigger="additional-equipment" />
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+        </div>
+        <div class="c-check-accordion__content" data-element="additional-equipment">
+          <div class="o-row" data-equipment="0">
+            <div class="o-col-md-12 o-col-lg-10 margin-responsive">
+              <div class="form__input-wrapper">
+                <input
+                  class="g-input form__input"
+                  id="checkoutForm-vehicle-additionalEquip-0"
+                  name="vehicle-additionalEquip-0"
+                  placeholder=" "
+                />
+                <label>Tipo de equipaje</label>
+              </div>
+            </div>
+            <div class="o-col-sm-8 o-col-lg-8 margin-responsive u-d-flex u-align-items-center">
+              <div class="form__input-wrapper u-w--100">
+                <select class="form__select" id="checkoutForm-vehicle-equipQty-0" name="vehicle-equipQty-0" required>
+                  <option value="" selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label>Cantidad</label>
+              </div>
+              <div
+                class="btn btn--secondary__ghost o-ml--2 btn--icon btn--icon__medium btn--medium"
+                data-trigger="add-equipment"
+              >
+                <i class="icon-add"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="o-row">
+          <div class="o-col-md-10 o-col-lg-8">
+            <button class="btn btn--primary u-w--100" type="submit" form="js-form-checkout-vehicles">
+              Guardar y continuar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Datos de los vehículos -->
+<div
+  class="box c-checkout-form__form-item g-dropdown-basic dropdown-list dropdown-collapse u-w--100 o-mt--3 show"
+  data-element="vehicles"
+>
+  <button class="c-checkout-form__form-title g-dropdown-basic--btn u-text">3 · Datos de los vehículos</button>
+
+  <div class="box--sumary c-checkout-form__form-summary g-hidden">
+    <div class="box--sumary__title">
+      <p>3 · Vehículos</p>
+    </div>
+    <div class="box--sumary__info"></div>
+    <div class="box--sumary__link u-d-none u-d-md-block">
+      <a class="g-link js-checkout-modify" data-trigger="checkout-modify">Modificar</a>
+    </div>
+  </div>
+
+  <div class="g-dropdown-basic--content">
+    <div class="g-dropdown-basic--bkg u-border--top-gray">
+      <form action="" class="js-checkout-form__step" id="js-form-checkout-vehicles">
+        <input id="checkoutForm-vehicle-type-1" name="vehicle-type-1" type="hidden" value="bike" />
+        <div class="o-row">
+          <div class="o-col-24 margin-responsive">
+            <h3 class="box--title">
+              Bicicleta
+              <span class="box--text box--text-light o-ml--3 mobile-none" data-text="vehicles-qty">3</span>
+            </h3>
+          </div>
+        </div>
+        <div class="c-check-accordion__header">
+          <div class="g-calendar--check">
+            <label class="control control--checkbox"
+              >¿Viajas con equipamiento adicional?
+              <input type="checkbox" data-trigger="additional-equipment" />
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+        </div>
+        <div class="c-check-accordion__content" data-element="additional-equipment">
+          <div class="o-row" data-equipment="0">
+            <div class="o-col-md-12 o-col-lg-10 margin-responsive">
+              <div class="form__input-wrapper">
+                <input
+                  class="g-input form__input"
+                  id="checkoutForm-vehicle-additionalEquip-0"
+                  name="vehicle-additionalEquip-0"
+                  placeholder=" "
+                />
+                <label>Tipo de equipaje</label>
+              </div>
+            </div>
+            <div class="o-col-sm-8 o-col-lg-8 margin-responsive u-d-flex u-align-items-center">
+              <div class="form__input-wrapper u-w--100">
+                <select class="form__select" id="checkoutForm-vehicle-equipQty-0" name="vehicle-equipQty-0" required>
+                  <option value="" selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label>Cantidad</label>
+              </div>
+              <div
+                class="btn btn--secondary__ghost o-ml--2 btn--icon btn--icon__medium btn--medium"
+                data-trigger="add-equipment"
+              >
+                <i class="icon-add"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="o-row">
+          <div class="o-col-md-10 o-col-lg-8">
+            <button class="btn btn--primary u-w--100" type="submit" form="js-form-checkout-vehicles">
+              Guardar y continuar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Datos de los vehículos -->
+<div
+  class="box c-checkout-form__form-item g-dropdown-basic dropdown-list dropdown-collapse u-w--100 o-mt--3 show"
+  data-element="vehicles"
+>
+  <button class="c-checkout-form__form-title g-dropdown-basic--btn u-text">3 · Datos de los vehículos</button>
+
+  <div class="box--sumary c-checkout-form__form-summary g-hidden">
+    <div class="box--sumary__title">
+      <p>3 · Vehículos</p>
+    </div>
+    <div class="box--sumary__info"></div>
+    <div class="box--sumary__link u-d-none u-d-md-block">
+      <a class="g-link js-checkout-modify" data-trigger="checkout-modify">Modificar</a>
+    </div>
+  </div>
+
+  <div class="g-dropdown-basic--content">
+    <div class="g-dropdown-basic--bkg u-border--top-gray">
+      <form action="" class="js-checkout-form__step" id="js-form-checkout-vehicles">
+        <input id="checkoutForm-vehicle-type-1" name="vehicle-type-1" type="hidden" value="caravan_other" />
+        <div class="o-row">
+          <div class="o-col-24 margin-responsive">
+            <h3 class="box--title">Caravana / Otros</h3>
+          </div>
+          <div class="o-col-md-12 o-col-lg-6 margin-responsive">
+            <div class="form__input-wrapper">
+              <input
+                class="g-input form__input"
+                type="text"
+                id="checkoutForm-vehicle-model-1"
+                name="vehicle-model-1"
+                placeholder=" "
+              />
+              <label>Marca y Model</label>
+            </div>
+          </div>
+          <div class="o-col-md-12 o-col-lg-6 margin-responsive">
+            <div class="form__input-wrapper">
+              <input
+                class="g-input form__input"
+                type="text"
+                id="checkoutForm-vehicle-id-1"
+                name="vehicle-id-1"
+                placeholder=" "
+              />
+              <label>Matrícula</label>
+            </div>
+          </div>
+        </div>
+        <div class="c-check-accordion__header">
+          <div class="g-calendar--check">
+            <label class="control control--checkbox"
+              >¿Viajas con equipamiento adicional?
+              <input type="checkbox" data-trigger="additional-equipment" />
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+        </div>
+        <div class="c-check-accordion__content" data-element="additional-equipment">
+          <div class="o-row" data-equipment="0">
+            <div class="o-col-md-12 o-col-lg-10 margin-responsive">
+              <div class="form__input-wrapper">
+                <input
+                  class="g-input form__input"
+                  id="checkoutForm-vehicle-additionalEquip-0"
+                  name="vehicle-additionalEquip-0"
+                  placeholder=" "
+                />
+                <label>Tipo de equipaje</label>
+              </div>
+            </div>
+            <div class="o-col-sm-8 o-col-lg-8 margin-responsive u-d-flex u-align-items-center">
+              <div class="form__input-wrapper u-w--100">
+                <select class="form__select" id="checkoutForm-vehicle-equipQty-0" name="vehicle-equipQty-0" required>
+                  <option value="" selected></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label>Cantidad</label>
+              </div>
+              <div
+                class="btn btn--secondary__ghost o-ml--2 btn--icon btn--icon__medium btn--medium"
+                data-trigger="add-equipment"
+              >
+                <i class="icon-add"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="o-row">
+          <div class="o-col-md-10 o-col-lg-8">
+            <button class="btn btn--primary u-w--100" type="submit" form="js-form-checkout-vehicles">
+              Guardar y continuar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

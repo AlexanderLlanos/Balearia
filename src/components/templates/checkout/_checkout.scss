@@ -1,0 +1,133 @@
+.cvv {
+  .form__input-wrapper {
+    width: 125px;
+    @include desktop {
+      width: 85px;
+    }
+  }
+  .img {
+    width: 78px;
+  }
+}
+
+.c-checkout-form {
+  @include e('form-title') {
+    .finished > & {
+      display: none;
+    }
+  }
+  &__form-item {
+    @include mobile {
+      padding: 16px !important;
+    }
+  }
+}
+
+[name='bigFamily-id'],
+[data-text='vehicle-model'],
+[data-element='promo-code'] input,
+[data-element^='passenger-idNumber'] input,
+[data-element='vehicles'] .info__name ~ span {
+  text-transform: uppercase;
+}
+
+.g-calendar--check .g-link i {
+  font-size: 14px;
+}
+
+#modal-checkout-factura-ok {
+  & .g-modal--medium__content {
+    text-align: center;
+  }
+
+  & .g-modal--info-icon {
+    font-size: 53px;
+  }
+}
+.g-dropdown--form-checkout {
+  .col-size-tablet {
+    @media screen and (min-width: 993px) and (max-width: 1231px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+.js-autofill__btn-fill-passenger {
+  &.box--funel {
+    color: #333333;
+    border: solid 1px #bebebe;
+    background-color: #fff;
+    justify-content: start;
+    padding-left: 1.5rem;
+
+    &.is-active {
+      border: solid 2px #008193;
+    }
+  }
+
+  & .box--funel__text {
+    line-height: 0px;
+  }
+
+  & > .js-autofill__btn-clear.icon-close {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+  }
+
+  & > .control--checkbox {
+    margin-bottom: 0px;
+  }
+}
+
+.g-checkout-secondary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &--check {
+    height: 16px;
+    width: 16px;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  &--label {
+    font-weight: 700;
+    color: #333333;
+    font-size: 14px;
+  }
+
+  // state
+  &.check {
+    .item {
+      background: #008193;
+      width: 12px;
+      height: 12px;
+      top: 1px;
+      left: 1px;
+      border-radius: 2px;
+      position: absolute;
+    }
+  }
+
+  &.multiple {
+    .g-checkout-secondary--check {
+      border: 1px solid #008193;
+    }
+    .item {
+      background: #008193;
+      width: 12px;
+      height: 2px;
+      top: 6px;
+      left: 1px;
+      border-radius: 2px;
+      position: absolute;
+    }
+  }
+}

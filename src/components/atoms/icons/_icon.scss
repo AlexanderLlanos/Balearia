@@ -1,0 +1,79 @@
+.g-icon {
+  &--tooltip {
+    color: $green-main;
+    font-size: 13px;
+    cursor: pointer;
+
+    @include mobile {
+      position: absolute;
+      right: 16px;
+      top: 0;
+
+      &__normal {
+        position: relative;
+        right: inherit;
+        top: initial;
+      }
+    }
+
+    &__menu {
+      @include mobile {
+        top: 33px;
+      }
+    }
+  }
+
+  &--close {
+    cursor: pointer;
+    color: $green-main;
+    font-size: 20px;
+    padding-right: 16px;
+
+    &__menu {
+      @include mobile {
+        position: absolute;
+        right: 16px;
+        top: 14px;
+        padding-right: 0;
+      }
+    }
+  }
+
+  &--small {
+    font-size: 16px;
+  }
+
+  &--medium {
+    font-size: 20px;
+    color: $green-main;
+  }
+
+  &--xmedium {
+    font-size: 26px;
+    color: $green-main;
+  }
+
+  &--large {
+    font-size: 32px;
+  }
+
+  &--xlarge {
+    font-size: 70px;
+  }
+
+  &--green {
+    color: $green-main;
+  }
+
+  &--gray {
+    color: $gray;
+  }
+
+  &--text {
+    color: $text;
+  }
+
+  &--green2 {
+    color: $green;
+  }
+}

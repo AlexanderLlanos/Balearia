@@ -1,0 +1,62 @@
+.g-radiobtn {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  font-family: Lato;
+  color: $text;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked ~ .g-radiobtn--checkmark {
+      border: 1px solid $green-main;
+
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  &--checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 1px solid $gray-light;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: none;
+    }
+
+    &::after {
+      top: 1px;
+      left: 1px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: $green-main;
+    }
+  }
+
+  &:hover input ~ .g-radiobtn--checkmark {
+    border: 1px solid $green-main;
+  }
+
+  &:hover input:checked ~ .g-radiobtn--checkmark {
+    &::after {
+      display: block;
+    }
+  }
+}

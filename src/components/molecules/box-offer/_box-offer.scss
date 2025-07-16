@@ -1,0 +1,26 @@
+.box-offer {
+  padding: 8px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  &__number {
+    background-color: $green-main;
+    border-radius: 8px;
+    min-width: 46px;
+    height: 36px;
+    color: $white;
+  }
+  &__icon {
+    font-size: 16px;
+    margin-right: 4px;
+  }
+  &__number,
+  &__title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.8px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,84 @@
+.g-outstanding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 50px 0;
+
+  @include large {
+    padding: 90px 0;
+  }
+
+  &--bkg {
+    width: 100%;
+    border-radius: 16px;
+    height: 480px;
+    object-fit: cover;
+
+    @include large {
+      height: 762px;
+    }
+  }
+
+  &--info {
+    left: 0;
+    position: absolute;
+    color: $white;
+
+    @include large {
+      width: 44%;
+      left: 30px;
+    }
+
+    @include desktop {
+      left: 100px;
+    }
+
+    .logo {
+      padding-left: 20px;
+      height: 70px;
+
+      @include large {
+        height: 90px;
+      }
+    }
+
+    .btn {
+      margin-top: 130px;
+
+      @include large {
+        margin-top: 0;
+      }
+    }
+
+    .subtitle {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 20px;
+      margin-bottom: 16px;
+      margin-top: 26px;
+      padding-left: 20px;
+      font-size: 16.8px;
+
+      @include large {
+        font-size: 35.92px;
+        line-height: 44px;
+      }
+    }
+
+    .title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      padding-left: 20px;
+      font-size: 28.38px;
+      line-height: 35px;
+
+      @include large {
+        font-size: 45.46px;
+        line-height: 55px;
+      }
+    }
+  }
+}

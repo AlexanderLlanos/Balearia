@@ -1,0 +1,46 @@
+/// Block Element
+/// @access public
+/// @param {String} $element - Element's name
+@mixin element($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+/// Block Modifier
+/// @access public
+/// @param {String} $modifier - Modifier's name
+@mixin modifier($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+/// @alias element
+@mixin e($element) {
+    @include element($element)  {
+        @content;
+    }
+}
+
+/// @alias modifier
+@mixin m($modifier) {
+    @include modifier($modifier) {
+        @content;
+    }
+}
+
+/// Block Multiple Modifier
+/// @access public
+/// @param {String} $modifier - Modifier's name
+/// will resolve in a CSS selector 
+/// [class^="stars_with"][class*="--contains"]
+ @mixin mm($modifier) {
+    $len: str-length(#{&}); /* Get parent string length */
+    $parent: str-slice(#{&}, 2, $len); /* Remove leading . */
+
+    @at-root [class^="#{$parent}"][class*="--#{$modifier}"] {
+        @extend .#{$parent};
+        @content;
+    }
+}

@@ -1,0 +1,40 @@
+.box--confirmation {
+  max-width: 703px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  @include mediaq-max(992px) {
+    background: $white;
+  }
+  .box {
+    @include mediaq-max(992px) {
+      box-shadow: none;
+    }
+  }
+  .text--name {
+    @include mediaq-max(992px) {
+      display: block;
+      text-align: center;
+    }
+  }
+  .btn--orange {
+    @include mediaq-max(992px) {
+      font-size: 14px;
+      padding: 0;
+    }
+  }
+  .u-font-weight-extrabold {
+    font-weight: 800;
+  }
+  .u-w-desktop--50 {
+    width: 50%;
+    @include mediaq-max(992px) {
+      width: 100%;
+    }
+  }
+  .text-confirmation {
+    line-height: 20.16px;
+  }
+  .text-correo {
+    line-height: 23.2px;
+  }
+}

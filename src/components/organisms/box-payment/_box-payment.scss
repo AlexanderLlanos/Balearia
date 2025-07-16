@@ -1,0 +1,22 @@
+.box-payment {
+  margin-bottom: 4px;
+  &__card {
+    margin-right: 4px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__item {
+    padding: 0px;
+    padding-bottom: 0px;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    & .item__content {
+      padding: 16px;
+    }
+  }
+}

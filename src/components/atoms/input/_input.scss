@@ -1,0 +1,659 @@
+%form-select-labels-style {
+  $size: 20px;
+  display: inline-block;
+  margin-right: 17px;
+  width: $size;
+  height: $size;
+  transition: all 0.2s;
+  border: 1px solid $gray;
+}
+
+%form-text-inputs-style {
+  @include font-size($bodytext-sz__sm, normal, normal);
+  @include padding(20px, 15px, 8px, 15px);
+  color: $text;
+  border: solid 1px $gray;
+  outline-color: $green-main;
+  background-color: $white;
+  border-radius: 8px;
+  font-family: Lato;
+}
+
+.g-input {
+  @extend %form-text-inputs-style;
+  width: 100%;
+  position: relative;
+
+  &::-moz-placeholder,
+  &:-moz-placeholder {
+    opacity: 0;
+  }
+  &::placeholder,
+  &::-webkit-input-placeholder,
+  &:-ms-input-placeholder {
+    opacity: 1;
+  }
+  &::placeholder,
+  &::-moz-placeholder {
+    color: $green-light;
+  }
+  &:valid,
+  &:-moz-ui-valid {
+    outline-color: $green-light;
+  }
+  &:invalid,
+  &:-moz-ui-invalid {
+    outline-color: $green-light;
+  }
+  &::-webkit-file-upload-button {
+    visibility: hidden;
+    display: none;
+  }
+
+  &--ligth {
+    background: transparent;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+textarea {
+  @extend %form-text-inputs-style;
+  width: 100%;
+}
+
+.g-input::-webkit-outer-spin-button,
+.g-input::-webkit-inner-spin-button,
+.g-input[type='date']::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
+  display: none;
+  margin: 0;
+}
+
+.g-input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.form {
+  @include e('legend') {
+    @include font-size($bodytext-sz__lg, normal, normal);
+    color: $green-dark;
+  }
+  @include e('label') {
+    @include font-size($bodytext-sz__sm, normal, normal);
+    color: $green-dark;
+    display: block;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  & fieldset > label {
+    position: relative;
+  }
+
+  @include e('input') {
+    //===================================================
+    // Selection
+
+    &[type='checkbox'],
+    &[type='radio'] {
+      position: absolute;
+      clip: rect(0, 0, 0, 0);
+    }
+
+    &[type='checkbox'] + label,
+    &[type='radio'] + label {
+      margin-right: 25px;
+      @include font-size($bodytext-sz__lg, normal, normal);
+      color: $gray-light;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    [class*='fieldset'] > &[type='checkbox']:not(:first-child) + label,
+    [class*='fieldset'] > &[type='radio']:not(:first-child) + label {
+      margin-top: 25px;
+    }
+
+    //--------------------------------------------------
+    // Unchecked styles
+    &[type='radio'] + label::before {
+      @extend %form-select-labels-style;
+      content: '\a0';
+      background: $white;
+      border: 1px solid $gray;
+      @include border-radius(50%);
+      box-shadow: inset 0 0 0 3px $white;
+      flex-shrink: 0;
+    }
+
+    &[type='checkbox'] + label::before {
+      @extend %form-select-labels-style;
+      content: '\a0';
+      color: $green;
+      font-size: 16px;
+      line-height: 19px;
+      background: $white;
+      border: 1px solid $gray;
+      @include border-radius(1px);
+      box-shadow: inset 0 0 0 3px $white;
+      display: inline-flex;
+      align-items: baseline;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    //--------------------------------------------------
+    // Checked styles
+    &[type='radio']:checked + label::before {
+      content: '\a0';
+      background: $green-main;
+      border: 1px solid $green-main;
+      box-shadow: inset 0 0 0 3px $white;
+    }
+
+    &[type='checkbox']:checked + label::before {
+      font-family: 'icomoon';
+      content: '\e900';
+      color: $green-2;
+      font-size: 16px;
+      line-height: 19px;
+      background: $white;
+      border: 1px solid $green-main;
+    }
+
+    &[type='file'] ~ span {
+      background-color: $green-2;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      height: 100%;
+      z-index: 2;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include mobile {
+        width: 50px;
+      }
+      @include large {
+        width: 70px;
+      }
+
+      &::after {
+        font-family: 'icomoon';
+        content: '\e900';
+        color: $white;
+        @include mobile {
+          font-size: 16px;
+        }
+        @include large {
+          font-size: 20px;
+        }
+      }
+    }
+
+    //===================================================
+    // Fields
+    &-wrapper {
+      position: relative;
+
+      [class*='fieldset'] > &:not(:first-child) {
+        margin-top: 20px;
+      }
+
+      & > label {
+        font-size: 14px;
+        pointer-events: none;
+        color: $green-light;
+        position: absolute;
+        transition: 0.2s;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        font-family: Lato;
+      }
+
+      & .g-input:focus,
+      & .g-input:active,
+      & .g-input:not(:placeholder-shown),
+      & select:focus,
+      & select:active,
+      & select:valid,
+      & textarea {
+        border-color: $green;
+        outline-color: $green-main;
+      }
+
+      & .g-input:focus + label,
+      & .g-input:active + label,
+      & .g-input:not(:placeholder-shown) + label,
+      & select:focus + label,
+      & select:active + label,
+      & select:valid ~ label,
+      & textarea + label {
+        @include font-size(9.8, 10.9, normal);
+        top: 16px;
+        left: 15px;
+        text-transform: uppercase;
+      }
+
+      & .g-input[type='file']:focus,
+      & .g-input[type='file']:active,
+      & .g-input[type='file']:not(:placeholder-shown) {
+        border-color: $gray-light;
+      }
+
+      & .g-input[type='radio']:focus + label,
+      & .g-input[type='radio']:active + label,
+      & .g-input[type='radio']:not(:placeholder-shown) + label,
+      & .g-input[type='checkbox']:focus + label,
+      & .g-input[type='checkbox']:active + label,
+      & .g-input[type='checkbox']:valid ~ label {
+        font-family: Lato;
+        @include font-size($bodytext-sz__sm, normal, normal);
+      }
+
+      & .g-input:not(:placeholder-shown):invalid:not(:focus),
+      & .g-input-not-valid:not(:focus) {
+        border-color: $red;
+        outline-color: $red;
+        background: $red-light;
+      }
+
+      & .g-input__error-label {
+        font-family: Lato;
+        @include font-size(12, normal, normal);
+        color: $red !important;
+        position: absolute;
+        top: calc(100% + 4px);
+      }
+
+      & + .g-input__error-label {
+        display: none;
+      }
+    }
+
+    &[type='date'],
+    &[type='datetime-local'] {
+      @extend %form-text-inputs-style;
+      position: relative;
+      width: 100%;
+
+      &:not(:focus)::placeholder,
+      &:not(:focus)::-webkit-input-placeholder,
+      &:not(:focus)::-moz-placeholder,
+      &:not(:focus):-moz-placeholder,
+      &:not(:focus):-ms-input-placeholder {
+        visibility: hidden;
+      }
+
+      &:not(:placeholder-shown):valid:not(:focus) {
+        background-color: transparent;
+        background-image: url('/src/assets/img/icons/check-circle.png');
+        background-position-x: calc(100% - 20px);
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: 22px;
+      }
+
+      &:not(:placeholder-shown):invalid:not(:focus) {
+        outline-color: $red;
+        background: $red-light;
+      }
+    }
+
+    &[type='file'] {
+      @extend %form-text-inputs-style;
+      position: relative;
+      width: 100%;
+
+      &:not(:focus)::placeholder,
+      &:not(:focus)::-webkit-input-placeholder,
+      &:not(:focus)::-moz-placeholder,
+      &:not(:focus):-moz-placeholder,
+      &:not(:focus):-ms-input-placeholder {
+        visibility: hidden;
+      }
+      // Because there is no way to validate file from client side, (appart from required attribute)
+      // green/reed border are not needed for now.
+      &:valid,
+      &:-moz-ui-valid,
+      &:not(:placeholder-shown):invalid:not(:focus) {
+        border-color: $green-lighter;
+      }
+    }
+
+    &[type='text'],
+    &[type='email'],
+    &[type='number'],
+    &[type='date'],
+    &[type='datetime-local'],
+    &[type='tel'],
+    &[type='url'] {
+      @extend %form-text-inputs-style;
+      position: relative;
+      width: 100%;
+
+      &:not(:placeholder-shown):valid:not(:focus) {
+        background: $green-lighter;
+        outline-color: $green;
+        border: 1px solid $green;
+
+        &.g-input-not-valid:not(:focus) {
+          border: 1px solid $red;
+          outline-color: $red;
+          background: $red-light;
+        }
+      }
+
+      &:not(:focus)::placeholder {
+        visibility: hidden;
+      }
+      &:not(:focus)::-webkit-input-placeholder {
+        visibility: hidden;
+      }
+      &:not(:focus)::-moz-placeholder {
+        visibility: hidden;
+      }
+      &:not(:focus):-ms-input-placeholder {
+        visibility: hidden;
+      }
+      &:not(:focus):-moz-placeholder {
+        visibility: hidden;
+      }
+
+      &:invalid {
+        outline-color: $green-main;
+      }
+    }
+  }
+
+  @include e('select') {
+    @extend %form-text-inputs-style;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    width: 100%;
+    background-color: transparent;
+    background-image: url('./../assets/img/arrow-down.png');
+    background-position-x: calc(100% - 12px);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    padding-right: 50px;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:not(:placeholder-shown):valid:not(:focus) {
+      background-color: $green-lighter;
+      outline-color: $green;
+      border: 1px solid $green;
+    }
+  }
+
+  @include e('err-msj') {
+    font-size: Lato;
+    @include font-size(14, normal, normal);
+    display: block;
+    color: $red;
+    margin-top: 10px;
+  }
+
+  @include e('note') {
+    color: $green-light;
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    @include mobile {
+      font-size: 12px;
+    }
+    @include large {
+      font-size: 14px;
+    }
+  }
+
+  @include e('more-icon') {
+    align-items: center;
+    font-size: 16px;
+    & span {
+      font-size: 22px;
+      margin-right: 10px;
+    }
+  }
+
+  @include e('icon-right') {
+    i {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      font-size: 24px;
+      color: $gray-light;
+    }
+
+    & .g-input:focus,
+    & .g-input:active,
+    & .g-input:not(:placeholder-shown),
+    & select:focus,
+    & select:active,
+    & select:valid {
+      padding-right: 50px;
+    }
+  }
+
+  @include e('icon-left') {
+    i {
+      position: absolute;
+      top: 15px;
+      left: 14px;
+      font-size: 18px;
+      color: $gray-light;
+    }
+
+    .g-input {
+      padding-left: 42px !important;
+    }
+
+    & > label {
+      left: 42px !important;
+    }
+
+    & .g-input:focus + label,
+    & input:active + label,
+    & input:not(:placeholder-shown) + label,
+    & select:focus + label,
+    & select:active + label,
+    & select:valid ~ label {
+      left: 42px;
+    }
+  }
+  &__help {
+    display: block;
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 12.44px;
+    line-height: 15px;
+    color: $gray-light;
+  }
+  &__input-file {
+    position: relative;
+    .input {
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.g-input--no-label {
+  padding-top: 15px;
+  padding-bottom: 17px;
+}
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 4px;
+  color: $text;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid $gray-light;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+
+// .control input:checked ~ .control__indicator {
+//   background: $green-main;
+// }
+
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: $green-main;
+}
+
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+
+.control--checkbox {
+  font-weight: 700;
+  color: $text;
+  background: transparent;
+  padding-top: 0;
+  display: inline-block;
+  &:hover {
+    .control__indicator {
+      border: 3px solid $green-main;
+    }
+  }
+  .control__indicator {
+    top: 1px;
+  }
+}
+
+.control--checkbox .control__indicator:after {
+  background: $green-main;
+  width: 12px;
+  height: 12px;
+  top: 1px;
+  left: 1px;
+  border-radius: 2px;
+  position: absolute;
+}
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+.control--radio .control__indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #7b7b7b;
+}
+
+.select-input {
+  display: flex;
+  height: 48px;
+  .form__select {
+    background-color: #fafafa !important;
+    border: 1px solid #aaaaaa;
+    box-sizing: border-box;
+    border-radius: 8px 0px 0px 8px;
+    padding: 16px 13px;
+    width: 72px;
+    min-width: 72px;
+    height: 100%;
+    color: #aaaaaa;
+    background-size: 10px;
+  }
+  .g-input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 100%;
+    border-left: 0 !important;
+    + label {
+      width: calc(100% - 30px);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+  .g-input-not-valid:not(:focus) {
+    border-color: $red;
+    outline-color: $red;
+    background: $red-light;
+  }
+}
+.form__select {
+  background-image: url('../../src/assets/img/arrow-down-green.svg');
+  background-size: 15px;
+
+  &.no-label {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+.form__select:disabled,
+.form__input:disabled {
+  pointer-events: none;
+  background-color: #fafafa;
+  color: #d3d3d3;
+  &.inert {
+    color: $text;
+  }
+}

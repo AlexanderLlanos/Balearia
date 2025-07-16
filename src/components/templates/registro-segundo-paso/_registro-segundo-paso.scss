@@ -1,0 +1,104 @@
+.o-container--registro {
+  width: auto;
+  max-width: 679px !important;
+  padding: 0 14px 14px 14px;
+  margin: 0 auto;
+  @include mediaq-max(992px) {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .box--registro {
+    display: flex;
+    margin-bottom: 24px;
+    @include mediaq-max(992px) {
+      flex-direction: column-reverse;
+    }
+    .texts {
+      .title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40.41px;
+        line-height: 49px;
+        color: $text;
+        margin-left: 14px;
+        &.title--registro {
+          margin-bottom: 0px;
+          @include mediaq-max(992px) {
+            font-size: 25.23px !important;
+            line-height: 30.76px !important;
+            margin-bottom: 0px;
+          }
+        }
+      }
+      .subtitle {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16.8px;
+        line-height: 20px;
+        color: $text;
+        margin-left: 14px;
+        @include mediaq-max(992px) {
+          font-size: 16.28px;
+        }
+      }
+    }
+  }
+  .subtitle-form {
+    font-family: Lato;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: $text-light;
+    &.subtitle-form--orange {
+      color: $yellow-main;
+    }
+  }
+
+  .control {
+    &.control--checkbox {
+      .label__text-light {
+        font-weight: 400;
+      }
+    }
+    &.control--btn {
+      margin-bottom: 0;
+    }
+  }
+
+  .icon-info--btn {
+    height: 15px;
+    width: 15px;
+  }
+  .g-calendar--check__caducidad {
+    display: flex;
+    justify-content: space-between;
+    i {
+      font-size: 16px;
+    }
+    .icon-info__caducidad {
+      font-size: 12px;
+    }
+  }
+
+  .tag__cumpleaños {
+    @include mediaq-max(992px) {
+      margin-top: 20px;
+    }
+  }
+
+  .footer-small {
+    background-color: $white;
+    padding-bottom: 0px;
+    @include mediaq-max(992px) {
+      padding-bottom: 0px;
+    }
+  }
+}
+
+//general
+.icon--green-main {
+  color: $green-main;
+}

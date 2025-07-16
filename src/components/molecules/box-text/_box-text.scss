@@ -1,0 +1,53 @@
+.box__text {
+  color: $text-light;
+  height: 64px;
+  width: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  @include large {
+    height: 80px;
+  }
+  &:hover {
+    background-color: $gray-dark;
+    &:after {
+      content: "";
+      height: 3px;
+      width: 44px;
+      background-color: $green-main;
+      margin-top: 5px;
+    }
+    .text {
+      color: $green-main;
+      font-size: 16.8px;
+      line-height: 20px;
+    }
+  }
+  &.disabled {
+    background-color: $gray-dark;
+    cursor: default;
+    &:after {
+      display: none;
+    }
+    .icon {
+      color: $gray;
+    }
+  }
+  .title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.44px;
+    line-height: 15px;
+  }
+  .text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .icon {
+    font-size: 24px;
+  }
+}
